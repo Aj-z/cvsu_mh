@@ -9,7 +9,9 @@ from .forms import (BsessQuiz, BpedQuiz, BsaQuiz,
                     BSBIO_ECOLOGY_Quiz, BSBIO_GENETICS_Quiz, BSBIO_GENETICS_Quiz,
                     BSPSYC_Quiz, BSSW_Quiz, BSABE_Quiz, BSARCH_Quiz, BSCE_Quiz, 
                     BSCpE_Quiz, BSCS_Quiz, BSEE_Quiz, BSINDT_AT_Quiz, 
-                    BSINDT_ET_Quiz, BSINDT_EX_Quiz, BSIT_Quiz, BSOA_Quiz,
+                    BSINDT_ET_Quiz, BSINDT_EX_Quiz, BSIT_Quiz, 
+                    BSOA_QUIZ, BSACC_QUIZ,BSBA_FM_QUIZ,BSBA_HRM_QUIZ,BSBA_OM_QUIZ,
+                    BSBA_MM_QUIZ,BSBA_SM_QUIZ,BSECON_QUIZ,BSIS_AS_QUIZ,BSIS_ES_QUIZ,
                     BSMT_Quiz, BSM_Quiz, BSN_Quiz,BSCQuiz, BSISMQuiz)
 
 # ------  CSPEAR  ---------
@@ -2598,26 +2600,34 @@ def BSIT_QUIZ(request):
         'Carousel_3p' : Carousel_3p,
         'Go_back': Go_back
     })
-def BSOA_QUIZ(request):
-    css_style = "cas.css"
+
+# ------  CEMDS ---------
+def cemds_home_view(request):
+    return render(request, 'cvsuquiz/cemds.html')
+def BSOA_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Office Administration"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+
+        form = BSOA_QUIZ(request.POST)
+
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -2628,17 +2638,19 @@ def BSOA_QUIZ(request):
             else:
                 feedback_q1 = "Wrong! The correct answer is B"
 
-            if answer_q2 == '1':
+            if answer_q2 == '3':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is c"
 
-            if answer_q3 == '3':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
-        form = BajQuiz()
+
+        form = BSOA_QUIZ()
+
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -2647,9 +2659,9 @@ def BSOA_QUIZ(request):
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
         'css_style' : css_style,
-       'College_Name': College_Name,
-       'Carousel_1img': Carousel_1img,
-       'Carousel_1h5' : Carousel_1h5,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
         'Carousel_1p' : Carousel_1p,
         'Carousel_2img' : Carousel_2img,
         'Carousel_2h5' : Carousel_2h5,
@@ -2657,8 +2669,608 @@ def BSOA_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
+def BSACC_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Accountancy "
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
 
-# ------  CEMDS ---------
-def cemds_home_view(request):
-    return render(request, 'cvsuquiz/cemds.html')
+
+
+    if request.method == "POST":
+
+        form = BSACC_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is C"
+
+            if answer_q2 == '3':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is c"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+
+        form = BSACC_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_FM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Financial Management"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_FM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_FM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_HRM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Human Resource Management "
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_HRM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_HRM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_MM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Marketing Management"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_MM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '3':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is C"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_MM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_OM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Operations Management "
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_OM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '3':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is C"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_OM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_SM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Service Management Program"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_SM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_SM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSECON_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Economics"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSECON_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '3':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+
+        form = BSECON_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSIS_AS_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in  International Studies Major in Asian Studies"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSIS_AS_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '3':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is C"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSIS_AS_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSIS_ES_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in  International Studies Major in European Studies"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSIS_ES_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '3':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is C"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSIS_ES_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })

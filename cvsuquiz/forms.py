@@ -1451,7 +1451,7 @@ class BSN_Quiz(forms.Form):
         widget=forms.RadioSelect,
         label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
     )        
-
+#CCJ Quiz
 class BSCQuiz(forms.Form):    
     CHOICES_Q1 = [
         ('1', 'A. Lack of forensic evidence'),
@@ -1524,3 +1524,365 @@ class BSISMQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="Crime Prevention, Detection, and Control: Which crime prevention strategy focuses on reducing opportunities for crime by modifying the environment?"
     )        
+#CEMDS Quiz
+class BSOA_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Balance Sheet'),
+        ('2', 'B. Income Statement'),
+        ('3', 'C. Cash Flow Statement'),
+        ('4', 'D. Statement of Retained Earnings'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Risk aversion'),
+        ('2', 'B. Procrastination'),
+        ('3', 'C. Opportunity-seeking'),
+        ('4', 'D. Relying solely on luck'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To improve handwriting'),
+        ('2', 'B. To increase the speed of note-taking'),
+        ('3', 'C. To enhance grammatical accuracy'),
+        ('4', 'D. To simplify vocabulary'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="OFFICE PROFESSIONAL: What financial statement summarizes a company’s revenues and expenses over a period of time?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="ENTREPRENEURIAL BEHAVIOR AND COMPETENCIES: Which of the following is a key competency of a successful entrepreneur?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="MACHINE SHORTHAND: What is the primary purpose of machine shorthand?"
+    )
+class BSACC_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Relevance'),
+        ('2', 'B. Faithful representation'),
+        ('3', 'C. Comparability'),
+        ('4', 'D. Timeliness'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. To detect all fraud within a company'),
+        ('2', 'B. To provide absolute assurance on financial statements'),
+        ('3', 'C. To express an opinion on whether financial statements are presented fairly'),
+        ('4', 'D. To prepare financial reports for management'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Maximizing short-term profits'),
+        ('2', 'B. Avoiding disclosure of financial information'),
+        ('3', 'C. Transparency and accountability'),
+        ('4', 'D. Prioritizing personal interests over stakeholder'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="CONCEPTUAL FRAMEWORK AND ACCOUNTING STANDARDS: According to the Conceptual Framework, which of the following is NOT a fundamental qualitative characteristic of financial information?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="AUDITING ASSURANCE: CONCEPTS AND APPLICATIONS: What is the primary objective of an independent financial statement audit? "
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="GOVERNANCE, BUSINESS ETHICS, RISK MANAGEMENT, AND INTERNAL CONTROL: Which of the following is a key principle of corporate governance?"
+    )       
+ #BSBA MAJORS   
+class BSBA_FM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. To maximize credit sales without assessing risk'),
+        ('2', 'B. To ensure timely collection of receivables while managing credit risk'),
+        ('3', 'C. To increase the company’s liabilities'),
+        ('4', 'D. To avoid granting credit to customers'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Taxation'),
+        ('2', 'B. Open market operations'),
+        ('3', 'C. Government spending'),
+        ('4', 'D. Price controls'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To maximize risk exposure'),
+        ('2', 'B. To reduce overall investment risk'),
+        ('3', 'C. To invest in a single asset for higher returns'),
+        ('4', 'D. To focus only on short-term gains'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="CREDIT AND COLLECTION: What is the primary objective of a credit and collection policy?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="MONETARY POLICY AND CENTRAL BANKING: Which of the following is a primary tool of monetary policy used by central banks? "
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="INVESTMENT AND PORTFOLIO MANAGEMENT: What is the main purpose of portfolio diversification?"
+    )
+class BSBA_HRM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. To eliminate labor unions'),
+        ('2', 'B. To negotiate terms of employment between employers and employees'),
+        ('3', 'C. To reduce employee wages'),
+        ('4', 'D. To allow employers to make decisions without employee input'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Employee’s personal expenses'),
+        ('2', 'B. Market competitiveness and job evaluation'),
+        ('3', 'C. Number of vacation days taken'),
+        ('4', 'D. Employee’s social status'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To increase company expenses'),
+        ('2', 'B. To enhance employee skills and improve job performance'),
+        ('3', 'C. To reduce employee workload permanently'),
+        ('4', 'D. To replace formal education'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="LABOR RELATIONS AND NEGOTIATIONS: What is the primary purpose of collective bargaining in labor relations?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="COMPENSATION ADMINISTRATION: Which of the following is a key factor in determining employee compensation?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="TRAINING AND DEVELOPMENT: What is the primary goal of employee training and development programs?"
+    ) 
+class BSBA_MM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. To eliminate labor unions'),
+        ('2', 'B. To negotiate terms of employment between employers and employees'),
+        ('3', 'C. To reduce employee wages'),
+        ('4', 'D. To allow employers to make decisions without employee input'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Employee’s personal expenses'),
+        ('2', 'B. Market competitiveness and job evaluation'),
+        ('3', 'C. Number of vacation days taken'),
+        ('4', 'D. Employee’s social status'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Direct response advertising'),
+        ('2', 'B. Comparative advertising'),
+        ('3', 'C. Product placement'),
+        ('4', 'D. Guerrilla marketing'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="MARKET RESEARCH: What is the primary purpose of market research?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="CONSUMER BEHAVIOR: In consumer decision-making, which factor influences a buyer’s choice based on values, traditions, and social norms?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="ADVERTISING: Which advertising strategy relies on indirect promotion by integrating products into movies, TV shows, or social media content?"
+    )    
+class BSBA_OM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Stakeholder preferences'),
+        ('2', 'B. The project manager’s experience'),
+        ('3', 'C. The project management triangle'),
+        ('4', 'D. The number of employees in the company'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. To increase company expenses'),
+        ('2', 'B. To enhance employee skills and improve job performance'),
+        ('3', 'C. Product design'),
+        ('4', 'D. Customer service training'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Gantt Chart'),
+        ('2', 'B. Fishbone Diagram'),
+        ('3', 'C. Pareto Chart'),
+        ('4', 'D. Benchmarking'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="PROJECT MANAGEMENT: What is the primary constraint in project management that affects scope, time, and cost?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="LOGISTICS MANAGEMENT: Which of the following is a key function of logistics management?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="PRODUCTIVITY AND QUALITY TOOLS: Which quality tool is commonly used to identify the root cause of a problem?"
+    )                                           
+class BSBA_SM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Increased operational costs'),
+        ('2', 'B. Enhanced focus on core business functions'),
+        ('3', 'C. Decreased access to skilled labor'),
+        ('4', 'D. Slower service delivery'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Prioritizing profit over customer satisfaction'),
+        ('2', 'B. Consistently meeting and exceeding customer expectations'),
+        ('3', 'C. Ignoring customer feedback'),
+        ('4', 'D. Reducing training programs for employees'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Manufacturing automobiles'),
+        ('2', 'B. Customer support and technical assistance'),
+        ('3', 'C. Real estate development'),
+        ('4', 'D. Oil refining'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="FUNDAMENTALS OF BUSINESS PROCESS OUTSOURCING 102: What is a key advantage of Business Process Outsourcing (BPO) for companies? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="SERVICE CULTURE: In a service-oriented company, what is the main characteristic of a strong service culture?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="FUNDAMENTALS OF BPO 101: Which of the following is a common service provided by BPO companies? "
+    )
+class BSECON_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. A tool for measuring inflation'),
+        ('2', 'B. A medium of exchange, store of value, and unit of account'),
+        ('3', 'C. A means to eliminate credit transactions'),
+        ('4', 'D. A way to avoid taxation'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. The risk of losing access to healthcare'),
+        ('2', 'B. The tendency of insured individuals to consume more healthcare services'),
+        ('3', 'C. The increase in the price of healthcare services'),
+        ('4', "D. The government's role in healthcare financing"),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To increase government intervention in trade'),
+        ('2', 'B. To restrict imports and exports'),
+        ('3', 'C. To reduce trade barriers and promote economic cooperation'),
+        ('4', 'D. To increase tariffs and protect domestic industries'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="MONETARY ECONOMICS: What is the primary function of money in an economy?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="HEALTH ECONOMICS: In health economics, what does the term 'moral hazard' refer to?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="INTERNATIONAL ECONOMICS: What is the main goal of free trade agreements between countries?"
+    )         
+class BSIS_AS_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. は (wa)'),
+        ('2', 'B. に (ni)'),
+        ('3', 'C. を (wo)'),
+        ('4', 'D. で (de)'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. -아/-어 (-a/-eo)'),
+        ('2', 'B. -요 (-yo)'),
+        ('3', 'C. -고 (-go)'),
+        ('4', "D. -자 (-ja)"),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Thai'),
+        ('2', 'B. Korean (Hanja)'),
+        ('3', 'C. Tagalog'),
+        ('4', 'D. Malay'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="INTERMEDIATE NIPPONGO: In Japanese grammar, which of the following particles is used to indicate the direct object of a sentence?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="INTERMEDIATE KOREAN: In Korean, which of the following honorific endings is commonly used when speaking to someone of higher status?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="ASIAN LANGUAGE 2: Which of the following Asian languages uses characters derived from Chinese Hanzi?"
+    )                                                                                     
+class BSIS_ES_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Estar'),
+        ('2', 'B. Ser'),
+        ('3', 'C. Tener'),
+        ('4', 'D. Hacer'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Je vais à la magasin.'),
+        ('2', 'B. J’irai au magasin.'),
+        ('3', 'C. Je vais aller au magasin.'),
+        ('4', "D. Je vais allais au magasin."),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Italian'),
+        ('2', 'B. German'),
+        ('3', 'C. Portuguese'),
+        ('4', 'D. French'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="INTERMEDIATE SPANISH: In Spanish, which verb is used to express a permanent state or inherent characteristic?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="INTERMEDIATE FRENCH: In French, how do you correctly say 'I am going to the store' using the near future tense "
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="EUROPEAN LANGUAGE: Which of the following European languages is NOT a Romance language?"
+    )                     
