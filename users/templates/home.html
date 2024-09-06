@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+    
+        <head>
+            <meta charset = "UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Django google sign in </title>
+            <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        </head>
+        <body style="margin:0">
+            {% load socialaccount %}
+            {% if not user.is_authenticated %}
+            <div class="background" style="background-image: url('{% static 'images/mindyourmindb.png' %}');" alt="Mind Your Mind">
+                <div class="positionlog">
+                    <div class="card w-96 shadow-xl glass">
+                        <div class="card-body">
+                            <h1>Well being Check</h1>
+                            <div class="google_card">
+                                <a href = "{% provider_login_url 'google' %}?next=/surveys"> 
+                                    <img src="{% static 'images/google_logo.png' %}" alt = "google logo" class = "google-logo">Login With Official CVSU account</a>
+                            </div>
+                        </a>   
+                        </div> 
+                    </div>    
+                </div>
+            </div>
+            {% else %}
+            <div class="background" style="background-image: url('{% static 'images/mindyourmindb.png' %}');" alt="Mind Your Mind">
+                <div class="positionlog">
+                    <div class="card w-96 shadow-xl glass">
+                        <div class="card-body">
+                            <h1>You are signed in as <h3>{{ user.email }}</h3></h1>
+                            <div class="google_card">
+                                <a href="{% url 'account_logout' %}"> 
+                                    <img src="{% static 'images/google_logo.png' %}" alt = "google logo" class = "google-logo">Logout CVSU account</a>
+                            </div>
+                        </a>   
+                        </div> 
+                    </div>    
+                </div>
+            </div>
+                
+            {% endif %}
+        </body>
+</html>
