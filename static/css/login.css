@@ -1,0 +1,92 @@
+
+* {
+    font-family: Montserrat;
+}
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.glass, .glass.btn-active {
+    border: none;
+    -webkit-backdrop-filter: blur(var(--glass-blur, 40px));
+    backdrop-filter: blur(var(--glass-blur, 40px));
+    background-color: transparent;
+    background-image: linear-gradient(135deg, rgb(255 255 255 / var(--glass-opacity, 60%)), #0000), linear-gradient(var(--glass-reflex-degree, 100deg), rgb(255 255 255 / var(--glass-reflex-opacity, 10%)) 25%, rgb(0 0 0 / 0%) 25%);
+    box-shadow: 0 0 0 1px rgb(255 255 255 / var(--glass-border-opacity, 10%)) inset, 0 0 0 2px #0000000d;
+    text-shadow: 0 1px rgb(0 0 0 / var(--glass-text-shadow-opacity, 5%));
+}
+
+.card-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: var(--padding-card, 2rem);
+    gap: .5rem;
+    align-items: center;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--rounded-box, 1rem)
+}
+
+.w-96 {
+    width: 24rem;
+}
+
+.shadow-xl {
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+
+img.google-logo {
+    margin-right: .5rem;
+    height: 1.25rem;
+    align-items: center;
+
+    
+}
+div.google_card {
+   
+    outline-color: var(--fallback-bc, oklch(var(--bc) / 1));    
+}
+a{
+    display: inline-flex;
+    gap: .3rem;
+    border-radius: .75rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+    height: 3rem;
+    min-height: 3rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    border-color: transparent;
+    background-color: rgba(225, 225, 255, 0.98);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: .750rem;
+    line-height: 1em;
+    font-weight: 200;
+    text-decoration-line: none;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0, 0, .2, 1);
+    border-width: var(--border-btn, 1px);
+    transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+    color: var(--fallback-bc, oklch(var(--bc) / 1));
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);;
+}
