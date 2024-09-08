@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    background-color: gray;
+    
+}
+ul {
+    background-color: rgb(212, 203, 203);
+    list-style-type: none;
+}
+h1 {
+    text-align: center;
+    background-color: aqua;
+}
+p {
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 1px;
+}
+form {
+    text-align: center;
+    background-color:beige;
+    margin-bottom: 0px;
+}
+html, body {
+    background-color: rgb(235, 222, 203);
+    height: 25vh;
+    border:black;
+}    
+button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 0 1px rgb(255 255 255 / var(--glass-border-opacity, 10%)) inset, 0 0 0 2px #0000000d;
+
+}
