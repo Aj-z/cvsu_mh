@@ -203,7 +203,7 @@ class DownloadResponseSurveyView(DetailView):
         return response
 
 
-@method_decorator(staff_member_required, name='dispatch')
+
 class SummaryResponseSurveyView(ContextTitleMixin, DetailView):
     model = Survey
     template_name = "djf_surveys/admins/summary.html"
