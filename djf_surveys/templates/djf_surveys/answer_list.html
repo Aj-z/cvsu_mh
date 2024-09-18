@@ -34,6 +34,11 @@
                                 </svg>
                             </a>
                         {% endif %}
+                        <a href="/surveys/"
+                           class="z-20 block p-4 text-blue-700 transition-all bg-blue-100 border-2 border-white rounded-full active:bg-blue-50 hover:scale-110 focus:outline-none focus:ring"
+                           type="button">
+                            {% include "djf_surveys/buttons/back_button.html" %}
+                        </a>
                         <a href="{% url 'djf_surveys:create' survey.slug %}"
                            class="z-20 block p-4 text-green-700 transition-all bg-green-100 border-2 border-white rounded-full active:bg-green-50 hover:scale-110 focus:outline-none focus:ring"
                            type="button">
