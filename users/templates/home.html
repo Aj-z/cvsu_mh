@@ -8,15 +8,17 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Well Being Check</title>
             <link rel="stylesheet" href="{% static 'css/login.css' %}">
+            <link rel="shortcut icon" type="image/x-icon" href="{% static 'css/favicon.ico' %}">
         </head>
         <body style="margin:0">
             {% load socialaccount %}
             {% if not user.is_authenticated %}
-            <div class="background" style="background-image: url('{% static 'images/mindyourmindb.png' %}');" alt="Mind Your Mind">
+            <div class="background" style="background-image: url('{% static 'images/backgroundtest5.png' %}');" alt="Mind Your Mind">
                 <div class="positionlog">
                     <div class="card w-96 shadow-xl glass">
                         <div class="card-body">
-                            <h1>Well being Check</h1>
+                            <img src="{% static 'images/logo_test2.png' %}" class = "weblogo">
+                            <h1>Well Being Check</h1>
                             <div class="google_card">
                                 <a href = "{% provider_login_url 'google' %}?next=/surveys"> 
                                     <img src="{% static 'images/google_logo.png' %}" alt = "google logo" class = "google-logo">Login With Official CVSU account</a>
@@ -27,10 +29,11 @@
                 </div>
             </div>
             {% else %}
-            <div class="background" style="background-image: url('{% static 'images/mindyourmindb.png' %}');" alt="Mind Your Mind">
+            <div class="background" style="background-image: url('{% static 'images/backgroundtest5.png' %}');" alt="Mind Your Mind">
                 <div class="positionlog">
                     <div class="card w-96 shadow-xl glass">
                         <div class="card-body">
+                            <img src="{% static 'images/logo_test2.png' %}" class = "weblogo">
                             <h1>You are signed in as <h3>{{ user.email }}</h3></h1>
                             <div class="google_card">
                                 <a href="{% url 'account_logout' %}"> 
