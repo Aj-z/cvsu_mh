@@ -19,6 +19,7 @@
         {% element p %}
             {% blocktrans with provider.name as provider %}You are about to sign in using a third-party account from {{ provider }}.{% endblocktrans %}
         {% endelement %}
+        <p>By clicking 'Continue,' you agree to and have read <a href="https://docs.google.com/document/d/1OCgAJfGEPHa8BHlHSe9zUpBePDbrrTFE8kizNcGL3BE/edit">this term and condition</a>.</p>
     {% endif %}
     {% element form method="post" no_visible_fields=True %}
         {% slot actions %}
