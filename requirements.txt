@@ -39,7 +39,7 @@ PyGObject==3.42.1
 PyJWT==2.3.0
 PyMySQL==1.1.1
 pyparsing==2.4.7
-python-apt==2.4.0+ubuntu3
+##### python-apt==2.4.0+ubuntu3
 python-dotenv==1.0.0
 pytz==2022.1
 PyYAML==5.4.1
