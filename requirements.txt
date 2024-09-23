@@ -10,7 +10,7 @@ click==8.1.7
 cryptography==3.4.8
 dbus-python==1.2.18
 distro==1.9.0
-distro-info==1.1+ubuntu0.2
+### removed distro-info==1.1+ubuntu0.2
 dj-database-url==2.2.0
 Django==4.2.16
 django-allauth==64.2.0
