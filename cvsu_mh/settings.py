@@ -44,13 +44,13 @@ INSTALLED_APPS = [
     'accounts',
     'survey',
     'users',
+   'bootstrap5',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-    'djf_surveys'
-    
+    'djf_surveys',
 ]
 
 SITE_ID = 3
