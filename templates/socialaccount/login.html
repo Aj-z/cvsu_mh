@@ -1,6 +1,7 @@
 {% extends "socialaccount/base_entrance.html" %}
 {% load i18n %}
 {% load allauth %}
+
 {% block head_title %}
     {% trans "Sign In" %}
 {% endblock head_title %}
@@ -19,7 +20,31 @@
         {% element p %}
             {% blocktrans with provider.name as provider %}You are about to sign in using a third-party account from {{ provider }}.{% endblocktrans %}
         {% endelement %}
-        <p>By clicking 'Continue,' you agree to and have read <a href="https://docs.google.com/document/d/1OCgAJfGEPHa8BHlHSe9zUpBePDbrrTFE8kizNcGL3BE/edit">this term and condition</a>.</p>
+        
+        <p>By clicking 'Continue,' you agree to and have read  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="padding:0; margin-top:-5px;">
+            this term and condition
+        </button>
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="background-color: rgb(242 255 244 / 42%); border-radius: 10px;">
+            <div class="modal-dialog" style="background-color: rgb(255 255 255);     border-radius: 10px;" >
+            <div class="modal-content" style="background-color: rgb(255 255 255); border-radius: 10px;;">   
+                <div class="modal-header" style="background-color: rgb(255 255 255); border-radius: 10px;;">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" style="background-color: #00000000;">Terms And Condition</h1>
+                </div>
+                <div class="modal-body" style="background-color: rgb(255 255 255); border-radius: 10px;;">
+                    <p class="modal_p" style="margin-bottom:1.5em;"><b>This website is intended for CvSU students and personnel</b>. By continuing, you authorize the website owner to collect, use, process, and share your data in accordance with the Data Privacy Act of 2012. The data will be used for analyzing trends, patterns, and responses through descriptive, diagnostic, predictive, and prescriptive analytics. The purpose of this analysis is to bring awareness to students and help create better strategies and implementations at CvSU.</p>
+                    <p class="modal_p" style="margin-bottom:1.5em;"><b>Data retention:</b> Your data will be retained for 30 days. During this period, you will be able to edit and delete your answers within the platform.</p>
+                    <p class="modal_p" style="margin-bottom:1.5em;"><b>Sensitive personal data:</b> Some sensitive personal data may be collected, and we will take extra precautions to protect it.</p>
+                    <p class="modal_p" style="margin-bottom:1.5em;"><b>Opt-out: </b> If you do not wish to proceed, please do not click the "Continue" button.</p>
+                </div>
+                <div class="modal-footer" style="background-color: rgb(255 255 255); border-radius: 10px;;">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Understood</button>
+               
+                </div>
+            </div>
+            </div>
+        </div>
     {% endif %}
     {% element form method="post" no_visible_fields=True %}
         {% slot actions %}

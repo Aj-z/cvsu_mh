@@ -1,6 +1,9 @@
 * {
     font-family:cursive;
 }
+h1.modal-title{
+    
+}
 div {
     background-color: rgb(135 214 207);
     
@@ -42,3 +45,4 @@ button {
 button:hover{
 color:#00ffad;
 }
+
