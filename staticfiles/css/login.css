@@ -119,4 +119,27 @@ a{
 a:hover{
     color:#00ffc9
 }
+.sparkle {
+	position: absolute;
+	top: var(--sparkle-translate-y, 0);
+	left: var(--sparkle-translate-x, 0);
+	width: var(--sparkle-size);
+	height: var(--sparkle-size);
+	border-radius: 50px;
+	background-color: #ffffff;
+	opacity: var(--sparkle-opacity, 0);
+	pointer-events: none;
+	transform-origin: center;
+	animation: sparkleAnim 2s infinite;
+	animation-delay: var(--sparkle-animation-delay, 0s);
+}
 
+@keyframes sparkleAnim {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
