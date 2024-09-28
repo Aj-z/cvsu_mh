@@ -44,7 +44,35 @@
                 </div>
             </div>
             </div>
+             
         </div>
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="background-color: rgb(242 255 244 / 42%); border-radius: 10px;">
+            <div class="modal-dialog" style="background-color: rgb(255 255 255);     border-radius: 10px;" >
+            <div class="modal-content" style="background-color: rgb(255 255 255); border-radius: 10px;;">   
+                <div class="modal-header" style="background-color: rgb(255 255 255); border-radius: 10px;;">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" style="background-color: #00000000;">Message From Creator/Founder</h1>
+                </div>
+                <div class="modal-body" style="background-color: rgb(255 255 255); border-radius: 10px;;">
+                    <p class="modal_p" style="margin-bottom:1.5em;"><b>Message:</b> Hello! Kabsuhenyos! this is Alvin Jan B Loria, a 3rd Year student from CVSU, itong website na ito ay ginawa para malaman kung ano ang kalagayan ng mga tao at mga nagaaral sa CVSU, Ang mga data o datos na makukuwa rito ay gagamitin upang mapaunlad pa lalo ang ating unibersidad, magkakaroon ng basehan at inspirasyon sa paggawa ng bagong mga aktibidad at polisiya ang ating mga leader at student leader na kung saan ay makakatulong sa mga estudyante, sa pamantasan, sa mga guro, stakeholders at sa lahat na konektado sa CVSU. ang mga data o datos na makikita nyo sa survey ay hindi dapat gamitin sa kahit anong ikakasira ng institusyon o ng indibidwal </p>
+                    <p class="modal_p" style="margin-bottom:1.5em;"><b>Paalala:</b>Sa pag sign in gamit ang ating cvsu.edu.ph na account, kinukuwa ko lamang ang inyong email at pangalan para sa katunayan ay kayo ay parte ng cvsu, ang password nyo at iba pang importante detalye ay hindi ko makukuwa at malalaman</p>
+                    <p class="modal_p" style="margin-bottom:1.5em;"><b>How to use:</b></p>
+                    <p class="modal_p" style="margin-bottom:1.5em;"><b>Opt-out: </b> If you do not wish to proceed, please do not click the "Continue" button.</p>
+                </div>
+                <div class="modal-footer" style="background-color: rgb(255 255 255); border-radius: 10px;;">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Understood</button>
+               
+                </div>
+            </div>
+            </div>
+             
+        </div>
+        <script>
+            // Trigger the modal when the page loads
+            window.onload = function() {
+                var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop1'));
+                myModal.show();
+            };
+        </script>  
     {% endif %}
     {% element form method="post" no_visible_fields=True %}
         {% slot actions %}
