@@ -26,16 +26,16 @@ h1{
     color:rgb(11, 105, 53);
 }
 
-.items{
+.items, .items1 {
     display: flex;
     gap: 0.3rem;
     perspective: calc(var(--index) * 35);
 }
 
-.item{
+.item, .item1 {
     border-radius: 10px;
-    width: calc(var(--index) * 3);
-    height: calc(var(--index) * 12);
+        width: calc(var(--index) * 3);
+        height: calc(var(--index) * 12);
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -45,7 +45,7 @@ h1{
     will-change: transform, filter, rotateY, width;
 }
 
-.item::before, .item::after{
+.item::before, .item::after, .item1::before, .item1::after{
     content: '';
     position: absolute;
     height: 100%;
@@ -53,11 +53,11 @@ h1{
     right: calc(var(--index) * -1);
 }
 
-.item::after{
+.item::after .item1::after{
     left: calc(var(--index) * -1);
 }
 
-.items .item:hover{
+.items .item:hover, .items1, .item1:hover{
     filter: inherit;
     transform: translateZ(calc(var(--index) * 10));
 }

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'accounts',
     'survey',
     'users',
+    'cvsuquiz',
    'bootstrap5',
     'django.contrib.sites',
     'allauth',

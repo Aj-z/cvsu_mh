@@ -24,5 +24,7 @@ urlpatterns = [
     path('survey/', include('survey.urls')),  
     path("", include("users.urls")),
     path('surveys/', include('djf_surveys.urls')),
+    path('cvsuquiz/', include('cvsuquiz.urls')),
+
     
 ]
