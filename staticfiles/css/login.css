@@ -143,3 +143,16 @@ a:hover{
 		opacity: 1;
 	}
 }
+/* Apply styles for devices with a max screen width of 768px (typical for tablets) */
+@media (max-width: 768px) {
+   * { 
+    font-family: Arial;
+  }
+}
+
+/* Apply styles for devices with a max screen width of 480px (typical for phones) */
+@media (max-width: 480px) {
+  * {
+    font-family: Arial;
+  }
+}
