@@ -131,5 +131,8 @@ p{
     background-color: rgb(255 255 255 / 11%);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(0.8px);
-    
+    --minFontSize:  5px;
+    --maxFontSize:  16px;
+    --scaler: 1vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
