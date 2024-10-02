@@ -1,9 +1,16 @@
 from django import forms
 from .models import AnswerEasyCspear
 
-class AnswerECForms(forms.Form):
-    answer = forms.ModelChoiceField(queryset=AnswerEasyCspear.objects.none(), widget=forms.RadioSelect)
-
-    def __init__(self, question, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['answer'].queryset = AnswerEasyCspear.objects.filter(question=question)
+class QuizForm(forms.Form):
+    CHOICES = [
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+    ]
+    
+    answer = forms.ChoiceField(
+        choices=CHOICES,
+        widget=forms.RadioSelect,
+        label="What is 1 + 1?"
+    )

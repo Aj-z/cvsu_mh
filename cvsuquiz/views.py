@@ -1,24 +1,20 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from .models import QuestionsEasyCspear, AnswerEasyCspear
-from .forms import AnswerECForms
+from django.shortcuts import render
+from .forms import QuizForm
 
-# Create your views here.
+def quiz_home_view(request):
+    return render(request, 'cvsuquiz/quiz_home.html')
 
 def quiz_home(request):
-    return render(request, 'quiz_home.html')
-
-def question_view(request, question_id):
-    question = get_object_or_404(QuestionsEasyCspear, id=question_id)
-    
-    if request.method == 'POST':
-        form = AnswerECForms(question, request.POST)
+    feedback = None
+    if request.method == "POST":
+        form = QuizForm(request.POST)
         if form.is_valid():
-            selected_answer = form.cleaned_data['answer']
-            if selected_answer.is_correct:
-                return render(request, 'correct.html', {'question': question})
+            answer = form.cleaned_data['answer']
+            if answer == '2':
+                feedback = "Correct!"
             else:
-                return render(request, 'incorrect.html', {'question': question})
+                feedback = "Wrong! The correct answer is 2."
     else:
-        form = AnswerECForms(question)
+        form = QuizForm()
 
-    return render(request, 'question.html', {'question': question, 'form': form})
+    return render(request, 'cvsuquiz/cspear.html', {'form': form, 'feedback': feedback})
