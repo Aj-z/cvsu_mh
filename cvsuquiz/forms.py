@@ -37,3 +37,39 @@ class QuizForm(forms.Form):
         widget=forms.RadioSelect,
         label=" Which of the following statements best describes the role of ergogenic aids and proper nutrition in enhancing athletic performance?"
     )
+class BpedQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. '),
+        ('2', 'B. '),
+        ('3', 'C. '),
+        ('4', 'D. '),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. '),
+        ('2', 'B. '),
+        ('3', 'C. '),
+        ('4', 'D. '),
+    ]
+    CHOICES_Q3 = [
+        ('1', ''),
+        ('2', ''),
+        ('3', ''),
+        ('4', ''),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Whats?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label=" ?"
+    )
