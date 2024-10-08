@@ -53,20 +53,20 @@ def BPED_Quiz(request):
             answer_q2 = form.cleaned_data['answer_q2']
             answer_q3 = form.cleaned_data['answer_q3']
 
-            if answer_q1 == '4':
+            if answer_q1 == '3':
                 feedback_q1 = "Correct!"
             else:
-                feedback_q1 = "Wrong! The correct answer is D"
+                feedback_q1 = "Wrong! The correct answer is C"
 
-            if answer_q2 == 'C':
+            if answer_q2 == '2':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is C"
+                feedback_q2 = "Wrong! The correct answer is B"
 
-            if answer_q3 == 'C':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is D"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
         form = BpedQuiz()
 

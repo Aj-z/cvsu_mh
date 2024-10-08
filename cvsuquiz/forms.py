@@ -39,37 +39,37 @@ class QuizForm(forms.Form):
     )
 class BpedQuiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. '),
-        ('2', 'B. '),
-        ('3', 'C. '),
-        ('4', 'D. '),
+        ('1', 'A. Reflex '),
+        ('2', 'B. Balance'),
+        ('3', 'C. Kinesthesia '),
+        ('4', 'D. Flexibility'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. '),
-        ('2', 'B. '),
-        ('3', 'C. '),
-        ('4', 'D. '),
+        ('1', 'A. Music education exclusively enhances artistic skills without influencing other academic areas. '),
+        ('2', 'B. Music education fosters critical thinking, collaboration, and improves memory retention, which contributes to better performance in subjects such as mathematics and reading.'),
+        ('3', 'C. There is no proven link between music education and cognitive development in non-musical areas.'),
+        ('4', 'D. Music education only helps develop motor skills and has no effect on cognitive abilities. '),
     ]
     CHOICES_Q3 = [
-        ('1', ''),
-        ('2', ''),
-        ('3', ''),
-        ('4', ''),
+        ('1', 'Motor schema theory suggests that each motor skill is learned in isolation, making it difficult to transfer skills across activities.'),
+        ('2', 'Motor schema theory proposes that generalized motor programs are stored in memory, allowing individuals to adapt previously learned skills to new contexts, enhancing the transfer of skills across similar activities.'),
+        ('3', 'The theory implies that motor learning is dependent on muscle memory alone, with no cognitive adaptation.'),
+        ('4', 'Motor schema theory states that only repetitive practice of identical movements can lead to skill improvement, limiting adaptability in dynamic environments.'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="Whats?"
+        label="In motor control, what is the term used to describe the bodys ability to sense movement and position in space?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="?"
+        label="How does the inclusion of music education in the K-12 curriculum support the development of cross-disciplinary skills, and what are the long-term cognitive benefits linked to sustained music education?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label=" ?"
+        label="How does the concept of motor schema theory explain the transfer of motor skills in complex activities like sports and dance, and what are the implications for training and performance optimization?"
     )
