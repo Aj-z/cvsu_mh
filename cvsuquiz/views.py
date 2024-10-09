@@ -1,17 +1,19 @@
 from django.shortcuts import render
-from .forms import QuizForm, BpedQuiz
+from .forms import BsessQuiz, BpedQuiz
 
 def quiz_home_view(request):
     return render(request, 'cvsuquiz/quiz_home.html')
 
-def quiz_home(request):
+def BSESS_Quiz(request):
+    COURSE_NAME = "Bachelor of Sports and Exercise Science"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
 
 
+
     if request.method == "POST":
-        form = QuizForm(request.POST)
+        form = BsessQuiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -32,18 +34,20 @@ def quiz_home(request):
             else:
                 feedback_q3 = "Wrong! The correct answer is D"    
     else:
-        form = QuizForm()
+        form = BsessQuiz()
 
     return render(request, 'cvsuquiz/cspear.html', {
         'form': form, 
         'feedback_q1': feedback_q1,
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
     })
 def BPED_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
+    COURSE_NAME = "Bachelor of Physical Education"
 
 
     if request.method == "POST":
@@ -75,4 +79,5 @@ def BPED_Quiz(request):
         'feedback_q1': feedback_q1,
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
     })

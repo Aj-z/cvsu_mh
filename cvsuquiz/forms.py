@@ -1,7 +1,7 @@
 from django import forms
 from .models import AnswerEasyCspear
 
-class QuizForm(forms.Form):
+class BsessQuiz(forms.Form):
     CHOICES_Q1 = [
         ('1', 'A. The branch of mechanics that studies the motion of a body or a system of bodies without consideration given to its mass or the forces acting on it.'),
         ('2', 'B. The branch of mechanics that is concerned with the effects of forces on the motion of a body or system of bodies, especially of forces that do not originate within the system itself.'),
