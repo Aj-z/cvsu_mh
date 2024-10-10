@@ -73,3 +73,39 @@ class BpedQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="How does the concept of motor schema theory explain the transfer of motor skills in complex activities like sports and dance, and what are the implications for training and performance optimization?"
     )
+class BsesQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'AA.'),
+        ('2', 'BA.A'),
+        ('3', 'CA '),
+        ('4', 'AA. '),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'AS'),
+        ('2', 'BS'),
+        ('3', 'CS'),
+        ('4', 'DS'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'AS'),
+        ('2', 'BS'),
+        ('3', 'CS'),
+        ('4', 'DS'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )
