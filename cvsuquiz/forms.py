@@ -73,6 +73,79 @@ class BpedQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="How does the concept of motor schema theory explain the transfer of motor skills in complex activities like sports and dance, and what are the implications for training and performance optimization?"
     )
+
+class BsaQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'To increase seed size for better handling during sowing'),
+        ('2', 'To shorten the seed dormancy period'),
+        ('3', 'To improve seed germination by pre-treating them with water or other substances'),
+        ('4', 'To reduce the seed moisture content for long-term storage'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'The use of naturally occurring enzymes to degrade foreign DNA'),
+        ('2', 'The cloning of an organism through somatic cell nuclear transfer'),
+        ('3', 'The ability to insert foreign DNA into the genome of a host organism'),
+        ('4', 'The manipulation of an organisms genome using selective breeding'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'The principle of health, which focuses on maintaining the health of ecosystems, people, and animals'),
+        ('2', 'The principle of ecology, which emphasizes farming practices that are in harmony with natural ecological cycles'),
+        ('3', 'The principle of fairness, which relates to ensuring equitable working conditions and fair trade practices'),
+        ('4', ' The principle of productivity, which aims at maximizing crop yields using synthetic fertilizers and pesticides'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="What is the primary goal of seed priming in seed technology?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Which of the following is a key feature of recombinant DNA technology?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Which of the following is not a principle of organic agriculture according to the International Federation of Organic Agriculture Movements (IFOAM)"
+    )
+class BaeQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'AA.'),
+        ('2', 'BA.A'),
+        ('3', 'CA '),
+        ('4', 'AA. '),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'AS'),
+        ('2', 'BS'),
+        ('3', 'CS'),
+        ('4', 'DS'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'AS'),
+        ('2', 'BS'),
+        ('3', 'CS'),
+        ('4', 'DS'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )    
 class BsesQuiz(forms.Form):
     CHOICES_Q1 = [
         ('1', 'AA.'),
@@ -109,3 +182,39 @@ class BsesQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="ABC"
     )
+class BsftQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'AA.'),
+        ('2', 'BA.A'),
+        ('3', 'CA '),
+        ('4', 'AA. '),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'AS'),
+        ('2', 'BS'),
+        ('3', 'CS'),
+        ('4', 'DS'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'AS'),
+        ('2', 'BS'),
+        ('3', 'CS'),
+        ('4', 'DS'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="ABC"
+    )        
