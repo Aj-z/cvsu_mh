@@ -6,7 +6,7 @@ def quiz_home_view(request):
 
 
 def BSESS_Quiz(request):
-    COURSE_NAME = "Bachelor of Sports and Exercise Science"
+    COURSE_NAME = "Bachelor of Science in Exercise and Sports Sciences"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
@@ -20,17 +20,17 @@ def BSESS_Quiz(request):
             answer_q2 = form.cleaned_data['answer_q2']
             answer_q3 = form.cleaned_data['answer_q3']
 
-            if answer_q1 == '4':
+            if answer_q1 == '1':
                 feedback_q1 = "Correct!"
             else:
-                feedback_q1 = "Wrong! The correct answer is D"
+                feedback_q1 = "Wrong! The correct answer is A"
 
-            if answer_q2 == 'C':
+            if answer_q2 == '2':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is C"
+                feedback_q2 = "Wrong! The correct answer is B"
 
-            if answer_q3 == 'C':
+            if answer_q3 == '4':
                 feedback_q3 = "Correct!"
             else:
                 feedback_q3 = "Wrong! The correct answer is D"    
@@ -138,20 +138,20 @@ def BAE_Quiz(request):
             answer_q2 = form.cleaned_data['answer_q2']
             answer_q3 = form.cleaned_data['answer_q3']
 
-            if answer_q1 == '3':
+            if answer_q1 == '1':
                 feedback_q1 = "Correct!"
             else:
-                feedback_q1 = "Wrong! The correct answer is C"
+                feedback_q1 = "Wrong! The correct answer is A"
 
-            if answer_q2 == '2':
+            if answer_q2 == '3':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is B"
+                feedback_q2 = "Wrong! The correct answer is C"
 
-            if answer_q3 == '2':
+            if answer_q3 == '3':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is B"    
+                feedback_q3 = "Wrong! The correct answer is C"    
     else:
         form = BaeQuiz()
 
@@ -176,10 +176,10 @@ def BSES_Quiz(request):
             answer_q2 = form.cleaned_data['answer_q2']
             answer_q3 = form.cleaned_data['answer_q3']
 
-            if answer_q1 == '3':
+            if answer_q1 == '2':
                 feedback_q1 = "Correct!"
             else:
-                feedback_q1 = "Wrong! The correct answer is C"
+                feedback_q1 = "Wrong! The correct answer is B"
 
             if answer_q2 == '2':
                 feedback_q2 = "Correct!"
@@ -214,15 +214,15 @@ def BSFT_Quiz(request):
             answer_q2 = form.cleaned_data['answer_q2']
             answer_q3 = form.cleaned_data['answer_q3']
 
-            if answer_q1 == '3':
+            if answer_q1 == '2':
                 feedback_q1 = "Correct!"
             else:
-                feedback_q1 = "Wrong! The correct answer is C"
+                feedback_q1 = "Wrong! The correct answer is B"
 
-            if answer_q2 == '2':
+            if answer_q2 == '1':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is B"
+                feedback_q2 = "Wrong! The correct answer is A"
 
             if answer_q3 == '2':
                 feedback_q3 = "Correct!"

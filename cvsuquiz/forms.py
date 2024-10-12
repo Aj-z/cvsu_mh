@@ -9,10 +9,10 @@ class BsessQuiz(forms.Form):
         ('4', 'D. If the forces acting upon an object are balanced, then the acceleration of that object will be 0 m/s/s.'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Competence.'),
-        ('2', 'B. Relatedness.'),
-        ('3', 'C. Autonomy.'),
-        ('4', 'D. Intrinsic Motivation.'),
+        ('1', 'A. Confirmation Bias'),
+        ('2', 'B. Negativity Bias'),
+        ('3', 'C. Self-Serving Bias'),
+        ('4', 'D. Hindsight Bias'),
     ]
     CHOICES_Q3 = [
         ('1', 'A. Ergogenic aids alone are sufficient to improve athletic performance, with no need for nutritional support.'),
@@ -30,7 +30,7 @@ class BsessQuiz(forms.Form):
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="Which of the following constructs within the Self-Determination Theory (SDT) is primarily focused on the psychological need for autonomy and the desire to make choices that align with one's interests and values?"
+        label="Which of the following cognitive biases can lead athletes to overlook their strengths and focus disproportionately on their failures, potentially affecting their self-esteem and future performance?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
@@ -112,109 +112,109 @@ class BsaQuiz(forms.Form):
     )
 class BaeQuiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'AA.'),
-        ('2', 'BA.A'),
-        ('3', 'CA '),
-        ('4', 'AA. '),
+        ('1', 'Vertical integration by acquiring input suppliers and distribution channels.'),
+        ('2', 'Focusing solely on a single crop to maximize production efficiency.'),
+        ('3', 'Using speculative buying to take advantage of price variations.'),
+        ('4', 'Reducing costs by substituting manual labor with mechanization.'),
     ]
     CHOICES_Q2 = [
-        ('1', 'AS'),
-        ('2', 'BS'),
-        ('3', 'CS'),
-        ('4', 'DS'),
+        ('1', 'Intensive tillage to prepare the seedbed'),
+        ('2', 'Monoculture planting to maximize land use efficiency'),
+        ('3', 'Crop rotation and cover cropping to enhance organic matter and protect the soil'),
+        ('4', 'Increasing the use of synthetic fertilizers to boost plant growth'),
     ]
     CHOICES_Q3 = [
-        ('1', 'AS'),
-        ('2', 'BS'),
-        ('3', 'CS'),
-        ('4', 'DS'),
+        ('1', 'Routine application of chemical pesticides to prevent outbreaks'),
+        ('2', 'Exclusive use of biological control agents to maintain ecological balance'),
+        ('3', 'Adoption of Integrated Pest Management (IPM) strategies combining biological, cultural, and chemical controls'),
+        ('4', 'Removing and replacing the affected plants to minimize disease spread'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="In agribusiness management, which of the following strategies best helps to minimize risks associated with fluctuating agricultural commodity prices?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="Which of the following agronomic practices is most effective in improving soil structure and preventing erosion in a large-scale crop production enterprise?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="In the management of a plantation crop production enterprise, which of the following is the most sustainable approach to managing pests and diseases?"
     )    
 class BsesQuiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'AA.'),
-        ('2', 'BA.A'),
-        ('3', 'CA '),
-        ('4', 'AA. '),
+        ('1', 'Establishing isolated wildlife reserves that exclude all human access'),
+        ('2', 'Implementing ecosystem restoration projects and promoting sustainable land-use practices'),
+        ('3', 'Focusing conservation efforts on protecting endangered species in zoos'),
+        ('4', 'Encouraging monoculture farming to reduce the need for habitat conversion'),
     ]
     CHOICES_Q2 = [
-        ('1', 'AS'),
-        ('2', 'BS'),
-        ('3', 'CS'),
-        ('4', 'DS'),
+        ('1', '0.7%'),
+        ('2', '1.4%'),
+        ('3', '2.8%'),
+        ('4', '4.1%'),
     ]
     CHOICES_Q3 = [
-        ('1', 'AS'),
-        ('2', 'BS'),
-        ('3', 'CS'),
-        ('4', 'DS'),
+        ('1', 'Which of the following is a major limitation when using environmental models to predict long-term climate change impacts?'),
+        ('2', 'Uncertainty in future socio-economic scenarios and greenhouse gas emissions'),
+        ('3', 'Lack of computational power to handle complex environmental data'),
+        ('4', 'The over-reliance on past data for calibration without any modern data inputs'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="Which of the following strategies is most effective for preserving biodiversity in ecosystems heavily impacted by human activities?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="According to the Stefan-Boltzmann law, the total energy radiated per unit surface area of a black body is proportional to the fourth power of its absolute temperature. If the Earth's average surface temperature increases from 288 K to 290 K, what is the approximate percentage increase in the radiated energy?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="Which of the following is a major limitation when using environmental models to predict long-term climate change impacts?"
     )
 class BsftQuiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'AA.'),
-        ('2', 'BA.A'),
-        ('3', 'CA '),
-        ('4', 'AA. '),
+        ('1', 'A. High-Performance Liquid Chromatography'),
+        ('2', 'B. Soxhlet Extraction'),
+        ('3', 'C. Gas Chromatography'),
+        ('4', 'D. Near-Infrared Spectroscopy '),
     ]
     CHOICES_Q2 = [
-        ('1', 'AS'),
-        ('2', 'BS'),
-        ('3', 'CS'),
-        ('4', 'DS'),
+        ('1', 'A. Maillard Reaction'),
+        ('2', 'B. Caramelization'),
+        ('3', 'C. Lipid Oxidation'),
+        ('4', 'D. Enzymatic Browning'),
     ]
     CHOICES_Q3 = [
-        ('1', 'AS'),
-        ('2', 'BS'),
-        ('3', 'CS'),
-        ('4', 'DS'),
+        ('1', 'A. 600 kg'),
+        ('2', 'B. 800 kg'),
+        ('3', 'C. 1000 kg'),
+        ('4', 'D. 1200 kg'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="Which of the following methods is most commonly used for the quantitative analysis of fat content in food samples, and involves the use of a solvent to extract fat from the sample?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="Which of the following reactions primarily contributes to the browning of food during cooking, resulting in the development of complex flavors and aromas?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="ABC"
+        label="A food processing plant operates at an efficiency of 80%. If the plant is designed to process 1000 kg of raw material per hour, how much of that raw material is effectively converted into finished products per hour?"
     )        
