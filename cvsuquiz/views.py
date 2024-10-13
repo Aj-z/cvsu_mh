@@ -238,3 +238,6 @@ def BSFT_Quiz(request):
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
     })
+
+def cvmbs_home_view(request):
+    return render(request, 'cvsuquiz/cvmbs.html')
