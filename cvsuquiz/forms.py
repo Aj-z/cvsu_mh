@@ -1,6 +1,7 @@
 from django import forms
 from .models import AnswerEasyCspear
 
+# Below is CSPEAR quizes
 class BsessQuiz(forms.Form):
     CHOICES_Q1 = [
         ('1', 'A. The branch of mechanics that studies the motion of a body or a system of bodies without consideration given to its mass or the forces acting on it.'),
@@ -74,6 +75,7 @@ class BpedQuiz(forms.Form):
         label="How does the concept of motor schema theory explain the transfer of motor skills in complex activities like sports and dance, and what are the implications for training and performance optimization?"
     )
 
+# Below is CAFENR quizes
 class BsaQuiz(forms.Form):
     CHOICES_Q1 = [
         ('1', 'To increase seed size for better handling during sowing'),
@@ -217,4 +219,42 @@ class BsftQuiz(forms.Form):
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
         label="A food processing plant operates at an efficiency of 80%. If the plant is designed to process 1000 kg of raw material per hour, how much of that raw material is effectively converted into finished products per hour?"
+    )        
+
+# Below is CED quizes
+class BsedQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Sensorimotor Stage'),
+        ('2', 'B. Preoperational Stage'),
+        ('3', 'C. Concrete Operational Stage'),
+        ('4', 'D. Formal Operational Stage'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Curriculum and Planning'),
+        ('2', 'B. Assessment and Reporting'),
+        ('3', 'C. Learning Environment'),
+        ('4', 'D. Personal Growth and Professional Development'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Autocratic Leadership'),
+        ('2', 'B. Transformational Leadership'),
+        ('3', 'C. Transactional Leadership'),
+        ('4', 'D. Laissez-faire Leadership'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="According to Piaget's theory of cognitive development, which of the following best describes the stage where adolescents begin to think abstractly and reason about hypothetical situations? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="In accordance with the Philippine Professional Standards for Teachers (PPST), which domain emphasizes the importance of teachers' engagement in ethical, reflective, and professional practices to enhance their own development and the quality of teaching?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="In promoting school-community partnerships, which leadership approach encourages collaboration by empowering teachers and stakeholders to take part in decision-making processes to improve the school environment and student learning outcomes?"
     )        

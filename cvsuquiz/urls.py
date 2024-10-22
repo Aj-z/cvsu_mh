@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import quiz_home_view, BSESS_Quiz, BPED_Quiz, BSES_Quiz, cafenr_home_view, BSA_Quiz, BAE_Quiz, BSFT_Quiz
+from .views import quiz_home_view, BSESS_Quiz, BPED_Quiz, BSES_Quiz, cafenr_home_view, BSA_Quiz, BAE_Quiz, BSFT_Quiz, ced_home_view, BSED_Quiz
 
 
 
@@ -12,4 +12,6 @@ urlpatterns = [
    path('BSES/', BSES_Quiz, name='BSES_quiz'),
    path('BAE/', BAE_Quiz, name='BAE_quiz'),
    path('BSFT/', BSFT_Quiz, name='BSFT_quiz'),
+   path('Ced/', ced_home_view, name='Ced_home'),
+   path('BSED/', BSED_Quiz, name='BSED_quiz'),
 ]
