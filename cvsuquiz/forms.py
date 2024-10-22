@@ -222,6 +222,222 @@ class BsftQuiz(forms.Form):
     )        
 
 # Below is CED quizes
+class Bsed_EnglQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Using standardized written tests to measure students understanding and production of language.'),
+        ('2', 'B. Implementing performance-based assessments like presentations and written essays, which focus primarily on productive skills.'),
+        ('3', 'C. Conducting a combination of authentic tasks, such as listening to podcasts, creating written summaries, oral presentations, and viewing multimedia, to evaluate all macrolanguage skills.'),
+        ('4', 'D. Assigning multiple-choice reading comprehension tests for receptive skills and oral exams for productive skills.'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Textual analysis, which focuses solely on the linguistic structures within the text without considering the social or cultural context.'),
+        ('2', 'B. Critical discourse analysis (CDA), which examines language in relation to power dynamics, social structures, and context, while also considering stylistic choices.'),
+        ('3', 'C. Stylistic analysis, which primarily focuses on how the language in a text produces particular effects on the reader, ignoring the broader societal context.'),
+        ('4', 'D. Pragmatics, which focuses on the speakers intention and the immediate context of communication, but overlooks stylistic elements.'),
+    ]
+    CHOICES_Q3 = [
+        ('1', "A. Mary Shelley's Frankenstein and Herman Melville's Moby-Dick"),
+        ('2', "B. George Orwell's 1984 and Nathaniel Hawthorne's The Scarlet Letter"),
+        ('3', "C. Charles Dickens' Great Expectations and Mark Twain's The Adventures of Huckleberry Finn"),
+        ('4', "D. Virginia Woolf's Mrs. Dalloway and F. Scott Fitzgerald's The Great Gatsby"),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="In assessing the macrolanguage skills of learners, which of the following methods best provides a comprehensive evaluation of both productive (speaking, writing) and receptive (listening, reading, viewing) skills? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="In discourse analysis, context plays a crucial role in understanding meaning. Which of the following approaches best integrates both the stylistic elements of language (such as tone, diction, and syntax) and the social context in which communication occurs?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="In both English and American literary traditions, the theme of individualism is prominent. Which of the following pairs of works best exemplifies how individualism is treated differently in English and American literature?"
+    )        
+class Bsed_FiliQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Tiyak na pagsunod sa estruktura ng orihinal na wika.'),
+        ('2', 'B. Pag-aangkop ng mga kultural na elemento upang maunawaan ng mambabasa sa target na wika.'),
+        ('3', 'C. Pagsasalin ng bawat salita nang literal upang hindi mawala ang diwa ng orihinal na akda.'),
+        ('4', 'D. Paggamit ng mga banyagang salita upang mapanatili ang estilo ng orihinal na may-akda.'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Ang karaniwang ayos ng pangungusap ay Panaguri-Simuno (PS).'),
+        ('2', 'B. Ang pangungusap sa wikang Filipino ay palaging Simuno-Panaguri (SP)'),
+        ('3', 'C. Hindi mahalaga ang ayos ng mga bahagi ng pangungusap sa wikang Filipino.'),
+        ('4', 'D. Walang tamang ayos ng pangungusap sa wikang Filipino, depende ito sa diwa ng nagsasalita'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Ang sanaysay ay karaniwang ginagamit para sa pagsusuri ng mga ideya, habang ang talumpati ay para sa pakikipag-ugnayan sa madla.'),
+        ('2', 'B. Ang sanaysay ay mas maikli kumpara sa talumpati, na karaniwang mas mahaba.'),
+        ('3', 'C. Ang sanaysay ay may pormal na estruktura, habang ang talumpati ay mas malaya at impormal.'),
+        ('4', 'D. Ang talumpati ay isinulat lamang para sa mga pampublikong okasyon, samantalang ang sanaysay ay maaaring personal.'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Sa pagsasalin ng mga akdang pampanitikan, ano ang pangunahing konsiderasyon ng isang tagasalin? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Alin sa mga sumusunod ang tamang paglalarawan ng estruktura ng pangungusap sa wikang Filipino?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Ano ang pangunahing pagkakaiba sa layunin ng sanaysay at talumpati?"
+    )        
+class Bsed_MathQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Width: 5 meters, Length: 24 meters'),
+        ('2', 'B. Width: 4√15 meters, Length: 2√15 meters'),
+        ('3', 'C. Width: 10 meters, Length: 12 meters'),
+        ('4', 'D. Width: 6 meters, Length: 20 meters'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. 0.8𝑙𝑤ℎ'),
+        ('2', 'B. 1.2𝑙𝑤ℎ'),
+        ('3', 'C. 1.5𝑙𝑤ℎ'),
+        ('4', 'D. 1.2𝑙²𝑤ℎ'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. 15 square meters'),
+        ('2', 'B. 25 square meters'),
+        ('3', 'C. 30 square meters'),
+        ('4', 'D. 50 square meters'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="A rectangular garden is to be designed so that its area is 120 square meters. One side of the garden will be against a wall, and there will be no need for a fence along that side.What dimensions will minimize the amount of fencing needed?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="A rectangular prism has a length of 𝑙 meters, a width of 𝑤 meters, and a height of ℎ meters.If the length is increased by 50%, the width is decreased by 20%, and the height remains unchanged, what is the new volume of the prism in terms of 𝑙, 𝑤,  ℎ?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="A triangular garden has a base of 10 meters and a height of 5 meters."
+    )        
+class BsedQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Sensorimotor Stage'),
+        ('2', 'B. Preoperational Stage'),
+        ('3', 'C. Concrete Operational Stage'),
+        ('4', 'D. Formal Operational Stage'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Curriculum and Planning'),
+        ('2', 'B. Assessment and Reporting'),
+        ('3', 'C. Learning Environment'),
+        ('4', 'D. Personal Growth and Professional Development'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Autocratic Leadership'),
+        ('2', 'B. Transformational Leadership'),
+        ('3', 'C. Transactional Leadership'),
+        ('4', 'D. Laissez-faire Leadership'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="According to Piaget's theory of cognitive development, which of the following best describes the stage where adolescents begin to think abstractly and reason about hypothetical situations? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="In accordance with the Philippine Professional Standards for Teachers (PPST), which domain emphasizes the importance of teachers' engagement in ethical, reflective, and professional practices to enhance their own development and the quality of teaching?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="In promoting school-community partnerships, which leadership approach encourages collaboration by empowering teachers and stakeholders to take part in decision-making processes to improve the school environment and student learning outcomes?"
+    )        
+class BsedQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Sensorimotor Stage'),
+        ('2', 'B. Preoperational Stage'),
+        ('3', 'C. Concrete Operational Stage'),
+        ('4', 'D. Formal Operational Stage'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Curriculum and Planning'),
+        ('2', 'B. Assessment and Reporting'),
+        ('3', 'C. Learning Environment'),
+        ('4', 'D. Personal Growth and Professional Development'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Autocratic Leadership'),
+        ('2', 'B. Transformational Leadership'),
+        ('3', 'C. Transactional Leadership'),
+        ('4', 'D. Laissez-faire Leadership'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="According to Piaget's theory of cognitive development, which of the following best describes the stage where adolescents begin to think abstractly and reason about hypothetical situations? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="In accordance with the Philippine Professional Standards for Teachers (PPST), which domain emphasizes the importance of teachers' engagement in ethical, reflective, and professional practices to enhance their own development and the quality of teaching?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="In promoting school-community partnerships, which leadership approach encourages collaboration by empowering teachers and stakeholders to take part in decision-making processes to improve the school environment and student learning outcomes?"
+    )        
+class BsedQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Sensorimotor Stage'),
+        ('2', 'B. Preoperational Stage'),
+        ('3', 'C. Concrete Operational Stage'),
+        ('4', 'D. Formal Operational Stage'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Curriculum and Planning'),
+        ('2', 'B. Assessment and Reporting'),
+        ('3', 'C. Learning Environment'),
+        ('4', 'D. Personal Growth and Professional Development'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Autocratic Leadership'),
+        ('2', 'B. Transformational Leadership'),
+        ('3', 'C. Transactional Leadership'),
+        ('4', 'D. Laissez-faire Leadership'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="According to Piaget's theory of cognitive development, which of the following best describes the stage where adolescents begin to think abstractly and reason about hypothetical situations? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="In accordance with the Philippine Professional Standards for Teachers (PPST), which domain emphasizes the importance of teachers' engagement in ethical, reflective, and professional practices to enhance their own development and the quality of teaching?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="In promoting school-community partnerships, which leadership approach encourages collaboration by empowering teachers and stakeholders to take part in decision-making processes to improve the school environment and student learning outcomes?"
+    )        
 class BsedQuiz(forms.Form):
     CHOICES_Q1 = [
         ('1', 'A. Sensorimotor Stage'),
