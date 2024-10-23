@@ -330,41 +330,41 @@ class Bsed_MathQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="A triangular garden has a base of 10 meters and a height of 5 meters."
     )        
-class BsedQuiz(forms.Form):
+class Bsed_ScieQuiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. Sensorimotor Stage'),
-        ('2', 'B. Preoperational Stage'),
-        ('3', 'C. Concrete Operational Stage'),
-        ('4', 'D. Formal Operational Stage'),
+        ('1', 'A. Alkanes are unsaturated hydrocarbons.'),
+        ('2', 'B. Alkanes only contain single bonds between carbon atoms.'),
+        ('3', 'C. Alkanes have a general formula of CnH2n.'),
+        ('4', 'D. Alkanes are highly reactive with strong acids.'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Curriculum and Planning'),
-        ('2', 'B. Assessment and Reporting'),
-        ('3', 'C. Learning Environment'),
-        ('4', 'D. Personal Growth and Professional Development'),
+        ('1', 'A. DNA replication'),
+        ('2', 'B. Translation of mRNA into protein'),
+        ('3', 'C. rRNA synthesis and ribosome assembly'),
+        ('4', 'D. Protein folding and modification'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. Autocratic Leadership'),
-        ('2', 'B. Transformational Leadership'),
-        ('3', 'C. Transactional Leadership'),
-        ('4', 'D. Laissez-faire Leadership'),
+        ('1', 'A. The Coriolis effect causes winds to deflect to the left, resulting in counterclockwise circulation around low-pressure systems.'),
+        ('2', 'B. The Coriolis effect causes winds to deflect to the right, leading to clockwise circulation around low-pressure systems'),
+        ('3', 'C. The Coriolis effect causes winds to deflect to the right, resulting in counterclockwise circulation around low-pressure systems'),
+        ('4', 'D. The Coriolis effect has no impact on wind direction but only influences wind speed.'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="According to Piaget's theory of cognitive development, which of the following best describes the stage where adolescents begin to think abstractly and reason about hypothetical situations? "
+        label="Which of the following statements about alkanes is true?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="In accordance with the Philippine Professional Standards for Teachers (PPST), which domain emphasizes the importance of teachers' engagement in ethical, reflective, and professional practices to enhance their own development and the quality of teaching?"
+        label="In eukaryotic cells, which of the following processes occurs in the nucleolus?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="In promoting school-community partnerships, which leadership approach encourages collaboration by empowering teachers and stakeholders to take part in decision-making processes to improve the school environment and student learning outcomes?"
+        label="The Coriolis effect causes winds to deflect to the right, resulting in counterclockwise circulation around low-pressure systems"
     )        
 class BsedQuiz(forms.Form):
     CHOICES_Q1 = [
