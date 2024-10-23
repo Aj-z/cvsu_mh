@@ -366,41 +366,41 @@ class Bsed_ScieQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="The Coriolis effect causes winds to deflect to the right, resulting in counterclockwise circulation around low-pressure systems"
     )        
-class BsedQuiz(forms.Form):
+class Bsed_SoStQuiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. Sensorimotor Stage'),
-        ('2', 'B. Preoperational Stage'),
-        ('3', 'C. Concrete Operational Stage'),
-        ('4', 'D. Formal Operational Stage'),
+        ('1', 'A. Using only text-based materials to avoid distractions from visuals or audio.'),
+        ('2', 'B. Integrating a variety of multimedia, such as videos, maps, and interactive timelines, to support diverse learning styles.'),
+        ('3', 'C. Relying solely on PowerPoint presentations with bullet points to summarize key concepts.'),
+        ('4', 'D. Using audio lectures exclusively to allow students to focus on listening skills.'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Curriculum and Planning'),
-        ('2', 'B. Assessment and Reporting'),
-        ('3', 'C. Learning Environment'),
-        ('4', 'D. Personal Growth and Professional Development'),
+        ('1', 'A. Concentric Zone Model'),
+        ('2', 'B. Sector Model'),
+        ('3', 'C. Multiple Nuclei Model'),
+        ('4', 'D. Urban Realms Model'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. Autocratic Leadership'),
-        ('2', 'B. Transformational Leadership'),
-        ('3', 'C. Transactional Leadership'),
-        ('4', 'D. Laissez-faire Leadership'),
+        ('1', 'A. It leads to cultural homogenization, where local traditions completely disappear in favor of global trends.'),
+        ('2', 'B. It causes an increase in the diversity of local architectural styles, preserving regional identities.'),
+        ('3', 'C. It results in hybrid landscapes, where global influences mix with local traditions, creating unique cultural expressions.'),
+        ('4', 'D. It has no significant impact on the cultural landscape, as local practices remain dominant.'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="According to Piaget's theory of cognitive development, which of the following best describes the stage where adolescents begin to think abstractly and reason about hypothetical situations? "
+        label="Which of the following is the most effective way to incorporate multimedia into Social Studies instructional materials for enhanced student engagement? "
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="In accordance with the Philippine Professional Standards for Teachers (PPST), which domain emphasizes the importance of teachers' engagement in ethical, reflective, and professional practices to enhance their own development and the quality of teaching?"
+        label="Which of the following urban models explains the spatial organization of cities based on transportation routes and economic activities?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="In promoting school-community partnerships, which leadership approach encourages collaboration by empowering teachers and stakeholders to take part in decision-making processes to improve the school environment and student learning outcomes?"
+        label="How does globalization primarily influence the cultural landscapes of cities?"
     )        
 class BsedQuiz(forms.Form):
     CHOICES_Q1 = [
