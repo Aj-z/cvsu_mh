@@ -222,6 +222,7 @@ class BsftQuiz(forms.Form):
     )        
 
 # Below is CED quizes
+# Bsed majors
 class Bsed_EnglQuiz(forms.Form):
     CHOICES_Q1 = [
         ('1', 'A. Using standardized written tests to measure students understanding and production of language.'),
@@ -402,6 +403,8 @@ class Bsed_SoStQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="How does globalization primarily influence the cultural landscapes of cities?"
     )        
+
+# 
 class BsedQuiz(forms.Form):
     CHOICES_Q1 = [
         ('1', 'A. Sensorimotor Stage'),

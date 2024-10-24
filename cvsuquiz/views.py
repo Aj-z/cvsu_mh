@@ -246,6 +246,7 @@ def ced_home_view(request):
     return render(request, 'cvsuquiz/ced.html')
 # Bachelor of Secondary Education Majors
 def BSE_ENGL_Quiz(request):
+    css_style = "ced.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
@@ -282,6 +283,7 @@ def BSE_ENGL_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
     })
 def BSE_FILI_Quiz(request):
     feedback_q1 = None
