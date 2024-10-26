@@ -40,16 +40,14 @@ h1{
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    filter:  brightness(.5) sepia(1) saturate(400%) hue-rotate(90deg) brightness(0.6) contrast(80%);
     transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
-    will-change: transform, filter, rotateY, width;
 }
 
 .item::before, .item::after, .item1::before, .item1::after{
     content: '';
     position: absolute;
     height: 100%;
-    width: 20px;
+    width: 50   px;
     right: calc(var(--index) * -1);
 }
 
@@ -143,7 +141,7 @@ vars
 :root {
     --carousel-transition-duration: 250ms;
     --carousel-transition-ease: ease-out;
-    --carousel-bg-color-rgb: 0, 0, 0;
+    --carousel-bg-color-rgb: 255, 255, 255;
     --carousel-shadow-color-rgb: 128, 128, 128;
     --carousel-item-width: 11.5rem;
     --carousel-item-height: 17.5rem;
@@ -157,7 +155,7 @@ vars
     --carousel-3d-perspective-origin: 50% 20%;
     --carousel-control-button-width: 1.25rem;
     --carousel-control-button-height: 4rem;
-    --carousel-control-color-rgb: 255, 255, 255;
+    --carousel-control-color-rgb: 50, 150, 50;
     --carousel-animation-duration: 25s;
     --carousel-animation-play-state: running;
     --carousel-direction-animation-play-state: paused;
@@ -178,7 +176,7 @@ global
 }
 
 a {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(42, 168, 99, 0);
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -199,6 +197,16 @@ body {
 /*
 carousel
 */
+
+/* added own detail carousel */
+li.carousel-item.item:active,li.carousel-item.item:focus   {
+    width: 30vw;
+	filter: inherit;
+	z-index: 100;
+	transform: translateZ(calc(var(--index) * 15))translateY(calc(var(--index) * -3));
+    margin: 0.45vw;
+
+}
 .carousel {
     --_diameter: var(--carousel-diameter);
     --_radius: calc(var(--_diameter) / 2);
@@ -344,7 +352,8 @@ carousel
     background-position: center;
     background-size: cover;
     transition: filter var(--carousel-transition-duration) var(--carousel-transition-ease);
-    filter: grayscale(100%);
+    filter: brightness(.5) sepia(1) saturate(400%) hue-rotate(90deg) brightness(0.6) contrast(80%);
+    border-radius:10px;
 }
 
 .carousel .carousel-item:hover a {
@@ -357,13 +366,13 @@ carousel
     height: inherit;
     background-color: rgba(var(--carousel-item-empty-color-rgb), 0.5);
     background-image: 
-            linear-gradient(to top, rgba(var(--carousel-bg-color-rgb), 0.25) 0%, rgba(var(--carousel-bg-color-rgb), 1.0) 75%), 
+            linear-gradient(to top, rgba(60, 180, 90, 0.50) 0%, rgba(var(--carousel-bg-color-rgb), 1.0) 75%), 
             var(--_image-url);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     pointer-events: none;
-    filter: blur(var(--carousel-item-reflection-blur)) grayscale(100%);
+    filter: blur(var(--carousel-item-reflection-blur));
     transition: filter var(--carousel-transition-duration) var(--carousel-transition-ease);
     transform-style: inherit;
     transform-origin: center bottom;
@@ -394,3 +403,4 @@ carousel
 .carousel .carousel-item-wrapper:has(.carousel-item:hover) .carousel-ground {
     opacity: 0.75;
 }
+
