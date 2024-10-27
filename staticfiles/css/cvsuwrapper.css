@@ -5,7 +5,7 @@
 }
 
 :root{
-    --index: calc(1vw + 1vh);
+    --index: calc(1vw + 1vh); 
     --transition: cubic-bezier(.1, .7, 0, 1);
 }
 
@@ -47,8 +47,8 @@ h1{
     content: '';
     position: absolute;
     height: 100%;
-    width: 50   px;
-    right: calc(var(--index) * -1);
+    width: 50px;
+    
 }
 
 .item::after .item1::after{
@@ -65,11 +65,11 @@ h1{
     
 }
 
-/*Right*/
+/*Right
 
 .items .item:hover + *{
     filter: inherit;
-    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    transform: translateZ(calc(vafr(--index) * 8.5)) rotateY(35deg);
     z-index: -1;
 }
 
@@ -90,9 +90,9 @@ h1{
     transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
     z-index: -4;
 }
+*/
 
-
-/*Left*/
+/*Left
 
 .items .item:has( + :hover){
     filter: inherit;
@@ -113,7 +113,7 @@ h1{
     filter: inherit;
     transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
 }
-
+*/
 .items .item:active, .items .item:focus {
 	width: 28vw;
 	filter: inherit;
@@ -352,7 +352,7 @@ li.carousel-item.item:active,li.carousel-item.item:focus   {
     background-position: center;
     background-size: cover;
     transition: filter var(--carousel-transition-duration) var(--carousel-transition-ease);
-    filter: blur(1.5px) brightness(.9) sepia(1) saturate(400%) hue-rotate(90deg) brightness(0.8) contrast(80%);
+    filter: blur(1px) brightness(.9) sepia(1) saturate(400%) hue-rotate(90deg) brightness(0.8) contrast(80%);
     border-radius:10px;
 }
 
