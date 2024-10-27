@@ -352,7 +352,7 @@ li.carousel-item.item:active,li.carousel-item.item:focus   {
     background-position: center;
     background-size: cover;
     transition: filter var(--carousel-transition-duration) var(--carousel-transition-ease);
-    filter: brightness(.5) sepia(1) saturate(400%) hue-rotate(90deg) brightness(0.6) contrast(80%);
+    filter: blur(1.5px) brightness(.9) sepia(1) saturate(400%) hue-rotate(90deg) brightness(0.8) contrast(80%);
     border-radius:10px;
 }
 
