@@ -364,7 +364,7 @@ carousel
     filter: grayscale(0%);
 }
 
-.carousel .carousel-item::before {
+.carousel .item::before {
     content: '';
     width: inherit;
     height: inherit;
