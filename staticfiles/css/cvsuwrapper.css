@@ -201,14 +201,7 @@ body {
 carousel
 */
 
-/* added own detail carousel */
-.carousel li.carousel-item:, carousel-item.item:focus   {
-    width: 30vw;
-	filter: inherit;
-	z-index: 100;
-    margin: 0.45vw;
 
-}
 .carousel {
     --_diameter: var(--carousel-diameter);
     --_radius: calc(var(--_diameter) / 2);
@@ -341,9 +334,16 @@ carousel
 .carousel .carousel-item:hover {
     box-shadow: 0 0 var(--carousel-item-glow-size) rgb(var(--carousel-item-glow-color-rgb));
     transform: rotateY(var(--_rotation)) translateZ(calc(var(--_radius) * var(--carousel-item-hover-effect)));
-	z-index:100;
-	width:30vw;
+	z-index: 100;
+	
 }
+.carousel .item:hover {
+    box-shadow: 0 0 var(--carousel-item-glow-size) rgb(var(--carousel-item-glow-color-rgb));
+    transform: rotateY(var(--_rotation)) translateZ(calc(var(--_radius) * var(--carousel-item-hover-effect)));
+	z-index:100;
+	width:500px;
+}
+
 
 .carousel .carousel-item a {
     display: block;
