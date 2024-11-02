@@ -333,7 +333,7 @@ carousel
 
 .carousel .carousel-item:hover {
     box-shadow: 0 0 var(--carousel-item-glow-size) rgb(var(--carousel-item-glow-color-rgb));
-    transform: rotateY(var(--_rotation)) translateZ(calc(var(--_radius) * var(--carousel-item-hover-effect)));
+    width: 200px;
 	z-index: 100;
 	
 }
