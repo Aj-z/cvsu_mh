@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from .forms import BsessQuiz, BpedQuiz, BsaQuiz, BsesQuiz, BaeQuiz, BsftQuiz, BsedQuiz, Bsed_EnglQuiz, Bsed_FiliQuiz, Bsed_MathQuiz, Bsed_ScieQuiz, Bsed_SoStQuiz
 
-def quiz_home_view(request):
-    return render(request, 'cvsuquiz/quiz_home.html')
+def cspear_home_view(request):
+    return render(request, 'cvsuquiz/Cspear.html')
 
 
 def BSESS_Quiz(request):
