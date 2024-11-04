@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import BsessQuiz, BpedQuiz, BsaQuiz, BsesQuiz, BaeQuiz, BsftQuiz, BsedQuiz, Bsed_EnglQuiz, Bsed_FiliQuiz, Bsed_MathQuiz, Bsed_ScieQuiz, Bsed_SoStQuiz
 
+# ------  CSPEAR  ---------
 def cspear_home_view(request):
     return render(request, 'cvsuquiz/Cspear.html')
 
@@ -83,6 +84,7 @@ def BPED_Quiz(request):
         'COURSE_NAME': COURSE_NAME,
     })
 
+# ------  CAFENR  ---------
 def cafenr_home_view(request):
     return render(request, 'cvsuquiz/cafenr.html')
 
@@ -239,12 +241,14 @@ def BSFT_Quiz(request):
         'COURSE_NAME': COURSE_NAME,
     })
 
+# ------  CVMBS  ---------
 def cvmbs_home_view(request):
     return render(request, 'cvsuquiz/cvmbs.html')
-# CED COURSES
+
+# ------  CED  ---------
 def ced_home_view(request):
     return render(request, 'cvsuquiz/ced.html')
-# Bachelor of Secondary Education Majors
+  # Bachelor of Secondary Education Majors
 def BSE_ENGL_Quiz(request):
     css_style = "ced.css"
     feedback_q1 = None
@@ -552,3 +556,24 @@ def BSTM_Quiz(request):
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
     })
+
+
+# ------  CCJ ---------
+def ccj_home_view(request):
+    return render(request, 'cvsuquiz/ccj.html')
+
+# ------  CAS ---------
+def cas_home_view(request):
+    return render(request, 'cvsuquiz/cas.html')
+
+# ------  CON ---------
+def con_home_view(request):
+    return render(request, 'cvsuquiz/con.html')
+
+# ------  CEIT ---------
+def ceit_home_view(request):
+    return render(request, 'cvsuquiz/ceit.html')
+
+# ------  CEIT ---------
+def cemds_home_view(request):
+    return render(request, 'cvsuquiz/cemds.html')
