@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'accounts',
     'survey',
     'users',
+    'cvsuquiz',
    'bootstrap5',
     'django.contrib.sites',
     'allauth',
@@ -119,10 +120,10 @@ import dj_database_url
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cvsu_mh_data_base',  # Database name from Render
-        'USER': 'cvsu_mh_data_base_user',      # User from Render
-        'PASSWORD': 'vZxaPqZzHqS2mg7eMs1wJpIgnf8BZHPl',  # Password from Render
-        'HOST': 'dpg-crk0eklds78s73eg2a3g-a.singapore-postgres.render.com',      # Host from Render
+        'NAME': 'cvsu_mh_data_base_c736',  # Database name from Render
+        'USER': 'cvsu_mh_data_base_c736_user',      # User from Render
+        'PASSWORD': 'vqczEDhOTQKHZEWbSR9nFxWcbMxlMKQW',  # Password from Render
+        'HOST': 'dpg-cs8g2dlsvqrc73bqjl1g-a.singapore-postgres.render.com',      # Host from Render
         'PORT': '5432',             # Default port for PostgreSQL
     }
 }

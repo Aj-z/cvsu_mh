@@ -1,0 +1,31 @@
+{% load static %} 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{% static 'css/' %}{{ css_style }}">
+</head>
+<body>
+    <h1>{{ COURSE_NAME }}: Try Quiz</h1>
+    <div class="questions"> <form method="POST">
+        {% csrf_token %}
+         {{ form.as_p }} 
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    {% if feedback_q1 %}
+        <p>Question 1: {{ feedback_q1 }}</p>
+    {% endif %}
+
+    {% if feedback_q2 %}
+        <p>Question 2: {{ feedback_q2 }}</p>    
+    {% endif %}
+
+    {% if feedback_q3 %}
+        <p>Question 3: {{ feedback_q3 }}</p>    
+    {% endif %}
+
+    
+</body>
+</html>

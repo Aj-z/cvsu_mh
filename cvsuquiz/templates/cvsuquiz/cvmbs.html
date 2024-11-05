@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Home</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the CVMBS!</h1>
+        <p>Test your knowledge with our quizzes.</p>
+
+        <h2>Available Quizzes:</h2>
+        <ul>
+            <li><a href="{% url 'BSA_quiz' %}"> Try Quiz: BSVT  (Bachelor of Science in Veterinary Technology) </a></li>
+            <li><a href="{% url 'BAE_quiz' %}"> Try Quiz: BS (Bachelor of Science in Animal Health and Management)</a></li>
+            <li><a href="{% url 'BSES_quiz' %}"> Try Quiz: BSES (Bachelor of Science In Environmental Science)</a></li>
+            <li><a href="{% url 'BSFT_quiz' %}"> Try Quiz: DVM (Doctor of Veterinary Medicine)</a></li>
+        </ul>
+
+       
+    </div>
+</body>
+</html>

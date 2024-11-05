@@ -7,11 +7,11 @@ from djf_surveys.models import TYPE_FIELD, Survey, Question, Answer
 from djf_surveys.utils import create_star
 
 COLORS = [
-    '#64748b', '#a1a1aa', '#374151', '#78716c', '#d6d3d1', '#fca5a5', '#ef4444', '#7f1d1d',
-    '#fb923c', '#c2410c', '#fcd34d', '#b45309', '#fde047', '#bef264', '#ca8a04', '#65a30d',
-    '#86efac', '#15803d', '#059669', '#a7f3d0', '#14b8a6', '#06b6d4', '#155e75', '#0ea5e9',
-    '#075985', '#3b82f6', '#1e3a8a', '#818cf8', '#a78bfa', '#a855f7', '#6b21a8', '#c026d3',
-    '#db2777', '#fda4af', '#e11d48', '#9f1239'
+    '#5acb9d', '#55c99e', '#50c7a2', '#4bc4a6', '#46c2a9', '#41c0ad', '#3cbeb1', '#37bcb5',
+  '#34bab9', '#34b7bd', '#34b4c1', '#34b2c5', '#34afc9', '#34adcd', '#34aad1', '#34a8d4',
+  '#34a5d7', '#36a2db', '#399fde', '#3c9ce1', '#4099e4', '#4396e7', '#4693ea', '#4990ed',
+  '#4c8df0', '#508af3', '#5386f5', '#5683f7', '#5980fa', '#5c7dfa', '#5f7afb', '#6277fc',
+  '#6574fd', '#6871fd', '#6b6efd', '#6d6bfc'
 ]
 
 
