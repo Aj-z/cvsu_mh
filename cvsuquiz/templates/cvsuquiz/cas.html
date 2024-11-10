@@ -1,28 +1,103 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Home</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="{% static 'css/cas_view.css' %}"  type="text/css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Welcome to the College of Art And Sciences</h1>
         <p>Test your knowledge with our quizzes.</p>
-
-        <h2>Available Quizzes:</h2>
-        <ul>
-            <li><a href="{% url 'BSE-ENGL_quiz' %}"> Try Quiz: BSE-ENGL (Bachelor of Science In Biology) </a></li>
-            <li><a href="{% url 'BSE-FILI_quiz' %}"> Try Quiz: BSE-FILI (Bachelor of Arts In Journalism ) </a></li>
-            <li><a href="{% url 'BSE-MATH_quiz' %}"> Try Quiz: BSE-MATH (Bachelor of Arts In English) </a></li>
-            <li><a href="{% url 'BSE-SCIE_quiz' %}"> Try Quiz: BSE-SCIE (Bachelor of Science In Psychology) </a></li>
-            <li><a href="{% url 'BSE-SS_quiz' %}"> Try Quiz: BSE-SS (Bachelor of Arts In Political Science) </a></li>
-            <li><a href="{% url 'BAE_quiz' %}"> Try Quiz: BEED (Bachelor of Science In Social Work)</a></li>
-            <li><a href="{% url 'BAE_quiz' %}"> Try Quiz: BEED (Bachelor of Science In Applied Mathematics)</a></li>
-        </ul>
-
-       
+        
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Available Quizzes:
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'BSE-ENGL_quiz' %}"> Try Quiz: BSE-ENGL (Bachelor of Science In Biology) </a></li>
+                <li><a class="dropdown-item" href="{% url 'BSE-FILI_quiz' %}"> Try Quiz: BSE-FILI (Bachelor of Arts In Journalism ) </a></li>
+                <li><a class="dropdown-item" href="{% url 'BSE-MATH_quiz' %}"> Try Quiz: BSE-MATH (Bachelor of Arts In English) </a></li>
+                <li><a class="dropdown-item" href="{% url 'BSE-SCIE_quiz' %}"> Try Quiz: BSE-SCIE (Bachelor of Science In Psychology) </a></li>
+                <li><a class="dropdown-item" href="{% url 'BSE-SS_quiz' %}"> Try Quiz: BSE-SS (Bachelor of Arts In Political Science) </a></li>
+                <li><a class="dropdown-item" href="{% url 'BAE_quiz' %}"> Try Quiz: BEED (Bachelor of Science In Social Work)</a></li>
+                <li><a class="dropdown-item" href="{% url 'BAE_quiz' %}"> Try Quiz: BEED (Bachelor of Science In Applied Mathematics)</a></li>
+            </ul>
+        </div>
+        <div class="courses">
+            <div class="card">
+                <img src="https://cdn.cara.app/production/posts/85e5f80a-10d6-4028-9ab5-dab77e349329/ajloria-3_l42afQIXoY0KoCcV5DM-1730438028604.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cara.app/production/posts/85e5f80a-10d6-4028-9ab5-dab77e349329/ajloria-3_l42afQIXoY0KoCcV5DM-1730438028604.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cara.app/production/posts/85e5f80a-10d6-4028-9ab5-dab77e349329/ajloria-3_l42afQIXoY0KoCcV5DM-1730438028604.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cara.app/production/posts/85e5f80a-10d6-4028-9ab5-dab77e349329/ajloria-3_l42afQIXoY0KoCcV5DM-1730438028604.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cara.app/production/posts/85e5f80a-10d6-4028-9ab5-dab77e349329/ajloria-3_l42afQIXoY0KoCcV5DM-1730438028604.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" >
+                <img src="https://cdn.cara.app/production/posts/85e5f80a-10d6-4028-9ab5-dab77e349329/ajloria-3_l42afQIXoY0KoCcV5DM-1730438028604.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.cara.app/production/posts/85e5f80a-10d6-4028-9ab5-dab77e349329/ajloria-3_l42afQIXoY0KoCcV5DM-1730438028604.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Courses:
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'BSE-ENGL_quiz' %}"> Try Quiz: BSE-ENGL (Bachelor of Science In Biology) </a></li>
+                    <li><a class="dropdown-item" href="{% url 'BSE-FILI_quiz' %}"> Try Quiz: BSE-FILI (Bachelor of Arts In Journalism ) </a></li>
+                    <li><a class="dropdown-item" href="{% url 'BSE-MATH_quiz' %}"> Try Quiz: BSE-MATH (Bachelor of Arts In English) </a></li>
+                    <li><a class="dropdown-item" href="{% url 'BSE-SCIE_quiz' %}"> Try Quiz: BSE-SCIE (Bachelor of Science In Psychology) </a></li>
+                    <li><a class="dropdown-item" href="{% url 'BSE-SS_quiz' %}"> Try Quiz: BSE-SS (Bachelor of Arts In Political Science) </a></li>
+                    <li><a class="dropdown-item" href="{% url 'BAE_quiz' %}"> Try Quiz: BEED (Bachelor of Science In Social Work)</a></li>
+                    <li><a class="dropdown-item" href="{% url 'BAE_quiz' %}"> Try Quiz: BEED (Bachelor of Science In Applied Mathematics)</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
