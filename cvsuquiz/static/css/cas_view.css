@@ -19,7 +19,7 @@
     background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 30%)),url("https://images.pexels.com/photos/954585/pexels-photo-954585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;  
     background-position: center;
-    filter: sepia(1) hue-rotate(17deg) brightness(0.9) saturate(10)blur(2px);
+    filter: sepia(1) hue-rotate(17deg) brightness(1.5) saturate(10)blur(2px);
     background-position-x:-59px;
 }
 .card-nonhover {
