@@ -120,7 +120,7 @@ import dj_database_url
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cvsu_mh_data_base_c736',  # Database name from Render
+        'NAME': 'cvsu_mh_data_base_c736',  # Database name from Render #mustchange this
         'USER': 'cvsu_mh_data_base_c736_user',      # User from Render
         'PASSWORD': 'vqczEDhOTQKHZEWbSR9nFxWcbMxlMKQW',  # Password from Render
         'HOST': 'dpg-cs8g2dlsvqrc73bqjl1g-a.singapore-postgres.render.com',      # Host from Render
