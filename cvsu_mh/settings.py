@@ -119,14 +119,20 @@ import dj_database_url
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cvsu_mh_data_base_c736',  # Database name from Render #mustchange this
-        'USER': 'cvsu_mh_data_base_c736_user',      # User from Render
-        'PASSWORD': 'vqczEDhOTQKHZEWbSR9nFxWcbMxlMKQW',  # Password from Render
-        'HOST': 'dpg-cs8g2dlsvqrc73bqjl1g-a.singapore-postgres.render.com',      # Host from Render
-        'PORT': '5432',             # Default port for PostgreSQL
+        'ENGINE': 'django.db.backends.sqlite3', # django.db.backends.sqlite3 or  django.db.backends.postgresql 
+        'NAME': 'db.sqlite3',  # Database name from Render #mustchange this
     }
 }
+
+# DATABASES = {
+    # 'default': 
+       # 'ENGINE': 'django.db.backends.sqlite3', 
+        #'NAME': 'cvsu_mh_data_base_c736', 
+        #'USER': 'cvsu_mh_data_base_c736_user',    
+        #'PASSWORD': 'vqczEDhOTQKHZEWbSR9nFxWcbMxlMKQW',  
+        #'HOST': 'dpg-cs8g2dlsvqrc73bqjl1g-a.singapore-postgres.render.com',    
+        #'PORT': '5432',       
+
 
 
 # Password validation

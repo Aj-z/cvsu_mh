@@ -242,3 +242,29 @@ class SuccessPageSurveyView(ContextTitleMixin, DetailView):
     model = Survey
     template_name = "djf_surveys/success-page.html"
     title_page = _("Submitted Successfully")
+
+class DetailSurveyViewPrivate(ContextTitleMixin, DetailView):
+    model = Survey
+    template_name = "djf_surveys/user_answer.html"
+    title_page = _("Survey Detail")
+    paginate_by = app_settings.SURVEY_PAGINATION_NUMBER['answer_list']
+
+    def dispatch(self, request, *args, **kwargs):
+
+        
+        return super().dispatch(request, *args, **kwargs)
+
+    def get_context_data(self, **kwargs):
+        user_answers = UserAnswer.objects.filter(survey=self.get_object()) \
+            .select_related('user').prefetch_related('answer_set__question')
+        paginator = NewPaginator(user_answers, self.paginate_by)
+        page_number = self.request.GET.get('page', 1)
+        page_obj = paginator.get_page(page_number)
+        page_range = paginator.get_elided_page_range(number=page_number)
+        context = super().get_context_data(**kwargs)
+        context['page_obj'] = page_obj
+        context['page_range'] = page_range
+        return context
+    
+
+    
