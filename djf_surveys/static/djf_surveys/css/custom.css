@@ -32,4 +32,19 @@
      }
         
  }
- 
+ @media screen and (max-width: 500px){
+    .swiper-slide
+    {
+        font-size:3vw;
+        
+    }
+    .grid.xs\:grid-cols-1.sm\:grid-cols-2.md\:grid-cols-2.lg\:grid-cols-3.gap-4{
+        width:70vw;
+        font-size:1px;
+    }
+    p.text-lg.text-neutral-900{
+        font-size:3.5vw;
+        font-weight:500;
+    }
+ }
+
