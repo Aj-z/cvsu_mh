@@ -35,9 +35,9 @@ class ChartJS:
 
     def _base_element_html(self):
         self.element_html = f"""
-<div class="swiper-slide">
+<div class="swiper-slide sw">
     <blockquote class="p-6 border border-gray-100 rounded-lg shadow-lg bg-white">
-      <canvas id="{self.chart_id}" width="{self.width}" height="{self.height}"></canvas>
+      <canvas id="{self.chart_id}" class="canvasid" width="{self.width}" height="{self.height}"  ></canvas>
     </blocquote>
 </div>
 """
