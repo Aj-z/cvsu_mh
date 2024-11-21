@@ -13,4 +13,7 @@ urlpatterns = [
     path('share/<str:slug>/', views.share_link, name='share_link'),
     path('success/<str:slug>/', views.SuccessPageSurveyView.as_view(), name='success'),
     path(SURVEYS_ADMIN_BASE_PATH, include('djf_surveys.admins.urls')),
+    ## added new private view
+    path('private/detail/<str:slug>/', views.DetailSurveyViewPrivate.as_view(), name='private'),
+    
 ]
