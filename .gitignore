@@ -1,1 +1,20 @@
-db.sqlite3
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment directories
+.venv/
+env/
+envs/
+
+# Ignore database files (e.g., SQLite)
+*.sqlite3
+
+# Ignore node_modules (for Node.js projects)
+node_modules/
+
+# Ignore Django cache and log files
+*.log
+*.pot
+db.json

@@ -15,6 +15,7 @@ import os
 from dotenv import load_dotenv
 
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -119,19 +120,20 @@ import dj_database_url
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # django.db.backends.sqlite3 or  django.db.backends.postgresql 
-        'NAME': 'db.sqlite3',  # Database name from Render #mustchange this
+        
+        'ENGINE': 'django.db.backends.postgresql', 
+        'NAME': os.getenv('DB_NAME'), 
+        'USER': os.getenv('DB_USER'),    
+        'PASSWORD': os.getenv('DB_PASSWORD'),  
+        'HOST': os.getenv('DB_HOST'),    
+        'PORT': os.getenv('DB_PORT', '5432'),   
     }
 }
 
 # DATABASES = {
     # 'default': 
-       # 'ENGINE': 'django.db.backends.sqlite3', 
-        #'NAME': 'cvsu_mh_data_base_c736', 
-        #'USER': 'cvsu_mh_data_base_c736_user',    
-        #'PASSWORD': 'vqczEDhOTQKHZEWbSR9nFxWcbMxlMKQW',  
-        #'HOST': 'dpg-cs8g2dlsvqrc73bqjl1g-a.singapore-postgres.render.com',    
-        #'PORT': '5432',       
+       #'ENGINE': 'django.db.backends.sqlite3', # django.db.backends.sqlite3 or  django.db.backends.postgresql 
+        #'NAME': 'db.sqlite3',  # Database name from Render #mustchange this    
 
 
 
