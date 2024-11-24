@@ -54,13 +54,14 @@ INSTALLED_APPS = [
     'djf_surveys',
 ]
 
-SITE_ID = 3
+
+SITE_ID = 4
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend',
+    'allauth.account.auth_backends.AuthenticationBackend', 
 )
 
-LOGIN_REDIRECT_URL = '/survey/'
+LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -125,7 +126,7 @@ DATABASES = {
         'USER': os.getenv('DB_USER'),    
         'PASSWORD': os.getenv('DB_PASSWORD'),  
         'HOST': os.getenv('DB_HOST'),    
-        'PORT': os.getenv('DB_PORT', '5432'),   
+        'PORT': os.getenv('DB_PORT'), 
     }
 }
 
