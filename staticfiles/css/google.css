@@ -1,8 +1,7 @@
 * {
-    font-family:cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-div {
+div.strong {
     background-color: rgb(135 214 207);
     
 }
@@ -36,12 +35,16 @@ button {
     margin-top: 2px;
     padding: 10px;
     background-color: #ffffff;
-    border:active;
-    border-color:#9eff326b;
-    border-radius:220px;
+    border: black;
+    border-style: solid;
+    border-color:#9eff3285;
+    border-radius: 220px;
+    border-width: 2px;
+    text-decoration: none;
+    color:black;
 }
 button:hover{
-color:#00ffad;
+    color:#00ffad;
 }
 .button {
     margin-top: 2px;
@@ -58,5 +61,3 @@ color:#00ffad;
 .button:hover{
 color:#00ffad;
 }
-
-
