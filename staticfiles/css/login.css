@@ -1,6 +1,6 @@
 
 * {
-    font-family: Cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1, h3 {
     color: #009d95;
@@ -142,17 +142,4 @@ a:hover{
 	50% {
 		opacity: 1;
 	}
-}
-/* Apply styles for devices with a max screen width of 768px (typical for tablets) */
-@media (max-width: 768px) {
-   * { 
-    font-family: Arial;
-  }
-}
-
-/* Apply styles for devices with a max screen width of 480px (typical for phones) */
-@media (max-width: 480px) {
-  * {
-    font-family: Arial;
-  }
 }
