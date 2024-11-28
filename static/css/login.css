@@ -143,3 +143,8 @@ a:hover{
 		opacity: 1;
 	}
 }
+@media (max-width: 320px) { /* Adjust max-width for your target devices */
+    .positionlog{
+        transform:scale(0.8);
+    }
+}
