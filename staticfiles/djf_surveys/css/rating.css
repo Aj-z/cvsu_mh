@@ -33,25 +33,8 @@ blockquote.p-6.border.border-gray-100.rounded-lg.shadow-lg.bg-white {
     }
     p.text-lg.text-neutral-900 {
     font-size: .9rem;
+    }
+    .flex.-space-x-4.hover\:space-x-1.float-right{
+        height:100%;
+    }
 }
-p.text-slate-400.break-words {
-    font-size: 0.7rem;
-}
-    .swiper-slide {
-    width: 80vw;
-    right: 25px;
-    position: relative;
-}
-   .p-4 {
-       margin: auto;
-   }
-   .swiper-slide.sw {
-    justify-content: revert;
-    left: -60px;
-    top: -50px;
-}
-   
-    a {
-        transform:scale(0.7);
-    }   
-} 
