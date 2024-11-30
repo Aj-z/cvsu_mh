@@ -20,6 +20,10 @@
  blockquote.p-6.border.border-gray-100.rounded-lg.shadow-lg.bg-white {
         display: grid;
     }
+
+blockquote.p-6.border.border-gray-100.rounded-lg.shadow-lg.bg-white {
+    display: grid;
+}
 @media screen and (max-width: 500px){
     .grid.xs\:grid-cols-1.sm\:grid-cols-2.md\:grid-cols-2.lg\:grid-cols-3.gap-4{
         display: flex;
@@ -27,39 +31,10 @@
         margin-bottom: -100px;
         
     }
-   .p-4 {
-       margin: auto;
-   }
-   .swiper-slide.sw {
-    justify-content: revert;
-    left: -60px;
-    top: -50px;
-}
-   
-    a {
-        transform:scale(0.7);
-    }   
-} 
-blockquote.p-6.border.border-gray-100.rounded-lg.shadow-lg.bg-white {
-    display: grid;
-}
-@media screen and (max-width: 500px){
-.grid.xs\:grid-cols-1.sm\:grid-cols-2.md\:grid-cols-2.lg\:grid-cols-3.gap-4{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -100px;
-    
-}
-.p-4 {
-   margin: auto;
-}
-.swiper-slide.sw {
-justify-content: revert;
-left: -60px;
-top: -50px;
-}
-
-a {
-    transform:scale(0.7);
-}   
+    p.text-lg.text-neutral-900 {
+    font-size: .9rem;
+    }
+    .flex.-space-x-4.hover\:space-x-1.float-right{
+        height:100%;
+    }
 }
