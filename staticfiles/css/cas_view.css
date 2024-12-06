@@ -111,6 +111,12 @@ p{
     filter: sepia(1) hue-rotate(17deg) brightness(1.5) saturate(10)blur(2px);
     background-position-x:-59px;
 }
+.list-group-item {
+    --bs-list-group-color:none;
+        }
+.list-group{
+    --bs-body-bg: none;
+}
 .card-nonhover {
     z-index: 2;
     position: absolute;
