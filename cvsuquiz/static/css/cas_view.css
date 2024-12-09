@@ -67,4 +67,9 @@ body{
     .card{
         width:77vw;
     }
+    .accordion-horizontal .accordion-item {
+        display: flex;
+        margin-bottom: 5px;
+        flex-direction: column;}
+    
   }
