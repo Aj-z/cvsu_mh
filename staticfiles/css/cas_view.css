@@ -27,7 +27,6 @@ button.accordion-button.collapsed {
 .courses {
     display: flex;
     flex-direction: row;
-
 }
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
@@ -75,11 +74,11 @@ p{
 .accordion-horizontal .accordion-item {
     display: flex;
     flex-direction: row;
-   
+
     margin-bottom: 5px;
   }
 
-  .accordion-horizontal .accordion-header {
+.accordion-horizontal .accordion-header {
     flex: 0 0 150px;
   }
 
@@ -90,7 +89,7 @@ p{
 
   .accordion-horizontal .accordion-collapse {
     flex: 1;
-   
+
   }
 .accordion-body {
     color: yellow;
@@ -102,19 +101,6 @@ p{
 .container.mt-4 {
     margin: 0;
 }
-.wrapper{
-    height: 100%;             
-    overflow: hidden;          
-    display:flex;
-    z-index:1;
-    position:absolute;
-    width:100%;
-    background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 30%)),url("https://images.pexels.com/photos/954585/pexels-photo-954585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-size: cover;  
-    background-position: center;
-    filter: sepia(1) hue-rotate(17deg) brightness(1.5) saturate(10)blur(2px);
-    background-position-x:-59px;
-}
 .list-group-item {
     --bs-list-group-color:none;
         }
@@ -124,35 +110,6 @@ p{
 .card-nonhover {
     z-index: 2;
     position: absolute;
-    text-align: center;
-    margin-top: 10%;
-    font-weight: bolder;
-    font-size: 1em;
-    color:black;
-    background-color:#99999900;
-    background: radial-gradient(circle, #0000002b, rgb(240 240 240 / 0%));
-}
-
-
-.text:hover{
-    opacity:0;
-}
-.card-img-top {
-    width: 100%;               
-    height: 100%;              
-    object-fit: cover;  
-}
-.card-body{
-    justify-content:flex-start;
-    display:inline;
-}
-h1 {
-    text-align:center;
-    color:black;
-    padding:2vh;
-    margin:0.2em;
-    background-color:yellow;
-    border-radius:10px;
 
 }
 .accordion-button:not(.collapsed) {
@@ -168,11 +125,9 @@ h1 {
     .card{
         width:77vw;
     }
+    .accordion-horizontal .accordion-item {
+        display: flex;
+        margin-bottom: 5px;
+        flex-direction: column;}
+
   }
-  a.btn.btn-primary {
-    position: relative;
-    right: -205px;
-    top: -83px;
-    width: 60px;
-    font-size: x-small;
-}
