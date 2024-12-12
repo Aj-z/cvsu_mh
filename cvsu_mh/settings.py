@@ -55,7 +55,7 @@ INSTALLED_APPS = [
 ]
 
 
-SITE_ID = os.getenv('SITE_ID', 4)
+SITE_ID = os.getenv('SITE_ID', 3)
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend', 
@@ -121,8 +121,8 @@ import dj_database_url
 DATABASES = {
     'default': {
         
-        'ENGINE': 'django.db.backends.postgresql', 
-        'NAME': os.getenv('DB_NAME'), 
+        'ENGINE': 'django.db.backends.sqlite3', 
+        'NAME': 'db.sqlite3', 
         'USER': os.getenv('DB_USER'),    
         'PASSWORD': os.getenv('DB_PASSWORD'),  
         'HOST': os.getenv('DB_HOST'),    
