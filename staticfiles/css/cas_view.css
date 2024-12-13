@@ -34,8 +34,15 @@ button.accordion-button.collapsed {
 }
 a.navbar-brand {
     color: yellow;
+    font-family: 'Times New Roman', serif;
 }
-
+.navbar-brand {
+    font-size: 2rem;
+    margin-left: 1vw;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: rgb(255 240 85);
+}
 button:focus:not(:focus-visible) {
     outline: 0;
     background: rgba(0, 0, 0, 0);
@@ -55,10 +62,13 @@ button:focus:not(:focus-visible) {
 button.accordion-button.collapsed {
     background: rgba(0, 0, 0, 0);
     color: yellow;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .accordion-item {
     background: rgba(0, 0, 0, 0);
+}
+h2 {
+    font-family: 'Times New Roman', serif;
 }
 h3{
     margin-bottom:0px;
@@ -131,3 +141,8 @@ p{
         flex-direction: column;}
 
   }
+  @media (min-width: 1200px) {
+    .h2, h2 {
+        font-size: 3rem;
+    }
+}
