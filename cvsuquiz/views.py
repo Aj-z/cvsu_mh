@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import BsessQuiz, BpedQuiz, BsaQuiz, BsesQuiz, BaeQuiz, BsftQuiz, BsedQuiz, Bsed_EnglQuiz, Bsed_FiliQuiz, Bsed_MathQuiz, Bsed_ScieQuiz, Bsed_SoStQuiz
+from .forms import BsessQuiz, BpedQuiz, BsaQuiz, BsesQuiz, BaeQuiz, BsftQuiz, BsedQuiz, Bsed_EnglQuiz, Bsed_FiliQuiz, Bsed_MathQuiz, Bsed_ScieQuiz, Bsed_SoStQuiz, BajQuiz
 
 # ------  CSPEAR  ---------
 def cspear_home_view(request):
@@ -565,6 +565,46 @@ def ccj_home_view(request):
 # ------  CAS ---------
 def cas_home_view(request):
     return render(request, 'cvsuquiz/cas.html')
+def BAJ_QUIZ(request):
+    css_style = "ced.css"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    COURSE_NAME = "Bachelor of Arts in Journalism"
+
+
+    if request.method == "POST":
+        form = BajQuiz(request.POST)
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '1':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is A"
+
+            if answer_q3 == '3':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+        form = BajQuiz()
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+    })
 
 # ------  CON ---------
 def con_home_view(request):
