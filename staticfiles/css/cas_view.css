@@ -23,6 +23,7 @@ button.accordion-button.collapsed {
     background: rgba(0, 0, 0, 0);
     color: yellow;
     text-decoration: none;
+    width: 30vw !important;
 }
 .courses {
     display: flex;
@@ -37,8 +38,13 @@ a.navbar-brand {
     font-family: 'Times New Roman', serif;
 }
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-left: 1vw;
+    margin-bottom: -15px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
 }
 .navbar-brand:focus, .navbar-brand:hover {
     color: rgb(255 240 85);
@@ -59,10 +65,24 @@ button:focus:not(:focus-visible) {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+a.navbar-brand.sc1 {
+    margin-bottom: 1px;
+}
+
 button.accordion-button.collapsed {
     background: rgba(0, 0, 0, 0);
     color: yellow;
     text-decoration: none;
+   
+}
+button.accordion-button.course1 {
+    width: 28vw !important;
+}
+button.accordion-button.course1.collapsed{
+    width: 28vw !important;
+}
+button.accordion-button.collapsed {
+    width: inherit !important;
 }
 .accordion-item {
     background: rgba(0, 0, 0, 0);
