@@ -566,7 +566,7 @@ def ccj_home_view(request):
 def cas_home_view(request):
     return render(request, 'cvsuquiz/cas.html')
 def BAJ_QUIZ(request):
-    css_style = "ced.css"
+    css_style = "cas.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
