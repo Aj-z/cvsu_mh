@@ -404,7 +404,7 @@ class Bsed_SoStQuiz(forms.Form):
         label="How does globalization primarily influence the cultural landscapes of cities?"
     )        
 
-# 
+#Cas Quizes
 class BajQuiz(forms.Form):
     CHOICES_Q1 = [
         ('1', 'A. By prioritizing advertiser requests over editorial content'),
@@ -441,75 +441,39 @@ class BajQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
     )        
-class BsedQuiz(forms.Form):
-    CHOICES_Q1 = [
-        ('1', 'A. Sensorimotor Stage'),
-        ('2', 'B. Preoperational Stage'),
-        ('3', 'C. Concrete Operational Stage'),
-        ('4', 'D. Formal Operational Stage'),
-    ]
-    CHOICES_Q2 = [
-        ('1', 'A. Curriculum and Planning'),
-        ('2', 'B. Assessment and Reporting'),
-        ('3', 'C. Learning Environment'),
-        ('4', 'D. Personal Growth and Professional Development'),
-    ]
-    CHOICES_Q3 = [
-        ('1', 'A. Autocratic Leadership'),
-        ('2', 'B. Transformational Leadership'),
-        ('3', 'C. Transactional Leadership'),
-        ('4', 'D. Laissez-faire Leadership'),
-    ]
+class BSE_ENGLQuiz(forms.Form):
     
+    CHOICES_Q1 = [
+        ('1', 'A. Encouraging learners to work individually until they master linguistic rules through memorization.'),
+        ('2', 'B. Using collaborative activities where learners receive guidance from a more knowledgeable peer or teacher to perform beyond their current ability.'),
+        ('3', 'C. Providing only authentic materials with minimal instruction, as learners should naturally acquire the language on their own.'),
+        ('4', 'D. Assessing learners solely through standardized tests to identify their exact linguistic ability level.'),
+    ]
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="According to Piaget's theory of cognitive development, which of the following best describes the stage where adolescents begin to think abstractly and reason about hypothetical situations? "
+        label="According to Vygotsky’s Zone of Proximal Development (ZPD), which of the following best represents an effective strategy for language acquisition in learners? "
     )
-
-    answer_q2 = forms.ChoiceField(
-        choices=CHOICES_Q2,
-        widget=forms.RadioSelect,
-        label="In accordance with the Philippine Professional Standards for Teachers (PPST), which domain emphasizes the importance of teachers' engagement in ethical, reflective, and professional practices to enhance their own development and the quality of teaching?"
-    )
-    answer_q3 = forms.ChoiceField(
-        choices=CHOICES_Q3,
-        widget=forms.RadioSelect,
-        label="In promoting school-community partnerships, which leadership approach encourages collaboration by empowering teachers and stakeholders to take part in decision-making processes to improve the school environment and student learning outcomes?"
-    )        
-class BsedQuiz(forms.Form):
-    CHOICES_Q1 = [
-        ('1', 'A. Sensorimotor Stage'),
-        ('2', 'B. Preoperational Stage'),
-        ('3', 'C. Concrete Operational Stage'),
-        ('4', 'D. Formal Operational Stage'),
-    ]
     CHOICES_Q2 = [
-        ('1', 'A. Curriculum and Planning'),
-        ('2', 'B. Assessment and Reporting'),
-        ('3', 'C. Learning Environment'),
-        ('4', 'D. Personal Growth and Professional Development'),
-    ]
-    CHOICES_Q3 = [
-        ('1', 'A. Autocratic Leadership'),
-        ('2', 'B. Transformational Leadership'),
-        ('3', 'C. Transactional Leadership'),
-        ('4', 'D. Laissez-faire Leadership'),
+        ('1', 'A. Teaching grammar rules explicitly and practicing them through isolated drills before moving to communication tasks.'),
+        ('2', 'B. Embedding grammar instruction in real-life communicative tasks where learners focus on meaning first, and form is addressed later if needed.'),
+        ('3', 'C. Using grammar-focused worksheets and quizzes to improve accuracy before engaging in conversation.'),
+        ('4', 'D. Prioritizing the rote memorization of grammatical structures and requiring learners to recite them in structured exercises.'),
     ]
     
-    answer_q1 = forms.ChoiceField(
-        choices=CHOICES_Q1,
-        widget=forms.RadioSelect,
-        label="According to Piaget's theory of cognitive development, which of the following best describes the stage where adolescents begin to think abstractly and reason about hypothetical situations? "
-    )
-
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="In accordance with the Philippine Professional Standards for Teachers (PPST), which domain emphasizes the importance of teachers' engagement in ethical, reflective, and professional practices to enhance their own development and the quality of teaching?"
+        label="Which of the following grammar teaching approaches aligns with a task-based learning method?"
     )
+    CHOICES_Q3 = [
+        ('1', 'A. Multiple-choice tests focusing on plot recall and character identification.'),
+        ('2', 'B. Short-answer questions requiring literal understanding of specific events in the text.'),
+        ('3', 'C. Open-ended essay prompts encouraging critical analysis, interpretation, and connections to real-world issues.'),
+        ('4', 'D. Cloze tests that measure knowledge of vocabulary used in the contemporary literary text.'),
+    ]
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="In promoting school-community partnerships, which leadership approach encourages collaboration by empowering teachers and stakeholders to take part in decision-making processes to improve the school environment and student learning outcomes?"
+        label="When assessing literature comprehension, which method is most effective for evaluating higher-order thinking skills in contemporary literature?"
     )        
