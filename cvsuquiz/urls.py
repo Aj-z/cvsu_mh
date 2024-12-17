@@ -5,7 +5,7 @@ from .views import (cspear_home_view, BSESS_Quiz, BPED_Quiz,
                     BSE_ENGL_Quiz, BSE_FILI_Quiz, 
                     BSE_MATH_Quiz, BSE_SCIE_Quiz, 
                     BSE_SS_Quiz,con_home_view, ceit_home_view, 
-                    ccj_home_view, cas_home_view, BAJ_QUIZ, cvmbs_home_view,
+                    ccj_home_view, cas_home_view, BAJ_QUIZ, BSE_ENGL_QUIZ, cvmbs_home_view,
                     cemds_home_view)
 
 
@@ -28,6 +28,7 @@ urlpatterns = [
    path('CCJ/', ccj_home_view, name='CCJ_home'),
    path('CAS/', cas_home_view, name='CAS_home'),
    path('BAJ/', BAJ_QUIZ, name='BAJ_quiz'),
+   path('BSE_ENGL/', BSE_ENGL_QUIZ, name='BSE_ENGL_quiz'),
    path('CON/', con_home_view, name='CON_home'),
    path('CEIT/', ceit_home_view, name='CEIT_home'),
    path('CVMBS/', cvmbs_home_view, name='CVMBS_home'),
