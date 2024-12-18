@@ -477,3 +477,367 @@ class BSE_ENGLQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="When assessing literature comprehension, which method is most effective for evaluating higher-order thinking skills in contemporary literature?"
     )        
+class BAPSQuiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. Oligarchy'),
+        ('2', 'B. Anarchy'),
+        ('3', 'C. Monarchy'),
+        ('4', 'D. Democracy'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="FUNDAMENTALS OF POLITICAL SCIENCE: Which form of government is characterized by the absence of a central authority? "
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. Political economy'),
+        ('2', 'B. Comparative politics'),
+        ('3', 'C. Political theory.'),
+        ('4', 'D. Public policy'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="INTRODUCTION TO COMPARATIVE POLITICS: Which term refers to the study of political systems through a cross-national perspective?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. A diplomat granted special privileges'),
+        ('2', 'B. A diplomat removed from their post'),
+        ('3', 'C. A diplomat declared unacceptable by the host country'),
+        ('4', 'D. A diplomatic immunity clause'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="DIPLOMATIC AND CONSULAR PRACTICES WITH BASIC PARLIAMENTARY PROCEDURES: In diplomacy, what does the term 'persona non grata' refer to?"
+    )        
+class BSAMQuiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. 11001'),
+        ('2', 'B. 10101'),
+        ('3', 'C. 11100'),
+        ('4', 'D. 10011'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="FUNDAMENTALS OF COMPUTING 1: What is the binary equivalent of the decimal number 25? "
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. 5'),
+        ('2', 'B. 1'),
+        ('3', 'C. 0'),
+        ('4', 'D. Does not exist'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="ADVANCED CALCULUS 1: Evaluate the limit of (sin(5x) / x) as x approaches 0."
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Separation of variables'),
+        ('2', 'B. Laplace transform'),
+        ('3', 'C. Fourier series'),
+        ('4', 'D. Green’s function'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="PARTIAL DIFFERENTIAL EQUATIONS: Which method is commonly used to solve the heat equation?"
+    )           
+class BSBIO_ANIMALBIO_Quiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. Insulin'),
+        ('2', 'B. Cortisol'),
+        ('3', 'C. Antidiuretic hormone (ADH)'),
+        ('4', 'D. Thyroxine'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="ANIMAL PHYSIOLOGY: Which hormone regulates water balance by increasing water reabsorption in the kidneys? "
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. Energy production'),
+        ('2', 'B. Protein modification and sorting'),
+        ('3', 'C. DNA replication'),
+        ('4', 'D. Lipid synthesis'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="CELL AND MOLECULAR BIOLOGY: What is the primary function of the Golgi apparatus in a eukaryotic cell?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Mammalia'),
+        ('2', 'B. Amphibia'),
+        ('3', 'C. Reptilia'),
+        ('4', 'D. Aves'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="COMPARATIVE VERTEBRATE ANATOMY: Which vertebrate class is characterized by a three-chambered heart and a double-loop circulatory system?"
+    )        
+class BSBIO_PLANTBIO_Quiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. Transport of nutrients'),
+        ('2', 'B. Photosynthetic pigment production'),
+        ('3', 'C. Gas exchange and transpiration'),
+        ('4', 'D. Seed germination'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="PLANT PHYSIOLOGY: What is the primary function of stomata in plants?"
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. Phloem'),
+        ('2', 'B. Xylem'),
+        ('3', 'C. Cambium'),
+        ('4', 'D. Epidermis'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="PLANT MORPHOANATOMY: Which plant tissue is responsible for secondary growth in dicots?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Brown algae'),
+        ('2', 'B. Red algae'),
+        ('3', 'C. Green algae'),
+        ('4', 'D. Cyanobacteria'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="PHYCOLOGY: Which group of algae is responsible for producing most of the Earth's oxygen?"
+    )         
+class BSBIO_MICROBIO_Quiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. Mutualism'),
+        ('2', 'B. Parasitism'),
+        ('3', 'C. Commensalism'),
+        ('4', 'D. Amensalism'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="MICROBIAL ECOLOGY: Which microbial interaction benefits one species while neither benefiting nor harming the other? "
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. To measure bacterial growth'),
+        ('2', 'B. To identify bacterial morphology'),
+        ('3', 'C. To differentiate bacteria based on cell wall composition'),
+        ('4', 'D. To detect endospores'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="MICROBIAL TECHNIQUES: What is the primary purpose of Gram staining in microbiology?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Lactobacillus'),
+        ('2', 'B. Saccharomyces cerevisiae'),
+        ('3', 'C. Escherichia coli'),
+        ('4', 'D. Rhizopus stolonifer'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="FOOD AND INDUSTRIAL MICROBIOLOGY: Which microorganism is primarily used in the production of bread and alcoholic beverages?"
+    )         
+class BSBIO_MEDICALBIO_Quiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. Trypanosoma brucei.'),
+        ('2', 'B. Plasmodium spp.'),
+        ('3', 'C. Giardia lamblia'),
+        ('4', 'D. Leishmania donovani.'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="PARASITOLOGY: Which parasitic protozoan causes malaria? "
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. Staphylococcus aureus'),
+        ('2', 'B. Streptococcus pyogenes'),
+        ('3', 'C. Escherichia coli'),
+        ('4', 'D. Mycobacterium tuberculosis'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="MEDICAL MICROBIOLOGY: Which bacterial species is a common cause of strep throat?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Cerebrum '),
+        ('2', 'B. Cerebellum'),
+        ('3', 'C. Medulla oblongata'),
+        ('4', 'D. Hypothalamus'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="HUMAN ANATOMY AND PHYSIOLOGY: Which part of the brain regulates balance and coordination?"
+    )         
+class BSBIO_ECOLOGY_Quiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. Filtration'),
+        ('2', 'B. Adsorption'),
+        ('3', 'C. Aeration'),
+        ('4', 'D. Neutralization'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="ENVIRONMENTAL TECHNOLOGY: Which method is commonly used to remove heavy metals from wastewater?"
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. Littoral zone'),
+        ('2', 'B. Limnetic zone'),
+        ('3', 'C. Profundal zone'),
+        ('4', 'D. Benthic zone'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="FRESHWATER ECOLOGY: What is the term for the area of a lake where light penetration is sufficient for photosynthesis?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Kin selection'),
+        ('2', 'B. Mutualism'),
+        ('3', 'C. Competition'),
+        ('4', 'D. Predation'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="BEHAVIORAL ECOLOGY: Which concept explains the behavior of animals that reduces their own fitness to increase the fitness of others?"
+    )         
+class BSBIO_GENETICS_Quiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. Monosomy 21'),
+        ('2', 'B. Trisomy 21'),
+        ('3', 'C. Deletion of chromosome 21'),
+        ('4', 'D. Translocation of chromosome 21'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="CYTOGENETICS: Which chromosomal abnormality causes Down syndrome? "
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. Pax6'),
+        ('2', 'B. Shh (Sonic Hedgehog)'),
+        ('3', 'C. BRCA1'),
+        ('4', 'D. APC'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="DEVELOPMENTAL GENETICS: Which gene is critical for limb development in vertebrates?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Epistasis'),
+        ('2', 'B. Pleiotropy'),
+        ('3', 'C. Polygenic inheritance'),
+        ('4', 'D. Codominance'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="ADVANCED GENETICS 2: What term describes the phenomenon where one gene influences multiple traits?"
+    )         
+class BSPSYC_Quiz(forms.Form):
+    
+    CHOICES_Q1 = [
+        ('1', 'A. To validate the hypothesis'),
+        ('2', 'B. To serve as a baseline for comparison'),
+        ('3', 'C. To eliminate dependent variables'),
+        ('4', 'D. To increase the sample size'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="EXPERIMENTAL PSYCHOLOGY: What is the main purpose of a control group in an experimental study?"
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. Trust vs. Mistrust'),
+        ('2', 'B. Industry vs. Inferiority'),
+        ('3', 'C. Identity vs. Role Confusion'),
+        ('4', 'D. Intimacy vs. Isolation'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="DEVELOPMENTAL PSYCHOLOGY: In Erikson’s psychosocial stages, which stage focuses on identity formation during adolescence?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Experimental manipulation'),
+        ('2', 'B. Surveys and observations'),
+        ('3', 'C. Laboratory testing'),
+        ('4', 'D. Neuroimaging'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="FIELD METHODS IN PSYCHOLOGY: Which of the following is a primary method used in field studies in psychology?"
+    )         
+class BSSW_Quiz(forms.Form):    
+    
+    CHOICES_Q1 = [
+        ('1', 'A. Chi-square test'),
+        ('2', 'B. Pearson correlation coefficient'),
+        ('3', 'C. Mann-Whitney U test'),
+        ('4', 'D. ANOVA'),
+    ]
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="SOCIAL WORK STATISTICS: What statistical method is best used to determine the relationship between two continuous variables?"
+    )
+    CHOICES_Q2 = [
+        ('1', 'A. Integrity'),
+        ('2', 'B. Competence'),
+        ('3', 'C. Self-determination'),
+        ('4', 'D. Service'),
+    ]
+    
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="KNOWLEDGE AND PHILOSOPHICAL FOUNDATIONS OF SOCIAL WORK PROFESSION: Which core value of social work emphasizes the client’s right to make their own choices?"
+    )
+    CHOICES_Q3 = [
+        ('1', 'A. Client’s income level'),
+        ('2', 'B. Ethical confidentiality and accuracy'),
+        ('3', 'C. The length of the document'),
+        ('4', 'D. Usage of complex jargon'),
+    ]
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="SOCIAL WORK COMMUNICATION AND DOCUMENTATION: What is the most important aspect to consider when documenting a case in social work?"
+    )         
+
+BSAMQuiz, BSBIO_ANIMALBIO_Quiz, BSBIO_PLANTBIO_Quiz, 
+BSBIO_MICROBIO_Quiz, BSBIO_MEDICALBIO_Quiz, BSBIO_ECOLOGY_Quiz,
+BSBIO_GENETICS_Quiz,BSPSYC_Quiz, BSSW_Quiz
