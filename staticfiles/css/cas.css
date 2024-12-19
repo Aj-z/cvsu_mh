@@ -1,8 +1,17 @@
 h1 {
-    -webkit-text-stroke: thin;
     color: #fff206;
+    font-family: 'Times New Roman', serif;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    margin-top: 2vh;
+    text-align: center;
+    align-items: center;
+   
 }
-label, p {
+label {
     background: #fff75d;
     width: 80vw;
     display: flex;
@@ -10,7 +19,16 @@ label, p {
     margin-bottom: 3px;
     border-radius: 10px;
 }
-
+.questions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
+    background: #fff75d;
+    border-radius: 10px;
+    top: -13;
+}
 body {
     background: #242424;
 }
@@ -18,8 +36,12 @@ label:hover {
     background: #fff200;
 }
 
-@media (min-width: 1200px) {
-    label, p {
+@media (max-width: 1200px) {
+    label {
         width: 50vw;
+    }
+    h1 {
+        
+        font-size: 1.2rem;
     }
 }
