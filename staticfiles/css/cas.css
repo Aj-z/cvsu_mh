@@ -11,6 +11,16 @@ h1 {
     align-items: center;
    
 }
+.results {
+    background: #fff75d;
+    width: 50vw;
+    display: flex;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 label {
     background: #fff75d;
     width: 80vw;
