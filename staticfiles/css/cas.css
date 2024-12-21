@@ -21,6 +21,15 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+button:hover {
+    background: #fff00a;
+   
+  }
+button {
+background: #fff75d;
+border-radius: 5px;
+padding: 10px;
+}
 label {
     background: #fff75d;
     width: 80vw;
