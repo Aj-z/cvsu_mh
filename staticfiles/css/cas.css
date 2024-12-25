@@ -1,19 +1,20 @@
 h1 {
-    color: #fff206;
-    font-family: 'Times New Roman', serif;
-    text-decoration: none;
-    font-size: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    height: 5vh;
-    margin-top: 2vh;
-    text-align: center;
-    align-items: center;
+    color: #fff206 !important;
+    font-family: 'Times New Roman', serif !important;
+    text-decoration: none !important;
+    font-size: 3rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 5vh !important;
+    margin-top: 2vh !important;
+    text-align: center !important;
+    align-items: center !important;
    
 }
+
 .results {
     background: #fff75d;
-    width: 50vw;
+    width: inherit;
     display: flex;
     margin-bottom: 3px;
     border-radius: 10px;
@@ -31,33 +32,65 @@ border-radius: 5px;
 padding: 10px;
 }
 label {
-    background: #fff75d;
-    width: 80vw;
+    background: #fff75d ;
+    width: inherit;
     display: flex;
     padding: 10px;
     margin-bottom: 3px;
     border-radius: 10px;
 }
 .questions {
-    align-items: center;
+  
     display: flex;
     flex-direction: column;
+    width:50vw;
 }
 div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
     background: #fff75d;
     border-radius: 10px;
     top: -13;
+    width: inherit;
 }
 body {
-    background: #242424;
+    background: #242424 !important;
 }
 label:hover {
     background: #fff200;
 }
 
+.allcontent {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40%;
+}
+.sideshow {
+    width: 30vw;
+    height: 100%;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    border-radius: 10px;
+}
+.carousel {
+    position: relative;
+    background: aquamarine;
+    border-radius: 10px;
+}
+.carousel-item {
+    border-radius: 10px;
+}
+img, svg {
+    border-radius: 10px;
+}
+button {
+    border-radius: 10px !important;
+}
 @media (max-width: 1200px) {
+    .questions{
+        width: 80vw;
+        margin: auto;
+    }
     label {
-        width: 50vw;
+        width: inherit;
     }
     h1 {
         
