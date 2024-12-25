@@ -7,12 +7,19 @@ from djf_surveys.models import TYPE_FIELD, Survey, Question, Answer
 from djf_surveys.utils import create_star
 
 COLORS = [
-    '#5acb9d', '#55c99e', '#50c7a2', '#4bc4a6', '#46c2a9', '#41c0ad', '#3cbeb1', '#37bcb5',
+  '#5acb9d', '#55c99e', '#50c7a2', '#4bc4a6', '#46c2a9', '#41c0ad', '#3cbeb1', '#37bcb5',
   '#34bab9', '#34b7bd', '#34b4c1', '#34b2c5', '#34afc9', '#34adcd', '#34aad1', '#34a8d4',
   '#34a5d7', '#36a2db', '#399fde', '#3c9ce1', '#4099e4', '#4396e7', '#4693ea', '#4990ed',
   '#4c8df0', '#508af3', '#5386f5', '#5683f7', '#5980fa', '#5c7dfa', '#5f7afb', '#6277fc',
-  '#6574fd', '#6871fd', '#6b6efd', '#6d6bfc'
-]
+  '#6574fd', '#6871fd', '#6b6efd', '#6d6bfc',"RGB(204, 134, 134)",
+  "RGB(134, 204, 134)","RGB(134, 134, 204)","RGB(204, 204, 134)","RGB(204, 134, 204)",
+  "RGB(134, 204, 204)","RGB(184, 154, 154)","RGB(154, 184, 154)","RGB(154, 154, 184)","RGB(194, 144, 144)",
+  "RGB(144, 194, 144)","RGB(144, 144, 194)","RGB(204, 174, 134)","RGB(174, 204, 134)","RGB(134, 174, 204)",
+  "RGB(184, 134, 204)","RGB(134, 184, 204)","RGB(204, 134, 174)","RGB(174, 134, 204)","RGB(134, 204, 174)",
+  "RGB(204, 154, 144)","RGB(154, 204, 144)","RGB(144, 154, 204)","RGB(194, 164, 144)","RGB(164, 194, 144)",
+  "RGB(144, 164, 194)","RGB(204, 184, 154)","RGB(184, 204, 154)","RGB(154, 184, 204)","RGB(174, 204, 164)",
+  "RGB(204, 164, 174)","RGB(164, 204, 174)","RGB(174, 174, 204)","RGB(144, 174, 194)","RGB(194, 144, 174)",
+  ]
 
 
 class ChartJS:
@@ -55,7 +62,12 @@ class ChartJS:
         self._base_element_html()
         self._shake_colors()
         script = f"""
-{self.element_html}
+<div class="chart-container">
+    <div class="chart-title-container">
+        <h2>{self.chart_name}</h2>
+    </div>
+    {self.element_html}
+</div>
 <script>
 {self._setup()}
 {self._config()}
@@ -80,11 +92,23 @@ const config%s = {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top',
+        position: 'bottom',
       },
       title: {
-        display: true,
-        text: '%s'
+        display: false,
+        text: '%s',
+        font: {
+         size:24 , 
+          weight: 'bold',
+          family: 'Arial, sans-serif'
+        },
+
+        padding: {
+          top: 20,
+          bottom: 20,
+        },
+        
+       lineHeight: 1.5
       }
     }
   },
