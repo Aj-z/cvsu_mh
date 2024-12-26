@@ -43,7 +43,8 @@ label {
   
     display: flex;
     flex-direction: column;
-    width:50vw;
+    width:80vw;
+    margin-left: 5vw;
 }
 div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
     background: #fff75d;
@@ -60,7 +61,7 @@ label:hover {
 
 .allcontent {
     display: flex;
-    flex-direction: row-reverse;
+
     height: 40%;
 }
 .sideshow {
