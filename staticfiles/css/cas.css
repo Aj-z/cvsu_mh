@@ -12,6 +12,60 @@ h1 {
    
 }
 
+/*  Nav bar css */
+.container-fluid {
+    margin-right: 5vw !important;
+    margin-left: 5vw !important;
+}
+
+a.navbar-brand {
+    color: yellow;
+    font-family: 'Times New Roman', serif;
+}
+.navbar-brand {
+    font-size: 1.2rem;
+    margin-left: 1vw;
+    margin-bottom: -15px;
+}
+a.navbar-brand.sc1 {
+    margin-bottom: 1px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    color: rgb(255 240 85);
+}
+.title {
+    display: flex;
+    flex-direction: column;
+}
+.navbar.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #121212 !important;
+    margin-bottom: 2vh;
+}
+.btn-outline-success {
+    --bs-btn-color: #fff75d !important;
+    --bs-btn-border-color: #06060600 !important;
+    --bs-btn-hover-color: #fff0 !important;
+    --bs-btn-hover-bg: #121212 !important;
+    --bs-btn-hover-border-color: #fff75d !important;
+    --bs-btn-focus-shadow-rgb: 25,135,84 !important;
+    --bs-btn-active-color: #f7ff00 !important;
+    --bs-btn-active-bg: #f7ff00 !important;
+    --bs-btn-active-border-color: #fff75d !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #fff75d !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-disabled-border-color: #fff75d !important;
+    --bs-gradient: none;
+  }
+
+  a {
+    color: #fff75d !important;
+    text-decoration: none !important;
+  }
+
+
 .results {
     background: #fff75d;
     width: inherit;
@@ -23,13 +77,16 @@ h1 {
     flex-direction: column;
 }
 button:hover {
-    background: #fff00a;
+    background: #ffffff12;
    
   }
+.d-block.w-100 {
+    filter: sepia(13%) saturate(0%) hue-rotate(130deg) brightness(95%) contrast(80%);
+  }
 button {
-background: #fff75d;
 border-radius: 5px;
 padding: 10px;
+
 }
 label {
     background: #fff75d ;
@@ -43,8 +100,9 @@ label {
   
     display: flex;
     flex-direction: column;
-    width:80vw;
+    width:50vw;
     margin-left: 5vw;
+    height: fit-content;
 }
 div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
     background: #fff75d;
@@ -52,8 +110,12 @@ div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
     top: -13;
     width: inherit;
 }
+.d-block.w-100{
+    width: initial !important;
+  }
+
 body {
-    background: #242424 !important;
+    background: #121212 !important
 }
 label:hover {
     background: #fff200;
@@ -61,20 +123,26 @@ label:hover {
 
 .allcontent {
     display: flex;
-
-    height: 40%;
+    height: fit-content;
 }
 .sideshow {
-    width: 30vw;
-    height: 100%;
-    margin-left: 5vw;
-    margin-right: 10vw;
+    width: 500px;
+    height: inherit !important;
+    margin-left: 12vw;
     border-radius: 10px;
+    margin-top: 4vh;
 }
 .carousel {
     position: relative;
-    background: aquamarine;
+    background: #fff200;
     border-radius: 10px;
+    width: 500px;
+    height: 750px;
+}
+.carousel-inner{
+    width: inherit !important;
+    height: inherit !important;
+    border-radius: 10px !important;
 }
 .carousel-item {
     border-radius: 10px;
@@ -84,10 +152,11 @@ img, svg {
 }
 button {
     border-radius: 10px !important;
+    background-color: #fff75d;
 }
 @media (max-width: 1200px) {
     .questions{
-        width: 80vw;
+        width: 50vw;
         margin: auto;
     }
     label {

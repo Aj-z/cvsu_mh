@@ -32,6 +32,8 @@ button.accordion-button.collapsed {
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
     background-color: #121212 !important;
+    margin-bottom: 1.2vh;
+
 }
 a.navbar-brand {
     color: yellow;
