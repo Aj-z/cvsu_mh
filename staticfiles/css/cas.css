@@ -77,11 +77,15 @@ a.navbar-brand.sc1 {
     flex-direction: column;
 }
 button:hover {
-    background: #ffffff12;
+    background:  #fffb00;
    
   }
 .d-block.w-100 {
-    filter: sepia(13%) saturate(0%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    filter: sepia(13%) saturate(0%) hue-rotate(130deg) brightness(50%) contrast(80%);
+  }
+  
+.d-block.w-100:hover {
+    filter:none;
   }
 button {
 border-radius: 5px;
@@ -155,9 +159,21 @@ button {
     background-color: #fff75d;
 }
 @media (max-width: 1200px) {
+    .carousel{
+        left: -10vw;
+        top: -15vh;
+        transform: scale(0.7);
+    }
+    .allcontent{
+        flex-direction: column;
+    }
+    .d-none {
+        display: flow;
+    }
     .questions{
-        width: 50vw;
-        margin: auto;
+        width: 100vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
     label {
         width: inherit;
