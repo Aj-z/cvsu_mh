@@ -578,6 +578,16 @@ def BAJ_QUIZ(request):
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor of Arts in Journalism"
+    College_Name = "College of Art And Sciences"
+    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
+    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
+    Carousel_1p="-Andrew Vachss"
+    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
+    Carousel_2p="-Finley Peter Dunne"
+    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
+    Carousel_3p="-Joseph Pulitzer"
 
 
     if request.method == "POST":
@@ -611,6 +621,16 @@ def BAJ_QUIZ(request):
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
         'css_style' : css_style,
+       'College_Name': College_Name,
+       'Carousel_1img': Carousel_1img,
+       'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
     })
 def BSE_ENGL_QUIZ(request):
     css_style = "cas.css"
