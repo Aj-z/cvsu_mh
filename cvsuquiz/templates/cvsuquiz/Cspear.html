@@ -1,23 +1,169 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Home</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="{% static 'css/cspear_view.css' %}"  type="text/css" rel="stylesheet">
+
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the CSPEAR!</h1>
-        <p>Test your knowledge with our quizzes.</p>
-
-        <h2>Available Quizzes:</h2>
-        <ul>
-            <li><a href="{% url 'BSESS_quiz' %}"> Try Quiz: BSESS (Bachelor of Sports and Exercise Science) </a></li>
-            <li><a href="{% url 'BPED_quiz' %}"> Try Quiz: BPED ( Bachelor of Physical Education )</a></li>
-        </ul>
-
-       
+  
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="title">
+        <a class="navbar-brand">College of Sports,</a>
+        <a class="navbar-brand sc1">Physical Education and Recreation</a>
+        </div>
+      
+        <button class="btn btn-outline-success d-flex" type="submit">Search</button>
+     
     </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="accordion accordion-horizontal" id="horizontalAccordion">
+      <!-- Accordion Item 1 -->
+      
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h2>Bachelor's<h2>
+          </button>
+        </h2>
+        
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#horizontalAccordion">
+          <div class="accordion-body">
+            <div class="accordion" id="undergradAccordion">
+          <!-- PHYSICAL EDUCATION -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingJournalism">
+              <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJournalism" aria-expanded="false" aria-controls="collapseJournalism" style="width:20vw">
+                <div>
+                  <h3 class="course">Bachelor of Physical Education</h3>
+                  <p class="discription">Prepares students for careers in teaching, coaching, and fitness, emphasizing health promotion, leadership, and program design.</p>
+                </div>
+              </button>
+            </h3>
+            <div id="collapseJournalism" class="accordion-collapse collapse science" aria-labelledby="headingJournalism" data-bs-parent="#undergradAccordion">
+              <div class="accordion-body">
+                 <b>Bachelor of Physical Education</b> 
+                <p>The Bachelor of Physical Education program delves into the principles of human movement, physical activity, and the role of sports in health and education. Students study anatomy, physiology, kinesiology, and teaching methodologies while exploring the cultural and social dimensions of physical activity, gaining a comprehensive understanding of physical education’s impact on individuals and communities.</p>
+                <p>This program fosters advanced skills in teaching, coaching, and fitness training, along with expertise in program design and implementation for various populations. Students develop critical thinking and leadership abilities, equipping them to promote health and wellness effectively while addressing societal needs through physical education and sports.</p>
+                <p>Graduates can pursue careers as educators, coaches, fitness trainers, or recreational program coordinators. Opportunities also exist in corporate wellness, community health promotion, and specialized fields like adaptive physical education. The program’s emphasis on versatility and innovation prepares graduates for diverse and dynamic roles in the fitness and education sectors.</p>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn more
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="{% url 'BPED_quiz' %}"> Try Quiz: BPED ( Bachelor of Physical Education )</a></li>
+                    <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/10/CMO-41-s-2017.pdf"> CMO: Policies, Standard And Guidelines for Journalism </a></li>
+                  </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- SPORTS AND EXERCISE SCIENCE-->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingEnglish">
+              <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnglish" aria-expanded="false" aria-controls="collapseEnglish" style="width:20vw">
+                <div>
+                  <h3 class="course">Bachelor of Science in Exercise And Sport Science</h3>
+                  <p class="discription">Focuses on optimizing athletic performance and health through careers in sports science, training, and wellness coaching.</p>
+                </div>
+                
+              </button>
+            </h3>
+            <div id="collapseEnglish" class="accordion-collapse collapse" aria-labelledby="headingEnglish" data-bs-parent="#undergradAccordion">
+              <div class="accordion-body">
+                <b>Bachelor of Science in Exercise And Sport Science</b> 
+                <p>focuses on the science of human performance, exercise, and sports management. Students explore biomechanics, sports psychology, exercise physiology, and nutrition, gaining a scientific perspective on optimizing athletic performance and promoting lifelong physical activity.</p>
+                <p>This program develops advanced knowledge in sports science, training design, and injury prevention while fostering research and analytical skills. Students gain practical experience through internships and hands-on learning, preparing them to apply evidence-based practices in enhancing physical performance and well-being.</p>
+                <p>Graduates are equipped for careers in sports science, athletic training, strength and conditioning, or wellness coaching. They can work in fitness centers, rehabilitation clinics, sports organizations, or research institutions. With the flexibility to pursue remote roles like online coaching or consulting, the program offers adaptability and relevance in the growing fields of health and sports science.</p>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn more
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><a href="{% url 'BSESS_quiz' %}"> Try Quiz: BSESS (Bachelor of Sports and Exercise Science) </a></li>
+                      <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/10/CMO-24-s-2017.pdf"> CMO: Policies, Standard And Guidelines for English Language Studies </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      
+
+      const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+// Function to handle the click event
+function handleClick(event) {
+    event.preventDefault();
+
+                // Check if media query matches
+                if (mediaQuery.matches) {
+                    // If the media query condition is true, hide the element
+                    const headingOne = document.querySelector('h2#headingOne');
+                    if (headingOne) {
+                        headingOne.style.display = 'none';
+                    }
+                }
+            }
+
+            // Add event listener to the element
+            const targetElement = document.querySelector('[data-bs-target="#collapseOne"]');
+            if (targetElement) {
+                targetElement.addEventListener('click', handleClick);
+            }
+      document.querySelector('[data-bs-target="#collapseOne"]').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default action of the link
+  
+        // Change the background to the image
+        document.body.style.backgroundImage = "url('/static/images/CSPEARback.png')"; 
+        // collapse open accordions
+        const collapsibleElements = document.querySelectorAll('.accordion-collapse');
+        collapsibleElements.forEach((element) => {
+          if (element.classList.contains('show')) {
+            const collapseInstance = bootstrap.Collapse.getInstance(element) || new bootstrap.Collapse(element);
+            collapseInstance.hide();
+    }
+  });
+  
+  
+      
+      });
+      document.querySelector('[data-bs-target="#collapseJournalism"]').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default action of the link
+  
+        // Change the background to the image
+        document.body.style.backgroundImage = "url('/static/images/BPED.png"; 
+  
+        // Optionally, hide the link once clicked (if you want)
+        this.style.display = 'flex';
+        
+      });
+      document.querySelector('[data-bs-target="#collapseEnglish"]').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default action of the link
+  
+        // Change the background to the image
+        document.body.style.backgroundImage = "url('/static/images/BSESS.png')"; 
+  
+  
+        // Optionally, hide the link once clicked (if you want)
+        this.style.display = 'flex';
+      });
+     
+    </script>
 </body>
 </html>
