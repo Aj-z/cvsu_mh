@@ -149,6 +149,22 @@ p{
     background-color: #18181800;
     box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 #eaff00;
 }
+.btn-outline-success {
+    --bs-btn-color: yellow !important;
+    --bs-btn-border-color: #0000 !important;
+    --bs-btn-hover-color: yellow !important;
+    --bs-btn-hover-bg: #19875400 !important;
+    --bs-btn-hover-border-color: yellow !important;
+    --bs-btn-focus-shadow-rgb: 25,135,84 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: yellow !important;
+    --bs-btn-active-border-color: yellow !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: yellow !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-disabled-border-color: yellow !important;
+    --bs-gradient: none !important;
+}
 
 @media (max-width: 768px) {
     .courses {
