@@ -130,11 +130,8 @@ label:hover {
     height: fit-content;
 }
 .sideshow {
-    width: 500px;
-    height: inherit !important;
-    margin-left: 12vw;
-    border-radius: 10px;
     margin-top: 4vh;
+    align-self: center;
 }
 .carousel {
     position: relative;
@@ -158,11 +155,21 @@ button {
     border-radius: 10px !important;
     background-color: #fff75d;
 }
+@media (min-width: 300px) {
+    .carousel-caption.d-none.d-md-block {
+        display: block !important;
+    }
+}
+@media (max-width: 1440px) and (min-width: 700px) {
+    .sideshow {
+        margin-top: 10vh;
+    }
+}
 @media (max-width: 1200px) {
     .carousel{
-        left: -10vw;
         top: -15vh;
         transform: scale(0.7);
+        display: grid;
     }
     .allcontent{
         flex-direction: column;
@@ -171,7 +178,7 @@ button {
         display: flow;
     }
     .questions{
-        width: 100vw;
+        width: 80vw;
         margin-left: 10vw;
         margin-right: 10vw;
     }
