@@ -39,15 +39,15 @@
             <div class="accordion" id="undergradAccordion">
           <!-- PHYSICAL EDUCATION -->
           <div class="accordion-item">
-            <h3 class="accordion-header" id="headingJournalism">
-              <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJournalism" aria-expanded="false" aria-controls="collapseJournalism" style="width:20vw">
+            <h3 class="accordion-header" id="headingPhysEd">
+              <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhysEd" aria-expanded="false" aria-controls="collapsePhysEd" style="width:20vw">
                 <div>
                   <h3 class="course">Bachelor of Physical Education</h3>
                   <p class="discription">Prepares students for careers in teaching, coaching, and fitness, emphasizing health promotion, leadership, and program design.</p>
                 </div>
               </button>
             </h3>
-            <div id="collapseJournalism" class="accordion-collapse collapse science" aria-labelledby="headingJournalism" data-bs-parent="#undergradAccordion">
+            <div id="collapsePhysEd" class="accordion-collapse collapse science" aria-labelledby="headingPhysEd" data-bs-parent="#undergradAccordion">
               <div class="accordion-body">
                  <b>Bachelor of Physical Education</b> 
                 <p>The Bachelor of Physical Education program delves into the principles of human movement, physical activity, and the role of sports in health and education. Students study anatomy, physiology, kinesiology, and teaching methodologies while exploring the cultural and social dimensions of physical activity, gaining a comprehensive understanding of physical education’s impact on individuals and communities.</p>
@@ -67,8 +67,8 @@
           </div>
           <!-- SPORTS AND EXERCISE SCIENCE-->
           <div class="accordion-item">
-            <h3 class="accordion-header" id="headingEnglish">
-              <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnglish" aria-expanded="false" aria-controls="collapseEnglish" style="width:20vw">
+            <h3 class="accordion-header" id="headingSportsExerScience">
+              <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSportsExerScience" aria-expanded="false" aria-controls="collapseSportsExerScience" style="width:20vw">
                 <div>
                   <h3 class="course">Bachelor of Science in Exercise And Sport Science</h3>
                   <p class="discription">Focuses on optimizing athletic performance and health through careers in sports science, training, and wellness coaching.</p>
@@ -76,7 +76,7 @@
                 
               </button>
             </h3>
-            <div id="collapseEnglish" class="accordion-collapse collapse" aria-labelledby="headingEnglish" data-bs-parent="#undergradAccordion">
+            <div id="collapseSportsExerScience" class="accordion-collapse collapse" aria-labelledby="headingSportsExerScience" data-bs-parent="#undergradAccordion">
               <div class="accordion-body">
                 <b>Bachelor of Science in Exercise And Sport Science</b> 
                 <p>focuses on the science of human performance, exercise, and sports management. Students explore biomechanics, sports psychology, exercise physiology, and nutrition, gaining a scientific perspective on optimizing athletic performance and promoting lifelong physical activity.</p>
@@ -143,7 +143,7 @@ function handleClick(event) {
   
       
       });
-      document.querySelector('[data-bs-target="#collapseJournalism"]').addEventListener('click', function (event) {
+      document.querySelector('[data-bs-target="#collapsePhysEd"]').addEventListener('click', function (event) {
         event.preventDefault(); // Prevent the default action of the link
   
         // Change the background to the image
@@ -153,7 +153,7 @@ function handleClick(event) {
         this.style.display = 'flex';
         
       });
-      document.querySelector('[data-bs-target="#collapseEnglish"]').addEventListener('click', function (event) {
+      document.querySelector('[data-bs-target="#collapseSportsExerScience"]').addEventListener('click', function (event) {
         event.preventDefault(); // Prevent the default action of the link
   
         // Change the background to the image
