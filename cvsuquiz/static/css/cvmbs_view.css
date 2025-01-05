@@ -1,0 +1,196 @@
+.card {
+    width:50000rem;
+    margin:5px;
+   
+}
+a {
+    color:white;
+    text-decoration: none !important;
+}
+body{
+    background: #5DB6F5;
+    background-image: url(/static/images/CVMBS_view.png);
+    background-size: cover;
+    overflow: auto;
+    transition: background-image 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: 40% 20%;
+    position: relative;
+
+}
+
+button.accordion-button.collapsed {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-decoration: none;
+    width: 30vw !important;
+}
+.courses {
+    display: flex;
+    flex-direction: row;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #3636367d !important;
+    margin-bottom: 1.2vh;
+}
+a.navbar-brand {
+    color: #ffffff;
+    font-family: 'Times New Roman', serif;
+}
+.navbar-brand {
+    font-size: 1.2rem;
+    margin-left: 1vw;
+    margin-bottom: -15px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: white(255 240 85);
+}
+button:focus:not(:focus-visible) {
+    outline: 0;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+.icon {
+    font-family: core-icons !important;
+   
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a.navbar-brand.sc1 {
+    margin-bottom: 1px;
+}
+
+button.accordion-button.collapsed {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-decoration: none;
+   
+}
+button.accordion-button.course1 {
+    width: 28vw !important;
+}
+button.accordion-button.course1.collapsed{
+    width: 28vw !important;
+}
+button.accordion-button.collapsed {
+    width: inherit !important;
+}
+.accordion-item {
+    background: rgba(0, 0, 0, 0);
+}
+h2 {
+    font-family: 'Times New Roman', serif;
+}
+h3{
+    margin-bottom:0px;
+    font-size: medium;
+}
+p{
+    color:#BBA4B8;
+    font-size: small;
+    font-weight: 400;
+}
+.accordion-horizontal .accordion-header {
+    background: rgba(0, 0, 0, 0);
+}
+.accordion-horizontal .accordion-item {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 5px;
+  }
+
+.accordion-horizontal .accordion-header {
+    flex: 0 0 150px;
+  }
+
+  .accordion-horizontal .accordion-button {
+    width: 100%;
+    text-align: left;
+  }
+
+  .accordion-horizontal .accordion-collapse {
+    flex: 1;
+
+  }
+.accordion-body {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+.accordion-item {
+    border: 0px;
+}
+.container.mt-4 {
+    margin: 0;
+}
+.list-group-item {
+    --bs-list-group-color:none;
+        }
+.list-group{
+    --bs-body-bg: none;
+}
+.card-nonhover {
+    z-index: 2;
+    position: absolute;
+
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #18181800;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 #ffffff;
+}
+.btn-outline-success {
+    --bs-btn-color: white !important;
+    --bs-btn-border-color: #0000 !important;
+    --bs-btn-hover-color: white !important;
+    --bs-btn-hover-bg: #19875400 !important;
+    --bs-btn-hover-border-color: white!important;
+    --bs-btn-focus-shadow-rgb: 25,135,84 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: white !important;
+    --bs-btn-active-border-color: white !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: white !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-disabled-border-color: white !important;
+    --bs-gradient: none !important;
+}
+
+@media (max-width: 768px) {
+    .courses {
+        flex-direction:column;
+    }
+    .card{
+        width:77vw;
+    }
+    .accordion-horizontal .accordion-item {
+        display: flex;
+        margin-bottom: 5px;
+        flex-direction: column;}
+    button.accordion-button.collapsed.course1 {
+        width: 80vw !important;
+    }
+    h3.course {
+        width: 80vw !important;
+    }
+    button.accordion-button.course1 {
+        width: 85vw !important;
+    }
+
+  }
+    
+  @media (min-width: 1200px) {
+    .h2, h2 {
+        font-size: 3rem;
+    }
+}
