@@ -1,23 +1,169 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Home</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="{% static 'css/cspear_view.css' %}"  type="text/css" rel="stylesheet">
+
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the College of Criminal Justice</h1>
-        <p>Test your knowledge with our quizzes.</p>
-
-        <h2>Available Quizzes:</h2>
-        <ul>
-            <li><a href="{% url 'BSE-ENGL_quiz' %}"> Try Quiz: BSE-ENGL (Bachelor of Science In Criminology) </a></li>
-            <li><a href="{% url 'BSE-FILI_quiz' %}"> Try Quiz: BSISM (Bachelor of Science In Industrial Security Management) </a></li>
-        </ul>
-
-       
+  
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="title">
+        <a class="navbar-brand">College of Sports,</a>
+        <a class="navbar-brand sc1">Physical Education and Recreation</a>
+        </div>
+      
+        <button class="btn btn-outline-success d-flex" ><a href="/cvsu_View">Go Back</a></button>
+     
     </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="accordion accordion-horizontal" id="horizontalAccordion">
+      <!-- Accordion Item 1 -->
+      
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h2>Bachelor's<h2>
+          </button>
+        </h2>
+        
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#horizontalAccordion">
+          <div class="accordion-body">
+            <div class="accordion" id="undergradAccordion">
+          <!-- PHYSICAL EDUCATION -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingPhysEd">
+              <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhysEd" aria-expanded="false" aria-controls="collapsePhysEd" style="width:20vw">
+                <div>
+                  <h3 class="course">Bachelor of Science In Criminology</h3>
+                  <p class="discription">This program equips students with the knowledge and skills to analyze, prevent, and manage crime, preparing them for impactful careers in law enforcement, justice, and public safety.</p>
+                </div>
+              </button>
+            </h3>
+            <div id="collapsePhysEd" class="accordion-collapse collapse science" aria-labelledby="headingPhysEd" data-bs-parent="#undergradAccordion">
+              <div class="accordion-body">
+                 <b>Bachelor of Science In Criminology</b> 
+                <p>The Bachelor of Science in Criminology program examines the causes, prevention, and control of crime through a comprehensive study of criminal behavior, law enforcement, and the justice system. </p>
+                <p>Students gain in-depth knowledge of criminological theories, forensic science, criminal law, and investigative techniques while exploring ethical and societal implications. This program hones critical thinking, analytical, and leadership skills, preparing students to address crime-related challenges effectively.</p>
+                <p>Graduates are equipped for careers in law enforcement, forensic analysis, corrections, security management, and criminological research, with opportunities to contribute to public safety and justice.</p>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn more
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'BPED_quiz' %}"> Try Quiz: BPED ( Bachelor of Science In Criminology )</a></li>
+                    <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/11/CMO-No.-80-s.-2017.pdf"> CMO: Policies, Standard And Guidelines for Criminology</a></li>
+                  </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- SPORTS AND EXERCISE SCIENCE-->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingSportsExerScience">
+              <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSportsExerScience" aria-expanded="false" aria-controls="collapseSportsExerScience" style="width:20vw">
+                <div>
+                  <h3 class="course">Bachelor of Science in Industrial Security Management</h3>
+                  <p class="discription">This program prepares students to manage risks and implement security strategies, equipping them for careers in protecting people, assets, and information across diverse industries.</p>
+                </div>
+                
+              </button>
+            </h3>
+            <div id="collapseSportsExerScience" class="accordion-collapse collapse" aria-labelledby="headingSportsExerScience" data-bs-parent="#undergradAccordion">
+              <div class="accordion-body">
+                <b>Bachelor of Science in Exercise And Sport Science</b> 
+                <p>The Bachelor of Science in Industrial Security Management program focuses on safeguarding people, assets, and information through modern security practices and risk management strategies.Students study principles of physical security, cybersecurity, crisis management, and threat assessment, alongside ethical and legal considerations in industrial security.  </p>
+                <p>The program emphasizes leadership, strategic planning, and technological proficiency, equipping graduates to address security challenges in dynamic environments.</p>
+                <p>Graduates can pursue roles as security consultants, risk analysts, corporate security managers, or specialists in cybersecurity and emergency preparedness, contributing to organizational resilience and safety.</p>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn more
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item"href="{% url 'BSESS_quiz' %}"> Try Quiz: BSESS (Bachelor of Science In Industrial Security Management) </a></li>
+                      <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/11/CMO-No.-81-s.-2017.pdf"> CMO: Policies, Standard And Guidelines for Industrial Security Management </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      
+
+      const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+// Function to handle the click event
+function handleClick(event) {
+    event.preventDefault();
+
+                // Check if media query matches
+                if (mediaQuery.matches) {
+                    // If the media query condition is true, hide the element
+                    const headingOne = document.querySelector('h2#headingOne');
+                    if (headingOne) {
+                        headingOne.style.display = 'none';
+                    }
+                }
+            }
+
+            // Add event listener to the element
+            const targetElement = document.querySelector('[data-bs-target="#collapseOne"]');
+            if (targetElement) {
+                targetElement.addEventListener('click', handleClick);
+            }
+      document.querySelector('[data-bs-target="#collapseOne"]').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default action of the link
+  
+        // Change the background to the image
+        document.body.style.backgroundImage = "url('/static/images/CSPEARback.png')"; 
+        // collapse open accordions
+        const collapsibleElements = document.querySelectorAll('.accordion-collapse');
+        collapsibleElements.forEach((element) => {
+          if (element.classList.contains('show')) {
+            const collapseInstance = bootstrap.Collapse.getInstance(element) || new bootstrap.Collapse(element);
+            collapseInstance.hide();
+    }
+  });
+  
+  
+      
+      });
+      document.querySelector('[data-bs-target="#collapsePhysEd"]').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default action of the link
+  
+        // Change the background to the image
+        document.body.style.backgroundImage = "url('/static/images/BPED.png"; 
+  
+        // Optionally, hide the link once clicked (if you want)
+        this.style.display = 'flex';
+        
+      });
+      document.querySelector('[data-bs-target="#collapseSportsExerScience"]').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default action of the link
+  
+        // Change the background to the image
+        document.body.style.backgroundImage = "url('/static/images/BSESS.png')"; 
+  
+  
+        // Optionally, hide the link once clicked (if you want)
+        this.style.display = 'flex';
+      });
+     
+    </script>
 </body>
 </html>
