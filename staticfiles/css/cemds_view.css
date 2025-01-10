@@ -8,7 +8,7 @@ a {
     text-decoration: none !important;
 }
 body{
-    background: #3636367d !important;
+    background: #C10F0F !important;
     background-image: url(/static/images/CVMBS_view.png);
     background-size: cover;
     overflow: auto;
@@ -31,7 +31,7 @@ button.accordion-button.collapsed {
 }
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: #3636367d !important;
+    background-color: #C10F0F !important;
     margin-bottom: 1.2vh;
 }
 a.navbar-brand {
@@ -96,8 +96,8 @@ h3{
     font-size: medium;
 }
 p{
-    color:#BBA4B8;
-    font-size: small;
+    color:white;
+    font-size: 0.9em;
     font-weight: 400;
 }
 .accordion-horizontal .accordion-header {

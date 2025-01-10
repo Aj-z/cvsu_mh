@@ -1304,7 +1304,18 @@ def con_home_view(request):
 # ------  CEIT ---------
 def ceit_home_view(request):
     return render(request, 'cvsuquiz/ceit.html')
+def BSABE_QUIZ(request):
+def BSARCH_QUIZ(request):
+def BSCE_QUIZ(request):
+def BSCpE_QUIZ(request):
+def BSCS_QUIZ(request):
+def BSEE_QUIZ(request):
+def BSINDT_AT_QUIZ(request):
+def BSINDT_ET_QUIZ(request):
+def BSINDT_EX_QUIZ(request):
+def BSIT_QUIZ(request):
+def BSOA_QUIZ(request):
 
-# ------  CEIT ---------
+# ------  CEMDS ---------
 def cemds_home_view(request):
     return render(request, 'cvsuquiz/cemds.html')
