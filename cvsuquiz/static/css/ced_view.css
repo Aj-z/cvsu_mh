@@ -31,7 +31,7 @@ button.accordion-button.collapsed {
 }
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: #5db6f580 !important ;
+    background-color: #7dc9ff42 !important;
     margin-bottom: 1.2vh;
 }
 a.navbar-brand {
