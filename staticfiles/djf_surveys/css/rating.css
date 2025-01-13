@@ -17,24 +17,22 @@
     background-repeat: no-repeat;
     background-image: url("../images/star-border.png");
 }
- blockquote.p-6.border.border-gray-100.rounded-lg.shadow-lg.bg-white {
-        display: grid;
-    }
-
-blockquote.p-6.border.border-gray-100.rounded-lg.shadow-lg.bg-white {
-    display: grid;
-}
 @media screen and (max-width: 500px){
     .grid.xs\:grid-cols-1.sm\:grid-cols-2.md\:grid-cols-2.lg\:grid-cols-3.gap-4{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: -100px;
-        
+        display:ruby;
     }
-    p.text-lg.text-neutral-900 {
-    font-size: .9rem;
-    }
-    .flex.-space-x-4.hover\:space-x-1.float-right{
-        height:100%;
-    }
+   .p-4 {
+       margin: auto;
+   }
+   .chart-container {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;     /* Center the title and chart horizontally */
+    width: 100%;             /* Ensure the chart container takes the full width */
+  }
 }
+.chart-title-container {
+    font-size: 15px;       
+    padding: 20px 0 20px 20px;       
+    width: 100%;           
+  }

@@ -24,4 +24,15 @@
    .p-4 {
        margin: auto;
    }
+   .chart-container {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;     /* Center the title and chart horizontally */
+    width: 100%;             /* Ensure the chart container takes the full width */
+  }
 }
+.chart-title-container {
+    font-size: 15px;       
+    padding: 20px 0 20px 20px;       
+    width: 100%;           
+  }
