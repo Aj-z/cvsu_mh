@@ -1235,3 +1235,113 @@ class BSOA_Quiz(forms.Form):
         widget=forms.RadioSelect,
         label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
     )        
+
+#Con Quiz
+class BSMT_Quiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. By prioritizing advertiser requests over editorial content'),
+        ('2', 'B. By clearly separating editorial content from advertisements'),
+        ('3', 'C. By editing stories to align with advertiser preferences'),
+        ('4', 'D. By avoiding controversial topics altogether'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Ensuring information is obtained legally and ethically'),
+        ('2', 'B. Meeting tight deadlines for publishing stories'),
+        ('3', 'C. Writing engaging headlines for maximum audience reach'),
+        ('4', 'D. Following up on leads that seem less credible'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
+        ('2', 'B. To sensationalize details to attract public attention'),
+        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
+        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="What is the most significant ethical challenge in investigative journalism?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+    )        
+class BSM_Quiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. By prioritizing advertiser requests over editorial content'),
+        ('2', 'B. By clearly separating editorial content from advertisements'),
+        ('3', 'C. By editing stories to align with advertiser preferences'),
+        ('4', 'D. By avoiding controversial topics altogether'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Ensuring information is obtained legally and ethically'),
+        ('2', 'B. Meeting tight deadlines for publishing stories'),
+        ('3', 'C. Writing engaging headlines for maximum audience reach'),
+        ('4', 'D. Following up on leads that seem less credible'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
+        ('2', 'B. To sensationalize details to attract public attention'),
+        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
+        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="What is the most significant ethical challenge in investigative journalism?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+    )        
+class BSN_Quiz(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. By prioritizing advertiser requests over editorial content'),
+        ('2', 'B. By clearly separating editorial content from advertisements'),
+        ('3', 'C. By editing stories to align with advertiser preferences'),
+        ('4', 'D. By avoiding controversial topics altogether'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Ensuring information is obtained legally and ethically'),
+        ('2', 'B. Meeting tight deadlines for publishing stories'),
+        ('3', 'C. Writing engaging headlines for maximum audience reach'),
+        ('4', 'D. Following up on leads that seem less credible'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
+        ('2', 'B. To sensationalize details to attract public attention'),
+        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
+        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="What is the most significant ethical challenge in investigative journalism?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+    )        

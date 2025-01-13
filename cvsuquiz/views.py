@@ -8,7 +8,8 @@ from .forms import (BsessQuiz, BpedQuiz, BsaQuiz,
                     BSBIO_ECOLOGY_Quiz, BSBIO_GENETICS_Quiz, BSBIO_GENETICS_Quiz,
                     BSPSYC_Quiz, BSSW_Quiz, BSABE_Quiz, BSARCH_Quiz, BSCE_Quiz, 
                     BSCpE_Quiz, BSCS_Quiz, BSEE_Quiz, BSINDT_AT_Quiz, 
-                    BSINDT_ET_Quiz, BSINDT_EX_Quiz, BSIT_Quiz, BSOA_Quiz)
+                    BSINDT_ET_Quiz, BSINDT_EX_Quiz, BSIT_Quiz, BSOA_Quiz,
+                    BSMT_Quiz, BSM_Quiz, BSN_Quiz)
 
 # ------  CSPEAR  ---------
 def cspear_home_view(request):
@@ -1302,7 +1303,186 @@ def BSSW_QUIZ(request):
 # ------  CON ---------
 def con_home_view(request):
     return render(request, 'cvsuquiz/con.html')
+def BSMT_QUIZ(request):
+    css_style = "cas.css"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    COURSE_NAME = "Bachelor of Arts in Journalism"
+    College_Name = "College of Art And Sciences"
+    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
+    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
+    Carousel_1p="-Andrew Vachss"
+    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
+    Carousel_2p="-Finley Peter Dunne"
+    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
+    Carousel_3p="-Joseph Pulitzer"
 
+
+    if request.method == "POST":
+        form = BajQuiz(request.POST)
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '1':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is A"
+
+            if answer_q3 == '3':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+        form = BajQuiz()
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+       'College_Name': College_Name,
+       'Carousel_1img': Carousel_1img,
+       'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+    })
+def BSM_QUIZ(request):
+    css_style = "cas.css"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    COURSE_NAME = "Bachelor of Arts in Journalism"
+    College_Name = "College of Art And Sciences"
+    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
+    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
+    Carousel_1p="-Andrew Vachss"
+    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
+    Carousel_2p="-Finley Peter Dunne"
+    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
+    Carousel_3p="-Joseph Pulitzer"
+
+
+    if request.method == "POST":
+        form = BajQuiz(request.POST)
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '1':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is A"
+
+            if answer_q3 == '3':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+        form = BajQuiz()
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+       'College_Name': College_Name,
+       'Carousel_1img': Carousel_1img,
+       'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+    })
+def BSN_QUIZ(request):
+    css_style = "cas.css"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    COURSE_NAME = "Bachelor of Arts in Journalism"
+    College_Name = "College of Art And Sciences"
+    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
+    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
+    Carousel_1p="-Andrew Vachss"
+    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
+    Carousel_2p="-Finley Peter Dunne"
+    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
+    Carousel_3p="-Joseph Pulitzer"
+
+
+    if request.method == "POST":
+        form = BajQuiz(request.POST)
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '1':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is A"
+
+            if answer_q3 == '3':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+        form = BajQuiz()
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+       'College_Name': College_Name,
+       'Carousel_1img': Carousel_1img,
+       'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+    });
 # ------  CEIT ---------
 def ceit_home_view(request):
     return render(request, 'cvsuquiz/ceit.html')

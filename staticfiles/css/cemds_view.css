@@ -8,8 +8,8 @@ a {
     text-decoration: none !important;
 }
 body{
-    background: #C10F0F !important;
-    background-image: url(/static/images/CVMBS_view.png);
+    background: #C10F0F;
+    background-image: url(/static/images/CEMDS_view.png);
     background-size: cover;
     overflow: auto;
     transition: background-image 0.5s ease-in-out;
