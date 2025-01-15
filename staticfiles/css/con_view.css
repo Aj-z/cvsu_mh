@@ -9,7 +9,7 @@ a {
 }
 body{
     background: #ffffff;
-    background-image: url(/static/images/CEMDS_view.png);
+    background-image: url(/static/images/CON_view.png);
     background-size: cover;
     overflow: auto;
     transition: background-image 0.5s ease-in-out;
@@ -41,7 +41,7 @@ a.navbar-brand {
 .navbar-brand {
     font-size: 1.2rem;
     margin-left: 1vw;
-    margin-bottom: -15px;
+   
 }
 .title {
     display: flex;
@@ -53,7 +53,7 @@ a.navbar-brand {
 button:focus:not(:focus-visible) {
     outline: 0;
     background: rgba(0, 0, 0, 0);
-    color: white;
+    color: #3E781F;
 }
 .icon {
     font-family: core-icons !important;
@@ -72,7 +72,7 @@ a.navbar-brand.sc1 {
 
 button.accordion-button.collapsed {
     background: rgba(0, 0, 0, 0);
-    color: white;
+    color: #3E781F;
     text-decoration: none;
    
 }
@@ -94,11 +94,12 @@ h2 {
 h3{
     margin-bottom:0px;
     font-size: medium;
+    font-weight: 600;
 }
 p{
     color:#2ABC40;
     font-size: 0.9em;
-    font-weight: 400;
+    font-weight: 550;
 }
 .accordion-horizontal .accordion-header {
     background: rgba(0, 0, 0, 0);
@@ -147,7 +148,7 @@ p{
 .accordion-button:not(.collapsed) {
     color: #3E781F;
     background-color: #18181800;
-    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 #ffffff;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 #3E781F;
 }
 .btn-outline-success {
     --bs-btn-color: #3E781F !important;
@@ -157,7 +158,7 @@ p{
     --bs-btn-hover-border-color: #3E781F!important;
     --bs-btn-focus-shadow-rgb: 25,135,84 !important;
     --bs-btn-active-color: #3E781F !important;
-    --bs-btn-active-bg: #3E781F !important;
+    --bs-btn-active-bg: #3e781f00 !important;
     --bs-btn-active-border-color: #3E781F !important;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
     --bs-btn-disabled-color: #3E781F!important;
