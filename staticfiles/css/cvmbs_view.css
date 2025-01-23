@@ -8,7 +8,7 @@ a {
     text-decoration: none !important;
 }
 body{
-    background: #3636367d !important;
+    background: #3636367d;
     background-image: url(/static/images/CVMBS_view.png);
     background-size: cover;
     overflow: auto;
