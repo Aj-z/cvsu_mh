@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.urls import reverse
 from .forms import (BsessQuiz, BpedQuiz, BsaQuiz, 
                     BsesQuiz, BaeQuiz, BsftQuiz, Bsed_EnglQuiz, 
                     Bsed_FiliQuiz, Bsed_MathQuiz, Bsed_ScieQuiz,
@@ -591,6 +592,7 @@ def BAJ_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
     Carousel_3p="-Joseph Pulitzer"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -634,6 +636,7 @@ def BAJ_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSE_ENGL_QUIZ(request):
     css_style = "cas.css"
@@ -651,6 +654,7 @@ def BSE_ENGL_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/3700658/pexels-photo-3700658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="The humanities are not a luxury. They reflect the creativity of a free society."
     Carousel_3p="- Drew Gilpin Faust"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -694,6 +698,7 @@ def BSE_ENGL_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BAPS_QUIZ(request):
     css_style = "cas.css"
@@ -711,6 +716,7 @@ def BAPS_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/8112195/pexels-photo-8112195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="Those who deny freedom to others deserve it not for themselves"
     Carousel_3p="- Abraham Lincoln"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -754,6 +760,7 @@ def BAPS_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSAM_QUIZ(request):
     css_style = "cas.css"
@@ -771,6 +778,7 @@ def BSAM_QUIZ(request):
     Carousel_3img ="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/585px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg"
     Carousel_3h5="Pure mathematics is, in its way, the poetry of logical ideas."
     Carousel_3p="- Albert Einstein"
+    Go_back=reverse('CAS_home')
     
 
 
@@ -815,6 +823,7 @@ def BSAM_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
         
     })
 def BSBIO_ANIMALBIO_QUIZ(request):
@@ -833,6 +842,7 @@ def BSBIO_ANIMALBIO_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/19916617/pexels-photo-19916617/free-photo-of-two-marine-iguanas-sitting-on-a-rocky-surface.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="The more clearly we can focus our attention on the wonders and realities of the universe about us, the less taste we shall have for destruction."
     Carousel_3p="-  Rachel Carson"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -876,6 +886,7 @@ def BSBIO_ANIMALBIO_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSBIO_PLANTBIO_QUIZ(request):
     css_style = "cas.css"
@@ -893,6 +904,7 @@ def BSBIO_PLANTBIO_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/4608993/pexels-photo-4608993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="Look deep into nature, and then you will understand everything better."
     Carousel_3p="- Albert Einstein"
+    Go_back=reverse('CAS_home')
     
 
 
@@ -937,6 +949,7 @@ def BSBIO_PLANTBIO_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
         
     })
 def BSBIO_MICROBIO_QUIZ(request):
@@ -955,6 +968,7 @@ def BSBIO_MICROBIO_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/6203349/pexels-photo-6203349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="Biology gives you a brain. Life turns it into a mind."
     Carousel_3p="- Jeffrey Eugenides"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -998,6 +1012,7 @@ def BSBIO_MICROBIO_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSBIO_MEDICALBIO_QUIZ(request):
     css_style = "cas.css"
@@ -1015,6 +1030,7 @@ def BSBIO_MEDICALBIO_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/2678059/pexels-photo-2678059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="It is far more important to know what person the disease has than what disease the person has"
     Carousel_3p="- Hippocrates"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -1058,6 +1074,7 @@ def BSBIO_MEDICALBIO_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSBIO_ECOLOGY_QUIZ(request):
     css_style = "cas.css"
@@ -1075,6 +1092,7 @@ def BSBIO_ECOLOGY_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/2319029/pexels-photo-2319029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="The Earth is what we all have in common."
     Carousel_3p="- Wendell Berry"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -1118,6 +1136,7 @@ def BSBIO_ECOLOGY_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSBIO_GENETICS_QUIZ(request):
     css_style = "cas.css"
@@ -1135,6 +1154,7 @@ def BSBIO_GENETICS_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/3825379/pexels-photo-3825379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="The ultimate aim of the modern movement in biology is to explain all biology in terms of physics and chemistry"
     Carousel_3p="- Francis Crick"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -1178,6 +1198,7 @@ def BSBIO_GENETICS_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSPSYC_QUIZ(request):
     css_style = "cas.css"
@@ -1195,6 +1216,7 @@ def BSPSYC_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/6249474/pexels-photo-6249474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5="The curious paradox is that when I accept myself just as I am, then I can change."
     Carousel_3p="- Carl Rogers"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -1238,6 +1260,7 @@ def BSPSYC_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSSW_QUIZ(request):
     css_style = "cas.css"
@@ -1255,6 +1278,7 @@ def BSSW_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5=" Social justice is the great work of our generation. It is the moral obligation of those with the capacity to help, to do so."
     Carousel_3p="- Whitney M. Young Jr."
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -1298,6 +1322,7 @@ def BSSW_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 
 # ------  CON ---------
@@ -1487,25 +1512,26 @@ def BSN_QUIZ(request):
 def ceit_home_view(request):
     return render(request, 'cvsuquiz/ceit.html')
 def BSABE_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "ceit.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    COURSE_NAME = "Bachelor of Science In Agricultural and Biosystems Engineering"
+    College_Name = "College of Engineering and Information Technology"
+    Carousel_1img ="https://images.pexels.com/photos/23698640/pexels-photo-23698640/free-photo-of-scenic-view-of-a-farm-with-a-wind-turbine-and-mountains-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The best way to predict the future is to create it."
+    Carousel_1p="-Peter Drucker"
+    Carousel_2img ="https://images.pexels.com/photos/16692986/pexels-photo-16692986/free-photo-of-drone-in-rural-scenery.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Engineering is the art of directing the great sources of power in nature for the use and convenience of man."
+    Carousel_2p="-Thomas Tredgold"
+    Carousel_3img ="https://images.pexels.com/photos/16511757/pexels-photo-16511757/free-photo-of-rows-of-lush-lettuce-beds-in-a-greenhouse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings."
+    Carousel_3p="-Masanobu Fukuoka"
+    Go_back=reverse('CEIT_home')
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+        form = BSABE_Quiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -1516,17 +1542,17 @@ def BSABE_QUIZ(request):
             else:
                 feedback_q1 = "Wrong! The correct answer is B"
 
-            if answer_q2 == '1':
+            if answer_q2 == '2':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is B"
 
-            if answer_q3 == '3':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
-        form = BajQuiz()
+        form = BSABE_Quiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -1545,6 +1571,7 @@ def BSABE_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSARCH_QUIZ(request):
     css_style = "cas.css"
