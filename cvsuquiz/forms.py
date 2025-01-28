@@ -841,39 +841,39 @@ class BSSW_Quiz(forms.Form):
 #Ceit Quiz
 class BSABE_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Increasing the use of synthetic fertilizers to boost crop yields.'),
+        ('2', 'B. Adopting rotational grazing and cover cropping.'),
+        ('3', 'C. Expanding monoculture practices to maximize profits.'),
+        ('4', 'D. Intensifying livestock feed with high-energy grains.'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. Neural networks for crop yield prediction'),
+        ('2', 'B. GIS for geospatial mapping and data analysis.'),
+        ('3', 'C. IoT for real-time environmental monitoring.'),
+        ('4', 'D. Blockchain for traceability in supply chains.'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. Thermal conductivity to handle extreme temperatures.'),
+        ('2', 'B. Tensile strength to withstand dynamic loads.'),
+        ('3', 'C. Electrical resistivity to ensure insulation.'),
+        ('4', 'D. Porosity to reduce weight and increase flexibility'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Plant and Livestock Systems and Environment: Which of the following is the most sustainable method to minimize greenhouse gas emissions in integrated crop-livestock systems? "
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Computer Application in AB Engineering: In precision agriculture, which computer application technique is used to analyze spatial variability in fields for site-specific management?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Properties of AB Materials: Which property is most critical for assessing the mechanical durability of bio-based composites used in agricultural machinery?"
     )        
 class BSARCH_Quiz(forms.Form):
     CHOICES_Q1 = [
