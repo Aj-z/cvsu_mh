@@ -1574,46 +1574,47 @@ def BSABE_QUIZ(request):
         'Go_back': Go_back
     })
 def BSARCH_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "ceit.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    COURSE_NAME = "Bachelor of Science In Architecture"
+    College_Name = "College of Engineering and Information Technology"
+    Carousel_1img ="https://scontent.fcrk3-1.fna.fbcdn.net/v/t39.30808-6/475525317_4764273517131662_5888292757694974785_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AeiV0WpDHsMQ7kNvgEkPbBp&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&_nc_gid=AUkmpavA2p9V4jw0aBBPeMb&oh=00_AYCJk4RD8eY3FhXVGNe0AloXJWKXAO4F_O0GQdo1uXu6kw&oe=67A01A89"
+    Carousel_1h5="Architecture should speak of its time and place, but yearn for timelessness."
+    Carousel_1p="-Frank Gehry"
+    Carousel_2img ="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/475307401_4764273557131658_5286387228374123926_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6m10DzeXN3EQ7kNvgFSMPuj&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=AfembqTUxXRi_JE_WbET7t2&oh=00_AYCynO1utBU3YWs-kn-5V1aqJMmqBAJm9p5S3U0xJd3-mQ&oe=67A00ED2"
+    Carousel_2h5="Form follows function that has been misunderstood. Form and function should be one, joined in a spiritual union."
+    Carousel_2p="-Frank Lloyd Wright"
+    Carousel_3img ="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/475533252_4764273533798327_4956764252380304385_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KJrv6CdDzIkQ7kNvgG2Rd4U&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=ApfARypAzixCz5TCl6RRmgQ&oh=00_AYDg7rei8fl05fUoR4OumhvVXfdv2SFHlk_URBcCDd3rVg&oe=67A028D4"
+    Carousel_3h5="Architecture is the learned game, correct and magnificent, of forms assembled in light."
+    Carousel_3p="-Le Corbusier"
+    Go_back=reverse('CEIT_home')
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+        form = BSARCH_Quiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
             answer_q3 = form.cleaned_data['answer_q3']
 
-            if answer_q1 == '2':
+            if answer_q1 == '3':
                 feedback_q1 = "Correct!"
             else:
-                feedback_q1 = "Wrong! The correct answer is B"
+                feedback_q1 = "Wrong! The correct answer is C"
 
-            if answer_q2 == '1':
+            if answer_q2 == '3':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is C"
 
-            if answer_q3 == '3':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
-        form = BajQuiz()
+        form = BSARCH_Quiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -1632,6 +1633,7 @@ def BSARCH_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSCE_QUIZ(request):
     css_style = "cas.css"

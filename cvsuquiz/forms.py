@@ -877,39 +877,39 @@ class BSABE_Quiz(forms.Form):
     )        
 class BSARCH_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Proportion'),
+        ('2', 'B. Balance'),
+        ('3', 'C. Unity'),
+        ('4', 'D. Rhythm'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. Site zoning regulations'),
+        ('2', 'B. Material cost and availability'),
+        ('3', 'C. Lateral load resistance and wind forces'),
+        ('4', 'D. Floor-to-ceiling height preference'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. To support vertical loads'),
+        ('2', 'B. To resist lateral forces from wind and earthquakes: '),
+        ('3', 'C. To provide insulation'),
+        ('4', 'D. To enhance aesthetic appeal'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Theory of Architecture 1: Which architectural principle is best described as the harmonious arrangement of parts  "
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Architectural Design 5: When designing high-rise buildings, which of the following is a key factor in determining the structural system? "
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Architectural Structures: What is the primary purpose of a shear wall in a building structure?"
     )        
 class BSCE_Quiz(forms.Form):
     CHOICES_Q1 = [
