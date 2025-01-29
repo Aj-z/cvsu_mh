@@ -1589,6 +1589,7 @@ def BSARCH_QUIZ(request):
     Carousel_3img ="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/475533252_4764273533798327_4956764252380304385_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KJrv6CdDzIkQ7kNvgG2Rd4U&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=ApfARypAzixCz5TCl6RRmgQ&oh=00_AYDg7rei8fl05fUoR4OumhvVXfdv2SFHlk_URBcCDd3rVg&oe=67A028D4"
     Carousel_3h5="Architecture is the learned game, correct and magnificent, of forms assembled in light."
     Carousel_3p="-Le Corbusier"
+    Go_back=reverse('CEIT_home')
 
 
     if request.method == "POST":
@@ -1632,6 +1633,7 @@ def BSARCH_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSCE_QUIZ(request):
     css_style = "cas.css"
