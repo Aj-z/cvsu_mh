@@ -913,39 +913,39 @@ class BSARCH_Quiz(forms.Form):
     )        
 class BSCE_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. To regulate building codes and construction permits'),
+        ('2', 'B. To ensure the competence and ethical standards of engineers'),
+        ('3', 'C. To manage public infrastructure projects'),
+        ('4', 'D. To establish the pricing for civil engineering services'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. Energy conservation'),
+        ('2', 'B. Mass conservation'),
+        ('3', 'C. Pressure equilibrium'),
+        ('4', 'D. Force distribution'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. 0.2 MPa'),
+        ('2', 'B. 0.5 MPa'),
+        ('3', 'C. 2 MPa'),
+        ('4', 'D. 5 MPa'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="CE Laws: Which of the following is the primary function of the Philippine Professional Regulation Commission (PRC) for civil engineers?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Hydraulics: In hydraulics, the continuity equation is based on the principle of:"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Structural Theory: A column with a length of 6 meters is subjected to a compressive force of 100 kN. The column has a cross-sectional area of 500 cm². What is the stress on the column?"
     )        
 class BSCpE_Quiz(forms.Form):
     CHOICES_Q1 = [
