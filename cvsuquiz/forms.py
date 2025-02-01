@@ -940,7 +940,7 @@ class BSCE_Quiz(forms.Form):
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="Hydraulics: In hydraulics, the continuity equation is based on the principle of:"
+        label="Hydraulics: In hydraulics, the continuity equation is based on the principle of"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
@@ -949,39 +949,39 @@ class BSCE_Quiz(forms.Form):
     )        
 class BSCpE_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. To eliminate noise from a signal'),
+        ('2', 'B. To determine the minimum sampling rate for accurate reconstruction'),
+        ('3', 'C. to compress digital signals efficiently'),
+        ('4', 'D. To convert digital signals back to analog'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. AND'),
+        ('2', 'B. OR'),
+        ('3', 'C. XOR'),
+        ('4', 'D. NOR'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. An algorithm must have a clear starting and ending point.'),
+        ('2', 'B. An algorithm can have infinite steps and still be valid.'),
+        ('3', 'C. An algorithm is only written using a programming language.'),
+        ('4', 'D. An algorithm must always contain loops and conditional statements.'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Digital Signal Processing:What is the primary reason for applying the Nyquist-Shannon Sampling Theorem in digital signal processing?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Logic Circuits and Design: Which of the following logic gates will produce an output of 1 only when both inputs are different?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Programming Logic and Design: Which of the following statements about algorithms is true?"
     )        
 class BSCS_Quiz(forms.Form):
     CHOICES_Q1 = [
@@ -1002,41 +1002,40 @@ class BSCS_Quiz(forms.Form):
         ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
         ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
     ]
-    
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Automata Theory and Formal Languages:  Which of the following automata is the most powerful in terms of computational capability?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Discrete Structure: In graph theory, which of the following is always true for a tree?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Intelligent Systems: What is the primary characteristic of a supervised learning algorithm in AI?"
     )        
 class BSEE_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Finite State Machine (FSM)'),
+        ('2', 'B. Pushdown Automaton (PDA)'),
+        ('3', 'C. Turing Machine (TM)'),
+        ('4', 'D. Regular Expression (RE)'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. A tree contains at least one cycle.'),
+        ('2', 'B. Every tree with n vertices has exactly n edges.'),
+        ('3', 'C. A tree is always a directed graph.'),
+        ('4', 'D. A tree with n vertices has exactly n−1 edges.'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. It learns patterns without any labeled data.'),
+        ('2', 'B. It requires labeled input and output pairs for training.'),
+        ('3', 'C. It uses reinforcement signals instead of data labels.'),
+        ('4', 'D. It evolves its own decision-making process without external input.'),
     ]
     
     answer_q1 = forms.ChoiceField(
