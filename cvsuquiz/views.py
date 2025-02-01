@@ -1698,25 +1698,26 @@ def BSCE_QUIZ(request):
         'Go_back': Go_back
     })
 def BSCpE_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "ceit.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    COURSE_NAME = "Bachelor of Science In Computer Engineering"
+    College_Name = "College of Engineering and Information Technology"
+    Carousel_1img ="https://images.pexels.com/photos/9242280/pexels-photo-9242280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The best way to predict the future is to invent it."
+    Carousel_1p="-Alan Kay"
+    Carousel_2img ="https://images.pexels.com/photos/16062771/pexels-photo-16062771/free-photo-of-closeup-of-an-illuminated-electronic-equipment.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The function of good software is to make the complex appear to be simple."
+    Carousel_2p="-Grady Booch"
+    Carousel_3img ="https://images.pexels.com/photos/6477211/pexels-photo-6477211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Everybody should learn to program a computer because it teaches you how to think."
+    Carousel_3p="-Steve Jobs"
+    Go_back=reverse('CEIT_home')
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+        form = BSCpE_Quiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -1727,17 +1728,17 @@ def BSCpE_QUIZ(request):
             else:
                 feedback_q1 = "Wrong! The correct answer is B"
 
-            if answer_q2 == '1':
+            if answer_q2 == '3':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is C"
 
-            if answer_q3 == '3':
+            if answer_q3 == 'A':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is A"    
     else:
-        form = BajQuiz()
+        form = BSCpE_Quiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -1756,48 +1757,50 @@ def BSCpE_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSCS_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "ceit.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    COURSE_NAME = "Bachelor of Science In Computer Science"
+    College_Name = "College of Engineering and Information Technology"
+    Carousel_1img ="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="A language that doesn't affect the way you think about programming is not worth knowing."
+    Carousel_1p="-Alan Perlis"
+    Carousel_2img ="https://images.pexels.com/photos/12899188/pexels-photo-12899188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it."
+    Carousel_2p="-Edsger W. Dijkstra"
+    Carousel_3img ="https://images.pexels.com/photos/16129705/pexels-photo-16129705/free-photo-of-man-sitting-at-desk-working-on-computers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="We build our computers the way we build our cities—over time, without a plan, on top of ruins."
+    Carousel_3p="-Ellen Ullman"
+    Go_back=reverse('CEIT_home')
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+        form = BSCS_Quiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
             answer_q3 = form.cleaned_data['answer_q3']
 
-            if answer_q1 == '2':
+            if answer_q1 == '3':
                 feedback_q1 = "Correct!"
             else:
-                feedback_q1 = "Wrong! The correct answer is B"
+                feedback_q1 = "Wrong! The correct answer is C"
 
-            if answer_q2 == '1':
+            if answer_q2 == '4':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is D"
 
-            if answer_q3 == '3':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
-        form = BajQuiz()
+        form = BSCS_Quiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -1816,9 +1819,10 @@ def BSCS_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSEE_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "ceit.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
