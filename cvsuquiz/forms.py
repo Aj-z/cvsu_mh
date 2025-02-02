@@ -403,7 +403,114 @@ class Bsed_SoStQuiz(forms.Form):
         widget=forms.RadioSelect,
         label="How does globalization primarily influence the cultural landscapes of cities?"
     )        
+class BEEDQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Assigning students to read books independently without discussion'),
+        ('2', 'B. Using storytelling and picture books to introduce new concepts'),
+        ('3', 'C. Focusing only on classic literature and avoiding modern stories'),
+        ('4', 'D. Allowing students to memorize and recite texts without interaction'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. To prepare students for professional sports careers'),
+        ('2', 'B. To ensure students become physically fit and active'),
+        ('3', 'C. To focus only on competitive sports and winning games'),
+        ('4', 'D. To limit physical activities to traditional exercises'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Using manipulatives like blocks and counters for hands-on learning'),
+        ('2', 'B. Relying solely on memorization of formulas and equations'),
+        ('3', 'C. Teaching all math concepts through worksheets only'),
+        ('4', 'D. Skipping problem-solving activities to save time'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Teaching in Elementary Grades through Literature: Which of the following is the most effective way to use children's literature in teaching elementary students? "
+    )
 
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Teaching P.E. and Health in Elementary Grades: What is the primary goal of Physical Education in elementary grades? "
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Teaching Math in the Primary Grades: Which of the following is an effective strategy for teaching basic math concepts to young learners?"
+    )     
+class BSHMQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. Strictly following company policies without considering guest needs'),
+        ('2', 'B. Providing personalized and responsive customer service'),
+        ('3', 'C. Reducing operational costs at the expense of customer experience'),
+        ('4', 'D. Prioritizing speed over quality in all service interactions'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Increasing profits by reducing employee wages'),
+        ('2', 'B. Reducing environmental impact while maintaining guest satisfaction'),
+        ('3', 'C. Maximizing the use of single-use plastics for convenience'),
+        ('4', 'D. Expanding hotel operations without considering local communities'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Managing housekeeping tasks and room cleanliness'),
+        ('2', 'B. Handling guest check-in, check-out, and reservations'),
+        ('3', 'C. Preparing and serving food in the hotels restaurant'),
+        ('4', 'D. Overseeing maintenance and repair of hotel facilities'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Tourism and Hospitality Service Quality Management: What is the most important factor in ensuring high-quality service in the hospitality industry?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Sustainable Hospitality Management: Which of the following is a key principle of sustainable hospitality management?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Fundamentals in Lodging Operations: What is the primary function of the front office department in a lodging establishment?"
+    )           
+class BSTMQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. It only involves luxury travel and expensive accommodations'),
+        ('2', 'B. It provides a combination of transportation, accommodation, and entertainment in one package'),
+        ('3', 'C. It requires tourists to book separate hotels and activities at each destination'),
+        ('4', 'D. It focuses only on short-distance travel within a single country'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. To react to problems as they arise without planning'),
+        ('2', 'B. To develop long-term goals and competitive strategies for business success'),
+        ('3', 'C. To focus only on short-term profit maximization'),
+        ('4', 'D. To limit innovation and avoid changes in business operations'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. It helps businesses make data-driven decisions to improve services'),
+        ('2', 'B. It is only useful for marketing and advertising purposes'),
+        ('3', 'C. It replaces the need for customer service interactions'),
+        ('4', 'D. It is only relevant for large multinational tourism companies'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Cruise Tourism: What is a key factor that differentiates cruise tourism from other types of tourism?:"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Strategic Management in Tourism and Hospitality: What is the main purpose of strategic management in tourism and hospitality?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Tourism Information Management: Why is information management important in the tourism industry?"
+    )  
 #Cas Quizes
 class BajQuiz(forms.Form):
     CHOICES_Q1 = [
@@ -1020,183 +1127,183 @@ class BSCS_Quiz(forms.Form):
     )        
 class BSEE_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. Finite State Machine (FSM)'),
-        ('2', 'B. Pushdown Automaton (PDA)'),
-        ('3', 'C. Turing Machine (TM)'),
-        ('4', 'D. Regular Expression (RE)'),
+        ('1', 'A. 100 MW'),
+        ('2', 'B. 88.89 MW'),
+        ('3', 'C. 75 MW'),
+        ('4', 'D. 120 MW'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. A tree contains at least one cycle.'),
-        ('2', 'B. Every tree with n vertices has exactly n edges.'),
-        ('3', 'C. A tree is always a directed graph.'),
-        ('4', 'D. A tree with n vertices has exactly n−1 edges.'),
+        ('1', 'A. Department of Energy (DOE)'),
+        ('2', 'B. Professional Regulation Commission (PRC)'),
+        ('3', 'C. Institute of Integrated Electrical Engineers (IIEE)'),
+        ('4', 'D. Department of Trade and Industry (DTI)'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. It learns patterns without any labeled data.'),
-        ('2', 'B. It requires labeled input and output pairs for training.'),
-        ('3', 'C. It uses reinforcement signals instead of data labels.'),
-        ('4', 'D. It evolves its own decision-making process without external input.'),
+        ('1', 'A. Resistor'),
+        ('2', 'B. Transistor'),
+        ('3', 'C. Zener Diode'),
+        ('4', 'D. Inductor'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Fundamentals of Power Plant Engineering: A 100 MW power plant operates with a thermal efficiency of 40%. If the plant consumes 800 GJ of fuel per hour, what is the actual power output in MW?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="EE Laws, Codes, and Professional Ethics: According to RA 7920 (Philippine Electrical Engineering Law), which entity is responsible for regulating the practice of electrical engineering in the Philippines?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Industrial Electronics: Which of the following components is primarily used to regulate voltage in a DC power supply?"
     )        
 class BSINDT_AT_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. To increase vehicle weight'),
+        ('2', 'B. To restore engine performance and efficiency'),
+        ('3', 'C. To change the car’s color'),
+        ('4', 'D. To improve fuel economy only'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. Increases engine weight'),
+        ('2', 'B. Improves fuel efficiency and combustion control'),
+        ('3', 'C. Requires more maintenance'),
+        ('4', 'D. reduces the number of engine components'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. Increased fuel efficiency'),
+        ('2', 'B. Engine knocking and rough idling'),
+        ('3', 'C. Decreased vehicle weight'),
+        ('4', 'D. Decreased exhaust emissions'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Engine Overhauling and Performance Testing: What is the main purpose of engine overhauling?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Carburetion and Fuel Injection Calibration: What is the main advantage of fuel injection over a carburetor? "
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Diagnose and Overhaul Diesel Engine: What is a common symptom of a failing diesel engine injector?"
     )        
 class BSINDT_ET_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Resistor'),
+        ('2', 'B. Capacitor'),
+        ('3', 'C. Transistor'),
+        ('4', 'D. Inductor'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. Convert AC power to DC power'),
+        ('2', 'B. Convert DC power to AC power'),
+        ('3', 'C. Store energy for later use'),
+        ('4', 'D. Regulate the voltage of solar panels'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. Color of the building'),
+        ('2', 'B. Type of fuel used'),
+        ('3', 'C. Weight of the machinery'),
+        ('4', 'D. Shape of the cooling tower'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Electronics Principle (Active and Passive Components): Which of the following is considered an active electronic component? "
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Solar Electric Design and Installation: What is the primary function of an inverter in a solar power system?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
-    )        
+        label="Power Production and Management Systems: Which of the following factors most affects the efficiency of a power plant?"
+    )  
 class BSINDT_EX_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. 8'),
+        ('2', 'B. 15'),
+        ('3', 'C. 16'),
+        ('4', 'D. 31'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. To provide mechanical support and electrical connections for components'),
+        ('2', 'B. To increase the voltage of the circuit'),
+        ('3', 'C. To replace resistors in a circuit'),
+        ('4', 'D. To reduce the cost of fabrication'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. To reset the system when an error occurs'),
+        ('2', 'B. To notify the processor of an external event needing attention'),
+        ('3', 'C. To increase the clock speed'),
+        ('4', 'D. To store program instructions'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Advance Digital Electronics: In a 4-bit binary counter, what is the maximum count value before it resets? "
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Electronics Design and Fabrication: What is the primary purpose of a Printed Circuit Board (PCB) in electronics design?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
-    )        
+        label="Microprocessor and Interfacing Techniques: In microprocessors, what is the function of an Interrupt Request (IRQ)?"
+    )  
 class BSIT_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. To randomly create software components'),
+        ('2', 'B. To understand user requirements and define system specifications'),
+        ('3', 'C. To test the system after development'),
+        ('4', 'D. To eliminate the need for databases'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. Enhancing usability and user experience'),
+        ('2', 'B. Reducing computer memory usage'),
+        ('3', 'C. Designing complex and difficult-to-navigate systems'),
+        ('4', 'D. Ignoring user feedback'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. Writing passwords on sticky notes'),
+        ('2', 'B. Using multi-factor authentication and encryption'),
+        ('3', 'C. Sharing login credentials with coworkers'),
+        ('4', 'D. Ignoring software updates'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="System Analysis and Design: What is the primary purpose of system analysis in software development?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Introduction to Human-Computer Interaction: What is the key principle of Human-Computer Interaction (HCI)?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Information Assurance and Security: What is the most effective way to protect sensitive data from cyber threats?"
     )        
 class BSOA_Quiz(forms.Form):
     CHOICES_Q1 = [
