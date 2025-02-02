@@ -1,4 +1,205 @@
 h1 {
-    -webkit-text-stroke:thin;
-    color: blue;
+    color: #60B4FF  !important;
+    font-family: 'Times New Roman', serif !important;
+    text-decoration: none !important;
+    font-size: 3rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 5vh !important;
+    margin-top: 2vh !important;
+    text-align: center !important;
+    align-items: center !important;
+   
+}
+
+/*  Nav bar css */
+.container-fluid {
+    margin-right: 5vw !important;
+    margin-left: 5vw !important;
+}
+
+a.navbar-brand {
+    color: #60B4FF ;
+    font-family: 'Times New Roman', serif;
+}
+.navbar-brand {
+    font-size: 1.2rem;
+    margin-left: 1vw;
+    margin-bottom: -15px;
+}
+a.navbar-brand.sc1 {
+    margin-bottom: 1px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #60B4FF (255 240 85);
+}
+.title {
+    display: flex;
+    flex-direction: column;
+}
+.navbar.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #60B4FF !important;
+    margin-bottom: 2vh;
+}
+.btn-outline-success {
+    --bs-btn-color: #60B4FF  !important;
+    --bs-btn-border-color: #06060600 !important;
+    --bs-btn-hover-color: #fff0 !important;
+    --bs-btn-hover-bg: #fff0 !important;
+    --bs-btn-hover-border-color: #fff !important;
+    --bs-btn-focus-shadow-rgb: 25,135,84 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #fff !important;
+    --bs-btn-active-border-color: #fff !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #fff !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-disabled-border-color: #fff !important;
+    --bs-gradient: none;
+  }
+
+  a {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+
+.results {
+    background: #ffffff;
+    width: inherit;
+    display: flex;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+button:hover {
+    background:  #11FFC730;
+   
+    color: white;
+  }
+.d-block.w-100 {
+    filter: sepia(100%) saturate(500%) hue-rotate(-200deg) brightness(80%) contrast(80%) blur(1px);
+  }
+  
+.d-block.w-100:hover {
+    filter:none;
+  }
+button {
+border-radius: 5px;
+padding: 10px;
+
+}
+label {
+    background: white;
+    width: inherit;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+}
+.questions {
+  
+    display: flex;
+    flex-direction: column;
+    width:50vw;
+    margin-left: 5vw;
+    height: fit-content;
+}
+div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
+    background: white;
+    border-radius: 10px;
+    top: -13;
+    width: inherit;
+}
+.d-block.w-100{
+    width: initial !important;
+  }
+
+body {
+    background: #60B4FF !important;
+}
+label:hover {
+    background: #EBF6FF;
+    color: #3417fb;
+}
+
+.allcontent {
+    display: flex;
+    height: fit-content;
+}
+.sideshow {
+    margin-top: 4vh;
+    align-self: center;
+}
+.carousel {
+    position: relative;
+    background: #60B4FF;
+    border-radius: 10px;
+    width: 500px;
+    height: 750px;
+}
+.carousel-inner{
+    width: inherit !important;
+    height: inherit !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 20px 10px #fff;
+}
+.carousel-item {
+    border-radius: 10px;
+}
+img, svg {
+    border-radius: 10px;
+}
+button {
+    border-radius: 10px !important;
+    background-color: #fff;
+}
+.carousel-caption.d-none.d-md-block {
+    color: #fff;
+  }
+@media (min-width: 300px) {
+    .carousel-caption.d-none.d-md-block {
+        display: block !important;
+    }
+}
+@media (max-width: 1440px) and (min-width: 700px) {
+    .sideshow {
+        margin-top: 10vh;
+    }
+}
+@media (min-width: 1200px) {
+    .sideshow {
+        margin-left: 10vw;
+        margin-top: 0vh; 
+    }
+}
+    
+@media (max-width: 1200px) {
+    .carousel{
+        top: -15vh;
+        transform: scale(0.7);
+        display: grid;
+    }
+    .allcontent{
+        flex-direction: column;
+    }
+    .d-none {
+        display: flow;
+    }
+    .questions{
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    label {
+        width: inherit;
+    }
+    h1 {
+        
+        font-size: 1.2rem;
+    }
 }
