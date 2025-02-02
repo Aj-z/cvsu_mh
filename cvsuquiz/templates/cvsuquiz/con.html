@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Of Agriculture, Forestry, Environment and Natural Resources</title>
+    <title>College of Nursing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="{% static 'css/cafenr_view.css' %}"  type="text/css" rel="stylesheet">
+    <link href="{% static 'css/con_view.css' %}"  type="text/css" rel="stylesheet">
 
 </head>
 <body>
@@ -42,23 +42,23 @@
               <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJournalism" aria-expanded="false" aria-controls="collapseJournalism" style="width:20vw">
                 <div>
                   <h3 class="course">Bachelor of Science in Medical Technology</h3>
-                  <p class="discription">Focuses on sustainable farming practices, crop and livestock management, and agricultural economics, leading to careers in agribusiness, research, and farm management.</p>
+                  <p class="discription">Combines laboratory science and diagnostics for careers in medical technology and clinical research.</p>
                 </div>
               </button>
             </h3>
             <div id="collapseJournalism" class="accordion-collapse collapse science" aria-labelledby="headingJournalism" data-bs-parent="#undergradAccordion">
               <div class="accordion-body">
                  <b>Bachelor of Science in Medical Technology</b> 
-                <p>This program delves into the science, technology, and practices of agriculture, equipping students with knowledge in crop and livestock production, soil management, agricultural economics, and sustainable farming practices. Students gain hands-on experience through laboratory and fieldwork, exploring innovative agricultural techniques and addressing global food security challenges.</p>
-                <p>The program fosters skills in critical thinking, problem-solving, and research, preparing graduates to develop solutions for sustainable agriculture. With expertise in farming systems, agribusiness, and resource management, graduates are well-equipped to navigate the complexities of modern agriculture.</p>
-                <p>Career opportunities include roles in farm management, agricultural research, agribusiness, government agencies, and consultancy. Graduates may also pursue entrepreneurial ventures or global opportunities in agriculture-related industries.</p>
+                <p>Focuses on the analysis of biological samples to aid in diagnosing and treating diseases. The program combines laboratory science with clinical applications, emphasizing precision and technical expertise.</p>
+                <p>Students gain knowledge in microbiology, hematology, clinical chemistry, and immunology, using state-of-the-art diagnostic equipment. The curriculum includes internships in hospitals and diagnostic centers to provide hands-on experience.</p>
+                <p>Graduates can pursue careers as medical technologists, laboratory analysts, or clinical researchers. Opportunities also exist in public health, forensic science, and biotechnology.</p>
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Learn more
                   </button>
                   <ul class="dropdown-menu">
                       <li><a href="{% url 'BSMT_quiz' %}"> Try Quiz: BSMT (Bachelor of Science in Medical Technology) </a></li>
-                      <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/10/CMO-41-s-2017.pdf"> CMO: Policies, Standard And Guidelines for Journalism </a></li>
+                      <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/10/CMO-13-s-2017.pdff"> CMO: Policies, Standard And Guidelines for Medical Technology</a></li>
                   </ul>
               </div>
               </div>
@@ -70,7 +70,7 @@
               <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnglish" aria-expanded="false" aria-controls="collapseEnglish" style="width:20vw">
                 <div>
                   <h3 class="course">Bachelor of Science in Midwifery</h3>
-                  <p class="discription">Emphasizes the application of modern technology in farming and agribusiness, preparing students for roles in agricultural engineering, extension, and technical consultancy.</p>
+                  <p class="discription">Focuses on maternal and neonatal care for careers as licensed midwives and maternal health advocates.</p>
                 </div>
                 
               </button>
@@ -78,16 +78,16 @@
             <div id="collapseEnglish" class="accordion-collapse collapse" aria-labelledby="headingEnglish" data-bs-parent="#undergradAccordion">
               <div class="accordion-body">
                 <b>Bachelor of Science in Midwifery</b> 
-                <p>This program focuses on the application of modern technology to agricultural processes, combining technical training with a strong foundation in agricultural science. Students learn about agricultural engineering, post-harvest technology, animal production, and agribusiness operations, preparing them to implement practical solutions to agricultural challenges.</p>
-                <p>The curriculum emphasizes innovation, hands-on technical skills, and adaptability, empowering students to address the technological demands of the agriculture sector. Graduates emerge with the expertise to improve productivity and efficiency in farming and agribusiness systems.</p>
-                <p>Career paths include roles in agricultural engineering, farm management, agribusiness, technical consultancy, and agricultural extension. Graduates can also explore entrepreneurial opportunities in mechanized farming and agricultural innovation.</p>
+                <p>Prepares students to provide maternal and neonatal care, focusing on safe and effective delivery practices. The program emphasizes the role of midwives in community health and family planning.</p>
+                <p>Students learn about prenatal, intrapartum, and postnatal care, alongside skills in emergency obstetric management and patient education. Practical training in clinics and hospitals ensures graduates are ready for real-world challenges.</p>
+                <p>Graduates can work as licensed midwives, maternal health advocates, or healthcare educators. They can also explore opportunities in public health programs and rural healthcare initiatives.</p>
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Learn more
                   </button>
                   <ul class="dropdown-menu">
                       <li><a href="{% url 'BSM_quiz' %}"> Try Quiz: BSM (Bachelor of Science in Midwifery) </a></li>
-                      <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/10/CMO-24-s-2017.pdf"> CMO: Policies, Standard And Guidelines for English Language Studies </a></li>
+                      <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/10/CMO-No.33-s2007.pdf"> CMO: Policies, Standard And Guidelines for Midwifery </a></li>
                   </ul>
                 </div>
               </div>
@@ -100,7 +100,7 @@
               <button class="accordion-button collapsed course1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolsci" aria-expanded="false" aria-controls="collapsePolsci" style="width:20vw">
                 <div>
                   <h3 class="course">Bachelor of Science in Nursing</h3>
-                  <p class="discription">Centers on understanding and solving environmental challenges through research, policy, and conservation, leading to careers in sustainability, consultancy, and environmental management.</p>
+                  <p class="discription">Combines patient care, clinical skills, and health promotion for careers in nursing and healthcare leadership.</p>
                 </div>
                
               </button>
@@ -108,16 +108,16 @@
             <div id="collapsePolsci" class="accordion-collapse collapse" aria-labelledby="headingPolsci" data-bs-parent="#undergradAccordion" >
               <div class="accordion-body">
                 <b>Bachelor of Science in Nursing</b> 
-                <p>This program investigates the complex relationships between natural systems, human activities, and environmental sustainability. Students study ecology, environmental policy, waste management, climate change, and conservation biology, gaining a multidisciplinary perspective on environmental challenges.</p>
-                <p>Through fieldwork, research, and practical projects, students develop analytical, research, and advocacy skills. The program prepares graduates to address critical environmental issues, promote sustainability, and implement policies to protect ecosystems.</p>
-                <p>Graduates can pursue careers in environmental consultancy, conservation, research, education, or government agencies. Opportunities also exist in sustainable development projects, renewable energy, and global environmental initiatives.</p>
+                <p>Equips students with the knowledge and skills to provide holistic patient care across various healthcare settings. The program emphasizes clinical competency, patient advocacy, and health promotion.</p>
+                <p>Students study anatomy, pharmacology, and nursing ethics, supported by extensive hands-on training in hospitals and community health centers. Leadership and research skills are also developed to address evolving healthcare needs.</p>
+                <p>Graduates can become registered nurses, clinical nurse specialists, or nursing educators. Career opportunities include roles in hospitals, community health, and specialized care facilities, with potential for international employment.</p>
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Learn more
                   </button>
                   <ul class="dropdown-menu">
                       <li><a href="{% url 'BSN_quiz' %}"> Try Quiz: BSN (Bachelor of Science in Nursing) </a></li>
-                      <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/10/CMO-No.31-s2011.pdf"> CMO: Policies, Standard And Guidelines for Political Science </a></li>
+                      <li><a class="dropdown-item" href="https://ched.gov.ph/wp-content/uploads/2017/10/CMO-15-s-2017.pdf"> CMO: Policies, Standard And Guidelines for Nursing </a></li>
                       
                   </ul>
                 </div> 
@@ -168,7 +168,7 @@ function handleClick(event) {
         event.preventDefault(); // Prevent the default action of the link
   
         // Change the background to the image
-        document.body.style.backgroundImage = "url('/static/images/CAFENRback.png')"; 
+        document.body.style.backgroundImage = "url('/static/images/CON_view.png')"; 
         // collapse open accordions
         const collapsibleElements = document.querySelectorAll('.accordion-collapse');
         collapsibleElements.forEach((element) => {
@@ -185,7 +185,7 @@ function handleClick(event) {
         event.preventDefault(); // Prevent the default action of the link
   
         // Change the background to the image
-        document.body.style.backgroundImage = "url('/static/images/agri.png')"; 
+        document.body.style.backgroundImage = "url('/static/images/medtech.png')"; 
   
         // Optionally, hide the link once clicked (if you want)
         this.style.display = 'flex';
@@ -195,7 +195,7 @@ function handleClick(event) {
         event.preventDefault(); // Prevent the default action of the link
   
         // Change the background to the image
-        document.body.style.backgroundImage = "url('/static/images/agritech.png')"; 
+        document.body.style.backgroundImage = "url('/static/images/mid_wifery.png')"; 
   
   
         // Optionally, hide the link once clicked (if you want)
@@ -205,7 +205,7 @@ function handleClick(event) {
         event.preventDefault(); // Prevent the default action of the link
   
         // Change the background to the image
-        document.body.style.backgroundImage = "url('/static/images/envsci.png')"; 
+        document.body.style.backgroundImage = "url('/static/images/nursing.png')"; 
   
   
         // Optionally, hide the link once clicked (if you want)
