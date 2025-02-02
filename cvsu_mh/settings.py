@@ -55,7 +55,7 @@ INSTALLED_APPS = [
 ]
 
 
-SITE_ID = os.getenv('SITE_ID', 3)
+SITE_ID = os.getenv('SITE_ID', 6)
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend', 
@@ -118,16 +118,12 @@ import dj_database_url
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+import dj_database_url
 DATABASES = {
-    'default': {
-        
-        'ENGINE': 'django.db.backends.sqlite3', 
-        'NAME': 'db.sqlite3', 
-        'USER': os.getenv('DB_USER'),    
-        'PASSWORD': os.getenv('DB_PASSWORD'),  
-        'HOST': os.getenv('DB_HOST'),    
-        'PORT': os.getenv('DB_PORT'), 
-    }
+    'default': dj_database_url.config(
+        default=os.getenv('DATABASE_URL','postgresql://cvsu_mh_user:rKAgjxFGM11myFMKEt10yCHo44AKK0ZJ@dpg-cufph7l2ng1s73c7u4qg-a.singapore-postgres.render.com/cvsu_mh'),
+        conn_max_age=600
+    )
 }
 
 # DATABASES = {
