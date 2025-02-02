@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-image: url("../images/star-border.png");
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 0px){
     .grid.xs\:grid-cols-1.sm\:grid-cols-2.md\:grid-cols-2.lg\:grid-cols-3.gap-4{
         display:ruby;
     }
@@ -36,3 +36,29 @@
     padding: 20px 0 20px 20px;       
     width: 100%;           
   }
+@media screen and (max-width: 1300px){
+    .grid.xs\:grid-cols-1.sm\:grid-cols-2.md\:grid-cols-2.lg\:grid-cols-3.gap-4{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -100px;
+        
+    }
+    blockquote > .flex.-space-x-4.hover\:space-x-1.float-right {
+        position: relative;
+        width:0px;
+        right:50px;
+        bottom:50px;
+        transform: scale(0.80)
+    }
+    p.text-lg.text-neutral-900 {
+    font-size: .9rem;
+    }
+    p.text-slate-400.break-words {
+    font-size: 0.7rem;
+    }
+    .swiper-slide {
+        width: 80vw;
+        left: -10vw;
+        position: relative;
+    }
+}
