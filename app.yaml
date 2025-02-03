@@ -1,0 +1,13 @@
+runtime: python310
+entrypoint: gunicorn -b :$PORT cvsu_mh.wsgi
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: "cvsu_mh.settings"
+  GOOGLE_CLOUD_PROJECT: "white-berm-449809-n8"  # Your Google Cloud Project ID
+
+handlers:
+  - url: /static
+    static_dir: static/
+
+  - url: /.*
+    script: auto

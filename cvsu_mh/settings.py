@@ -131,14 +131,35 @@ import environ
 env = environ.Env()
 environ.Env.read_env()
 #for google cloud 
+import os
+from google.cloud import secretmanager
+from django.core.exceptions import ImproperlyConfigured
+
+# Function to fetch secrets from Google Cloud Secret Manager
+def get_secret(secret_name):
+    client = secretmanager.SecretManagerServiceClient()
+    project_id = os.getenv('GOOGLE_CLOUD_PROJECT')
+    secret_path = f"projects/{project_id}/secrets/{secret_name}/versions/latest"
+    try:
+        response = client.access_secret_version(name=secret_path)
+        return response.payload.data.decode("UTF-8")
+    except Exception as e:
+        raise ImproperlyConfigured(f"Could not retrieve secret {secret_name}: {e}")
+    
+DB_NAME = get_secret('DB_NAME')
+DB_USER = get_secret('DB_USER')
+DB_PASSWORD = get_secret('DB_PASSWORD')   
+DB_HOST = get_secret('DB_HOST')
+DB_PORT = get_secret('DB_PORT')    
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': '/cloudsql/{}'.format(os.getenv('CLOUD_SQL_CONNECTION_NAME')),  # connection string,
-        'PORT': '5432',
+        'HOST': DB_HOST,
+        'PORT': DB_PORT,
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
     }
 }
 
