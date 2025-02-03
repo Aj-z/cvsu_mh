@@ -7,11 +7,11 @@ __pycache__/
 .venv/
 env/
 envs/
-app.yaml
-
+*.env
+.vscode/
 # Ignore database files (e.g., SQLite)
 *.sqlite3
-
+.idea/
 # Ignore node_modules (for Node.js projects)
 node_modules/
 
