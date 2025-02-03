@@ -33,7 +33,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() in ['true', '1']
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 # Application definition
-
+ALLOWED_HOSTS = ['.appspot.com', 'https://cvsu-mh.onrender.com/']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -114,16 +114,32 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'cvsu_mh.wsgi.application'
 
-import dj_database_url
+
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 import dj_database_url
+#DATABASES = {
+    #'default': dj_database_url.config(
+     #   default=os.getenv('DATABASE_URL','postgresql://cvsu_mh_user:rKAgjxFGM11myFMKEt10yCHo44AKK0ZJ@dpg-cufph7l2ng1s73c7u4qg-a.singapore-postgres.render.com/cvsu_mh'),
+      #  conn_max_age=600
+    #)
+# -for onrender-}
+import environ
+
+# Initialize environment variables
+env = environ.Env()
+environ.Env.read_env()
+#for google cloud 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL','postgresql://cvsu_mh_user:rKAgjxFGM11myFMKEt10yCHo44AKK0ZJ@dpg-cufph7l2ng1s73c7u4qg-a.singapore-postgres.render.com/cvsu_mh'),
-        conn_max_age=600
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': '/cloudsql/{}'.format(os.getenv('CLOUD_SQL_CONNECTION_NAME')),  # connection string,
+        'PORT': '5432',
+    }
 }
 
 # DATABASES = {
