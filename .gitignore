@@ -7,6 +7,7 @@ __pycache__/
 .venv/
 env/
 envs/
+app.yaml
 
 # Ignore database files (e.g., SQLite)
 *.sqlite3
