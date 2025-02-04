@@ -33,7 +33,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() in ['true', '1']
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 # Application definition
-ALLOWED_HOSTS = ['.appspot.com', 'https://cvsu-mh.onrender.com','127.0.0.1:8000', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['.appspot.com', 'cvsu-mh.onrender.com','127.0.0.1:8000', 'localhost', '127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
