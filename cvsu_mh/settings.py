@@ -33,7 +33,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() in ['true', '1']
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 # Application definition
-ALLOWED_HOSTS = ['.appspot.com', 'https://cvsu-mh.onrender.com/','127.0.0.1:8000', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['.appspot.com', 'https://cvsu-mh.onrender.com','127.0.0.1:8000', 'localhost', '127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -131,10 +131,10 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('DB_NAME', 'Cvsu_mh_databse'),
-        'USER': os.getenv('DB_USER', 'postgres'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'GuHZU9C2K*r0xILl'),
-        'HOST': '/home/aj/cloudsql/white-berm-449809-n8:asia-southeast1:cvsu101-mentalhealth-databases',  # Cloud SQL connection
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': '35.198.227.136',  # Cloud SQL connection
         'PORT': '5432',
     }
 }
