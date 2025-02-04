@@ -1,0 +1,33 @@
+# Ignore the .git directory and git-related files
+.git/
+.gitignore
+
+# Ignore node_modules (typically large and unnecessary in the deployment)
+node_modules/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore media files (unless you intend to upload them to Cloud Storage)
+media/
+
+# Ignore static files (unless you are using them in App Engine)
+static/
+
+# Ignore test files and directories
+tests/
+
+# Ignore log files
+*.log
+*.tmp
+
+# Ignore backup, swap, and editor-related files
+*.bak
+*.swp
+*.idea/
+.vscode/
+venv/
+Cleaned/
+.venv/

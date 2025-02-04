@@ -33,7 +33,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() in ['true', '1']
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 # Application definition
-ALLOWED_HOSTS = ['.appspot.com', 'https://cvsu-mh.onrender.com/']
+ALLOWED_HOSTS = ['.appspot.com', 'https://cvsu-mh.onrender.com/','127.0.0.1:8000', 'localhost', '127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,7 +55,7 @@ INSTALLED_APPS = [
 ]
 
 
-SITE_ID = os.getenv('SITE_ID', 6)
+SITE_ID = os.getenv('SITE_ID', 7)
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend', 
@@ -126,42 +126,54 @@ import dj_database_url
     #)
 # -for onrender-}
 import environ
+import os
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.getenv('DB_NAME', 'Cvsu_mh_databse'),
+        'USER': os.getenv('DB_USER', 'postgres'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'GuHZU9C2K*r0xILl'),
+        'HOST': '/home/aj/cloudsql/white-berm-449809-n8:asia-southeast1:cvsu101-mentalhealth-databases',  # Cloud SQL connection
+        'PORT': '5432',
+    }
+}
 
 # Initialize environment variables
 env = environ.Env()
 environ.Env.read_env()
 #for google cloud 
-import os
-from google.cloud import secretmanager
-from django.core.exceptions import ImproperlyConfigured
+#import os
+#from google.cloud import secretmanager
+#from django.core.exceptions import ImproperlyConfigured
 
 # Function to fetch secrets from Google Cloud Secret Manager
-def get_secret(secret_name):
-    client = secretmanager.SecretManagerServiceClient()
-    project_id = os.getenv('GOOGLE_CLOUD_PROJECT')
-    secret_path = f"projects/{project_id}/secrets/{secret_name}/versions/latest"
-    try:
-        response = client.access_secret_version(name=secret_path)
-        return response.payload.data.decode("UTF-8")
-    except Exception as e:
-        raise ImproperlyConfigured(f"Could not retrieve secret {secret_name}: {e}")
+#def get_secret(secret_name):
+ #   client = secretmanager.SecretManagerServiceClient()
+ #   project_id = os.getenv('GOOGLE_CLOUD_PROJECT')
+ #   secret_path = f"projects/{project_id}/secrets/{secret_name}/versions/latest"
+  #  try:
+  #      response = client.access_secret_version(name=secret_path)
+  #      return response.payload.data.decode("UTF-8")
+  #  except Exception as e:
+  #      raise ImproperlyConfigured(f"Could not retrieve secret {secret_name}: {e}")
     
-DB_NAME = get_secret('DB_NAME')
-DB_USER = get_secret('DB_USER')
-DB_PASSWORD = get_secret('DB_PASSWORD')   
-DB_HOST = get_secret('DB_HOST')
-DB_PORT = get_secret('DB_PORT')    
+#DB_NAME = get_secret('DB_NAME')
+#DB_USER = get_secret('DB_USER')
+#DB_PASSWORD = get_secret('DB_PASSWORD')   
+#DB_HOST = get_secret('DB_HOST')
+#DB_PORT = get_secret('DB_PORT')    
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': DB_HOST,
-        'PORT': DB_PORT,
-        'NAME': DB_NAME,
-        'USER': DB_USER,
-        'PASSWORD': DB_PASSWORD,
-    }
-}
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.postgresql',
+   #     'HOST': DB_HOST,
+    #    'PORT': DB_PORT,
+     #   'NAME': DB_NAME,
+      #  'USER': DB_USER,
+       # 'PASSWORD': DB_PASSWORD,
+    #}
+#}
 
 # DATABASES = {
     # 'default': 
