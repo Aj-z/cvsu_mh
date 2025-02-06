@@ -1345,39 +1345,39 @@ class BSOA_Quiz(forms.Form):
 #Con Quiz
 class BSMT_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Administering medications to patients'),
+        ('2', 'B. Performing laboratory tests to aid in disease diagnosis'),
+        ('3', 'C. Conducting surgical procedures'),
+        ('4', 'D. Prescribing treatments for patients'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. Gram staining'),
+        ('2', 'B. Polymerase Chain Reaction (PCR)'),
+        ('3', 'C. Western blot'),
+        ('4', 'D. Blood typing'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. Staphylococcus aureus'),
+        ('2', 'B. Escherichia coli'),
+        ('3', 'C. Mycobacterium tuberculosis'),
+        ('4', 'D. Streptococcus pneumoniae'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Principles of Medical Laboratory Science Practice I: What is the primary role of a medical laboratory scientist in healthcare?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Molecular Biology and Diagnostics: Which of the following is a common technique used in molecular diagnostics for detecting genetic material?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Clinical Bacteriology: Which bacterial species is commonly associated with food poisoning and is detected using selective media in clinical bacteriology?"
     )        
 class BSM_Quiz(forms.Form):
     CHOICES_Q1 = [
