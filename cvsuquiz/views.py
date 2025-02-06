@@ -1463,7 +1463,7 @@ def BSSW_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5=" Social justice is the great work of our generation. It is the moral obligation of those with the capacity to help, to do so."
     Carousel_3p="- Whitney M. Young Jr."
-    Go_back=reverse('CAS_home')
+    Go_back=reverse('CON_home')
 
 
     if request.method == "POST":
@@ -1514,25 +1514,26 @@ def BSSW_QUIZ(request):
 def con_home_view(request):
     return render(request, 'cvsuquiz/con.html')
 def BSMT_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "con.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
+    COURSE_NAME = "Bachelor of Science in Medical Technology"
+    College_Name = "College of Nursing"
     Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
+    Carousel_1h5="The greatest asset of a laboratory is not its equipment, but its people."
+    Carousel_1p="-James Watson"
     Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
+    Carousel_2h5="Science moves with the spirit of an adventure characterized both by youthful arrogance and by the belief that the truth, once found, would be simple as well as pretty"
+    Carousel_2p="-Paul Nurse"
     Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    Carousel_3h5="If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off... no matter what they say."
+    Carousel_3p="-Barbara McClintock"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+        form = BSMT_Quiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -1543,17 +1544,17 @@ def BSMT_QUIZ(request):
             else:
                 feedback_q1 = "Wrong! The correct answer is B"
 
-            if answer_q2 == '1':
+            if answer_q2 == '2':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is B"
 
-            if answer_q3 == '3':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
-        form = BajQuiz()
+        form = BSMT_Quiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -1572,23 +1573,25 @@ def BSMT_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSM_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "con.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
+    COURSE_NAME = "Bachelor of Science in Midwifery"
+    College_Name = "College of Nursing"
     Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
+    Carousel_1h5="Good maternity care starts with respect."
+    Carousel_1p="-Ina May Gaskin"
     Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
+    Carousel_2h5="The best way to save the world is to birth and raise healthy, happy children."
+    Carousel_2p="-Robin Lim"
     Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    Carousel_3h5="Birth isn’t something we suffer, but something we actively do and exult in."
+    Carousel_3p="-Sheila Kitzinger"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -1632,23 +1635,25 @@ def BSM_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSN_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "con.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
+    COURSE_NAME = "Bachelor of Science in Nursing"
+    College_Name = "College of Nursing"
     Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
+    Carousel_1h5="For the sick, it is important to have the best."
+    Carousel_1p="-Florence Nightingale"
     Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
+    Carousel_2h5="The nurse is temporarily the consciousness of the unconscious, the love of life for the suicidal, the leg of the amputee, the eyes of the newly blind, a means of locomotion for the infant, knowledge and confidence for the young mother, the mouthpiece for those too weak or withdrawn to speak."
+    Carousel_2p="-Virginia Henderson"
     Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    Carousel_3h5="As a nurse, we have the opportunity to heal the heart, mind, soul, and body of our patients, their families, and ourselves."
+    Carousel_3p="-Maya Angelou"
+    Go_back=reverse('CAS_home')
 
 
     if request.method == "POST":
@@ -1692,7 +1697,8 @@ def BSN_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
-    });
+        'Go_back': Go_back,
+    })
 # ------  CEIT ---------
 def ceit_home_view(request):
     return render(request, 'cvsuquiz/ceit.html')
