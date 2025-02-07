@@ -40,7 +40,7 @@ a.navbar-brand.sc1 {
 }
 .navbar.bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: #000 !important;
+    background-color: white !important;
     margin-bottom: 2vh;
 }
 .btn-outline-success {
@@ -61,7 +61,7 @@ a.navbar-brand.sc1 {
   }
 
   a {
-    color:  #ffeb4a !important;
+    color:   #3E781F !important;
     text-decoration: none !important;
   }
 
@@ -81,12 +81,12 @@ a.navbar-brand.sc1 {
     margin-bottom: 10vw;
 }
 button:hover {
-    background:  #FFFB00E5;
+    background:  #85d05ef5;
    
-    color: black;
+    color: #273323;
   }
 .d-block.w-100 {
-    filter: sepia(100%) saturate(500%) hue-rotate(5deg) brightness(80%) contrast(80%) blur(1px);
+    filter: sepia(100%) saturate(0%)brightness(90%) contrast(70%) blur(2px);
   }
   
 .d-block.w-100:hover {
@@ -105,7 +105,7 @@ label {
     margin-bottom: 3px;
     border-radius: 10px;
     border-color: aliceblue;
-    color: #ffeb4a;
+    color: #3E781F;
 }
 .questions {
   
@@ -120,7 +120,7 @@ div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
     border-radius: 10px;
     top: -13;
     width: inherit;
-    border-color: #f5f5dc3d;
+    border-color: #3E781F;
     border-width: 1px;
     border-style: solid;
 }
@@ -129,11 +129,11 @@ div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
   }
 
 body {
-    background: #000 !important;
+    background: #fff !important;
 }
 label:hover {
-    background: #F7E840;
-    color: #000;
+    background: #3E781F;
+    color: white;
 }
 
 .allcontent {
@@ -146,7 +146,7 @@ label:hover {
 }
 .carousel {
     position: relative;
-    background: #FFE300;
+    background: white;
     border-radius: 10px;
     width: 500px;
     height: 750px;
@@ -155,7 +155,7 @@ label:hover {
     width: inherit !important;
     height: inherit !important;
     border-radius: 10px !important;
-    box-shadow: 0px 0px 20px 10px #fffec3c4;
+    box-shadow: 0px 0px 20px 10px #e5ffcac4;
 }
 .carousel-item {
     border-radius: 10px;
@@ -166,7 +166,7 @@ img, svg {
 button {
     border-radius: 10px !important;
     background-color: #fff0;
-    color: #fff;
+    color: #3E781F;
     /*! border-color: #e7f2fb !important; */
     /*! border-width: 1px; */
     /*! text-decoration: none; */
