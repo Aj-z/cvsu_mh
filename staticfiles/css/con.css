@@ -66,8 +66,8 @@ a.navbar-brand.sc1 {
   }
 
 
-.results {
-    background: #0d0d0d;
+  .results {
+    background: #ffffff00;
     width: inherit;
     display: flex;
     margin-bottom: 3px;
@@ -75,7 +75,7 @@ a.navbar-brand.sc1 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    color: #fffb00;
+    color: #3E781F;
     border-width: 1px;
     border-style: dashed;
     margin-bottom: 10vw;
