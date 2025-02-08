@@ -1381,73 +1381,73 @@ class BSMT_Quiz(forms.Form):
     )        
 class BSM_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Oxytocin'),
+        ('2', 'B. Misoprostol'),
+        ('3', 'C. Ergometrine'),
+        ('4', 'D. All of the above'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. First maneuver'),
+        ('2', 'B. Second maneuver'),
+        ('3', 'C. Third maneuver'),
+        ('4', 'D. Fourth maneuver'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. 20-30 breaths per minute'),
+        ('2', 'B. 30-60 breaths per minute'),
+        ('3', 'C. 60-80 breaths per minute'),
+        ('4', 'D. 80-100 breaths per minute'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Midwifery and Pharmacology: Which drug is commonly used to prevent postpartum hemorrhage?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Midwifery Practice 3: When performing Leopold’s maneuver, which step determines the fetal lie? "
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Obstetrics and Newborn Care: What is the normal respiratory rate of a newborn? "
     )        
 class BSN_Quiz(forms.Form):    
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Performing technical procedures'),
+        ('2', 'B. Establishing therapeutic relationships'),
+        ('3', 'C. Administering medications'),
+        ('4', 'D. Following hospital policies'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. High-protein, high-potassium diet'),
+        ('2', 'B. Low-protein, low-sodium diet'),
+        ('3', 'C. High-carbohydrate, high-fat diet'),
+        ('4', 'D. High-fiber, high-sodium diet'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. Administering aspirin and nitroglycerin'),
+        ('2', 'B. Encouraging ambulation'),
+        ('3', 'C. Providing a high-fat diet'),
+        ('4', 'D. Applying warm compress to the chest'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Theoretical Foundation of Nursing: According to Jean Watson’s Theory of Human Caring, what is the core of nursing practice? "
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Nutrition and Diet Therapy: Which diet is recommended for a patient with chronic kidney disease (CKD) to reduce fluid retention and electrolyte imbalance?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
     )        
