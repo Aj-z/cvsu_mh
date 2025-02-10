@@ -104,6 +104,18 @@ def BSA_Quiz(request):
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor Of Science In Agriculture"
+    css_style = "cafenr.css"
+    College_Name = "College Of Agriculture, Forestry, Environment and Natural Resources"
+    Carousel_1img ="https://images.pexels.com/photos/7507496/pexels-photo-7507496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Those who do not remember the past are condemned to repeat it."
+    Carousel_1p="-George Santayana"
+    Carousel_2img ="https://images.pexels.com/photos/3747542/pexels-photo-3747542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Education is the most powerful weapon which you can use to change the world."
+    Carousel_2p="-Nelson Mandela"
+    Carousel_3img ="https://images.pexels.com/photos/2346289/pexels-photo-2346289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="A people without the knowledge of their past history, origin, and culture is like a tree without roots."
+    Carousel_3p="- Marcus Garvey"
+    Go_back=reverse('CAFENR_home')
 
 
     if request.method == "POST":
@@ -136,12 +148,36 @@ def BSA_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BAE_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor in Agricultural Technology"
+    css_style = "cafenr.css"
+    College_Name = "College Of Agriculture, Forestry, Environment and Natural Resources"
+    Carousel_1img ="https://images.pexels.com/photos/7507496/pexels-photo-7507496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Those who do not remember the past are condemned to repeat it."
+    Carousel_1p="-George Santayana"
+    Carousel_2img ="https://images.pexels.com/photos/3747542/pexels-photo-3747542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Education is the most powerful weapon which you can use to change the world."
+    Carousel_2p="-Nelson Mandela"
+    Carousel_3img ="https://images.pexels.com/photos/2346289/pexels-photo-2346289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="A people without the knowledge of their past history, origin, and culture is like a tree without roots."
+    Carousel_3p="- Marcus Garvey"
+    Go_back=reverse('CAFENR_home')
 
 
     if request.method == "POST":
@@ -174,12 +210,36 @@ def BAE_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSES_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor of Science In Environmental Science"
+    css_style = "cafenr.css"
+    College_Name = "College Of Agriculture, Forestry, Environment and Natural Resources"
+    Carousel_1img ="https://images.pexels.com/photos/7507496/pexels-photo-7507496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Those who do not remember the past are condemned to repeat it."
+    Carousel_1p="-George Santayana"
+    Carousel_2img ="https://images.pexels.com/photos/3747542/pexels-photo-3747542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Education is the most powerful weapon which you can use to change the world."
+    Carousel_2p="-Nelson Mandela"
+    Carousel_3img ="https://images.pexels.com/photos/2346289/pexels-photo-2346289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="A people without the knowledge of their past history, origin, and culture is like a tree without roots."
+    Carousel_3p="- Marcus Garvey"
+    Go_back=reverse('CAFENR_home')
 
 
     if request.method == "POST":
@@ -212,12 +272,36 @@ def BSES_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSFT_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor of Science In Food Technology"
+    css_style = "cafenr.css"
+    College_Name = "College Of Agriculture, Forestry, Environment and Natural Resources"
+    Carousel_1img ="https://images.pexels.com/photos/7507496/pexels-photo-7507496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Those who do not remember the past are condemned to repeat it."
+    Carousel_1p="-George Santayana"
+    Carousel_2img ="https://images.pexels.com/photos/3747542/pexels-photo-3747542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Education is the most powerful weapon which you can use to change the world."
+    Carousel_2p="-Nelson Mandela"
+    Carousel_3img ="https://images.pexels.com/photos/2346289/pexels-photo-2346289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="A people without the knowledge of their past history, origin, and culture is like a tree without roots."
+    Carousel_3p="- Marcus Garvey"
+    Go_back=reverse('CAFENR_home')
 
 
     if request.method == "POST":
@@ -250,6 +334,18 @@ def BSFT_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 
 # ------  CVMBS  ---------
