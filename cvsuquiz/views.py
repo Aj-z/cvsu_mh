@@ -22,6 +22,18 @@ def BSESS_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
+    css_style = "cspear.css"
+    College_Name = "College of Sports, Physical Education and Recreation"
+    Carousel_1img ="https://images.pexels.com/photos/30617264/pexels-photo-30617264/free-photo-of-exciting-hockey-game-at-delta-center-arena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Sport has the power to change the world. It has the power to inspire. It has the power to unite people in a way that little else does."
+    Carousel_1p="-Nelson Mandela"
+    Carousel_2img ="https://images.pexels.com/photos/159607/basketball-player-girls-basketball-girl-159607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Sport is part of every man and woman’s heritage and its absence can never be compensated for."
+    Carousel_2p="-Pierre de Coubertin"
+    Carousel_3img ="https://images.pexels.com/photos/159515/football-american-football-runner-player-159515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="The man who can drive himself further once the effort gets painful is the man who will win."
+    Carousel_3p="-Roger Bannister"
+    Go_back=reverse('CSPEAR_home')
 
 
 
@@ -55,12 +67,37 @@ def BSESS_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BPED_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor of Physical Education"
+    css_style = "cspear.css"
+    College_Name = "College of Sports, Physical Education and Recreation"
+    Carousel_1img ="https://images.pexels.com/photos/8537187/pexels-photo-8537187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Intelligence and skill can only function at the peak of their capacity when the body is healthy and strong."
+    Carousel_1p="- John F. Kennedy "
+    Carousel_2img ="https://images.pexels.com/photos/15138028/pexels-photo-15138028/free-photo-of-boy-during-pe-classes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The education of the body must precede that of the intellect."
+    Carousel_2p="-Aristotle"
+    Carousel_3img ="https://images.pexels.com/photos/8430349/pexels-photo-8430349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="A sound mind in a sound body is a short but full description of a happy state in this world."
+    Carousel_3p="-Friedrich Ludwig Jahn"
+    Go_back=reverse('CSPEAR_home')
+    
 
 
     if request.method == "POST":
@@ -93,6 +130,18 @@ def BPED_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 
 # ------  CAFENR  ---------
