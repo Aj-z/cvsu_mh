@@ -19,7 +19,7 @@ h1 {
 }
 
 a.navbar-brand {
-    color: #60B4FF ;
+    color: #e3b0b0 !important;
     font-family: 'Times New Roman', serif;
 }
 .navbar-brand {
@@ -44,7 +44,7 @@ a.navbar-brand.sc1 {
     margin-bottom: 2vh;
 }
 .btn-outline-success {
-    --bs-btn-color: #60B4FF  !important;
+    --bs-btn-color: #e3b0b0 !important;
     --bs-btn-border-color: #06060600 !important;
     --bs-btn-hover-color: #fff0 !important;
     --bs-btn-hover-bg: #fff0 !important;
