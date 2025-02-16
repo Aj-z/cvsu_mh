@@ -4,12 +4,12 @@
    
 }
 a {
-    color:white;
+    color:#ffd864;
     text-decoration: none !important;
 }
 body{
-    background: #681567;
-    background-image: url(/static/images/CCJback.png);
+    background: #842B2B;
+    background-image: url(/static/images/CSPEARback.png);
     background-size: cover;
     overflow: auto;
     transition: background-image 0.5s ease-in-out;
@@ -31,12 +31,12 @@ button.accordion-button.collapsed {
 }
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: #681567 !important;
+    background-color: #6E1288CC !important;
     margin-bottom: 1.2vh;
 
 }
 a.navbar-brand {
-    color: white;
+    color: #ffd864;
     font-family: 'Times New Roman', serif;
 }
 .navbar-brand {
@@ -54,7 +54,7 @@ a.navbar-brand {
 button:focus:not(:focus-visible) {
     outline: 0;
     background: rgba(0, 0, 0, 0);
-    color: white;
+    color: #ffd864;
 }
 .icon {
     font-family: core-icons !important;
@@ -73,7 +73,7 @@ a.navbar-brand.sc1 {
 
 button.accordion-button.collapsed {
     background: rgba(0, 0, 0, 0);
-    color: white;
+    color: #ffd864;
     text-decoration: none;
    
 }
@@ -97,7 +97,7 @@ h3{
     font-size: medium;
 }
 p{
-    color:#FF5EEF;
+    color:#fff5d9;
     font-size: 0.9em;
 }
 .accordion-horizontal .accordion-header {
@@ -145,18 +145,18 @@ p{
 
 }
 .accordion-button:not(.collapsed) {
-    color: white;
+    color: #ffd864;
     background-color:#ffffff00;
     box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 white;
 }
 .btn-outline-success {
-    --bs-btn-color: #fff !important;
+    --bs-btn-color: #ffd864 !important;
     --bs-btn-border-color: #19875400 !important;
-    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-color:  #ffd864 !important;
     --bs-btn-hover-bg: #19875400 !important;
-    --bs-btn-hover-border-color: #fff !important;
+    --bs-btn-hover-border-color: #ffd864 !important;
     --bs-btn-focus-shadow-rgb: 25,135,84;
-    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-color:  #ffd864 !important;
     --bs-btn-active-bg: #fff0 !important;
     --bs-btn-active-border-color: #19875400 !important;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
