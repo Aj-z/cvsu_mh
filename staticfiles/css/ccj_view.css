@@ -9,7 +9,7 @@ a {
 }
 body{
     background: #842B2B;
-    background-image: url(/static/images/CSPEARback.png);
+    background-image: url(/static/images/crim_college);
     background-size: cover;
     overflow: auto;
     transition: background-image 0.5s ease-in-out;
