@@ -1451,3 +1451,40 @@ class BSN_Quiz(forms.Form):
         widget=forms.RadioSelect,
         label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
     )        
+
+class BSN_Quiz(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Performing technical procedures'),
+        ('2', 'B. Establishing therapeutic relationships'),
+        ('3', 'C. Administering medications'),
+        ('4', 'D. Following hospital policies'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. High-protein, high-potassium diet'),
+        ('2', 'B. Low-protein, low-sodium diet'),
+        ('3', 'C. High-carbohydrate, high-fat diet'),
+        ('4', 'D. High-fiber, high-sodium diet'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Administering aspirin and nitroglycerin'),
+        ('2', 'B. Encouraging ambulation'),
+        ('3', 'C. Providing a high-fat diet'),
+        ('4', 'D. Applying warm compress to the chest'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Theoretical Foundation of Nursing: According to Jean Watson’s Theory of Human Caring, what is the core of nursing practice? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Nutrition and Diet Therapy: Which diet is recommended for a patient with chronic kidney disease (CKD) to reduce fluid retention and electrolyte imbalance?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
+    )        
