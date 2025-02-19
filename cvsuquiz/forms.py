@@ -1452,39 +1452,75 @@ class BSN_Quiz(forms.Form):
         label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
     )        
 
-class BSN_Quiz(forms.Form):    
+class BSC_Quiz(forms.Form):    
     CHOICES_Q1 = [
-        ('1', 'A. Performing technical procedures'),
-        ('2', 'B. Establishing therapeutic relationships'),
-        ('3', 'C. Administering medications'),
-        ('4', 'D. Following hospital policies'),
+        ('1', 'A. Using a strong password policy and multi-factor authentication'),
+        ('2', 'B. Locking computer screens when leaving the workstation'),
+        ('3', 'C. Conducting background checks on all employees'),
+        ('4', 'D. Installing antivirus software on personal devices'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. High-protein, high-potassium diet'),
-        ('2', 'B. Low-protein, low-sodium diet'),
-        ('3', 'C. High-carbohydrate, high-fat diet'),
-        ('4', 'D. High-fiber, high-sodium diet'),
+        ('1', 'A. Principle of Least Privilege'),
+        ('2', 'B. Separation of Duties'),
+        ('3', 'C. Due Diligence'),
+        ('4', 'D. Chain of Command'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. Administering aspirin and nitroglycerin'),
-        ('2', 'B. Encouraging ambulation'),
-        ('3', 'C. Providing a high-fat diet'),
-        ('4', 'D. Applying warm compress to the chest'),
+        ('1', 'A. Situational Crime Prevention'),
+        ('2', 'B. Rehabilitation Programs'),
+        ('3', 'C. Community-Oriented Policing'),
+        ('4', 'D. Punitive Deterrence'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="Theoretical Foundation of Nursing: According to Jean Watson’s Theory of Human Caring, what is the core of nursing practice? "
+        label="Asset Protection: Which of the following is the most effective method for protecting sensitive digital assets in an organization?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="Nutrition and Diet Therapy: Which diet is recommended for a patient with chronic kidney disease (CKD) to reduce fluid retention and electrolyte imbalance?"
+        label="Introduction to Security Administration & Management: In security management, which principle ensures that no single individual has complete control over a critical process?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
+        label="Crime Prevention, Detection, and Control: Which crime prevention strategy focuses on reducing opportunities for crime by modifying the environment?"
+    )        
+class BSISM_Quiz(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Using a strong password policy and multi-factor authentication'),
+        ('2', 'B. Locking computer screens when leaving the workstation'),
+        ('3', 'C. Conducting background checks on all employees'),
+        ('4', 'D. Installing antivirus software on personal devices'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Principle of Least Privilege'),
+        ('2', 'B. Separation of Duties'),
+        ('3', 'C. Due Diligence'),
+        ('4', 'D. Chain of Command'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Situational Crime Prevention'),
+        ('2', 'B. Rehabilitation Programs'),
+        ('3', 'C. Community-Oriented Policing'),
+        ('4', 'D. Punitive Deterrence'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Asset Protection: Which of the following is the most effective method for protecting sensitive digital assets in an organization?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Introduction to Security Administration & Management: In security management, which principle ensures that no single individual has complete control over a critical process?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Crime Prevention, Detection, and Control: Which crime prevention strategy focuses on reducing opportunities for crime by modifying the environment?"
     )        
