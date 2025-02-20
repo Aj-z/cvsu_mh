@@ -1451,3 +1451,76 @@ class BSN_Quiz(forms.Form):
         widget=forms.RadioSelect,
         label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
     )        
+
+class BSC_Quiz(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Lack of forensic evidence'),
+        ('2', 'B. Strict banking regulations'),
+        ('3', 'C. High turnover of criminal members'),
+        ('4', 'D. Use of sophisticated communication and money laundering techniques'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Marijuana'),
+        ('2', 'B. Cocaine'),
+        ('3', 'C. Ecstasy'),
+        ('4', 'D. Methamphetamine (Shabu)'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Presence of an accidental electrical short circuit'),
+        ('2', 'B. A burn pattern showing a "V" shape on the wall'),
+        ('3', 'C. Multiple points of origin with no clear accidental cause'),
+        ('4', "D. Presence of household flammable liquids near the fire's point of origin"),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Specialized Crime Investigation 2: In investigating organized crime syndicates, which of the following is a primary challenge"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Vice and Drug Education and Control: Which of the following is NOT classified as a Schedule I drug under the Philippine Dangerous Drugs Act?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Fire Technology & Arson Investigation: Which of the following is a key indicator that a fire was intentionally set?"
+    )        
+class BSISM_Quiz(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Using a strong password policy and multi-factor authentication'),
+        ('2', 'B. Locking computer screens when leaving the workstation'),
+        ('3', 'C. Conducting background checks on all employees'),
+        ('4', 'D. Installing antivirus software on personal devices'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Principle of Least Privilege'),
+        ('2', 'B. Separation of Duties'),
+        ('3', 'C. Due Diligence'),
+        ('4', 'D. Chain of Command'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Situational Crime Prevention'),
+        ('2', 'B. Rehabilitation Programs'),
+        ('3', 'C. Community-Oriented Policing'),
+        ('4', 'D. Punitive Deterrence'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Asset Protection: Which of the following is the most effective method for protecting sensitive digital assets in an organization?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Introduction to Security Administration & Management: In security management, which principle ensures that no single individual has complete control over a critical process?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Crime Prevention, Detection, and Control: Which crime prevention strategy focuses on reducing opportunities for crime by modifying the environment?"
+    )        
