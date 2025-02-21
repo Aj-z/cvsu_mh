@@ -1452,7 +1452,7 @@ class BSN_Quiz(forms.Form):
         label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
     )        
 
-class BSC_Quiz(forms.Form):    
+class BSCQuiz(forms.Form):    
     CHOICES_Q1 = [
         ('1', 'A. Lack of forensic evidence'),
         ('2', 'B. Strict banking regulations'),
@@ -1488,7 +1488,7 @@ class BSC_Quiz(forms.Form):
         widget=forms.RadioSelect,
         label="Fire Technology & Arson Investigation: Which of the following is a key indicator that a fire was intentionally set?"
     )        
-class BSISM_Quiz(forms.Form):    
+class BSISMQuiz(forms.Form):    
     CHOICES_Q1 = [
         ('1', 'A. Using a strong password policy and multi-factor authentication'),
         ('2', 'B. Locking computer screens when leaving the workstation'),
