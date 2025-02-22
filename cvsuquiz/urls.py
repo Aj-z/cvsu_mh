@@ -9,7 +9,7 @@ from .views import (cspear_home_view, BSESS_Quiz, BPED_Quiz,
                     BSABE_QUIZ, BSARCH_QUIZ, BSCE_QUIZ, BSCpE_QUIZ, 
                     BSCS_QUIZ, BSEE_QUIZ, BSINDT_AT_QUIZ, BSINDT_ET_QUIZ,
                     BSINDT_EX_QUIZ, BSIT_QUIZ, BSOA_QUIZ, 
-                    ccj_home_view,BSC_Quiz, cas_home_view, BAJ_QUIZ, 
+                    ccj_home_view,BSC_Quiz, cas_home_view, BAJ_QUIZ, BSISM_Quiz, 
                     BSE_ENGL_QUIZ,BAPS_QUIZ, BSAM_QUIZ, BSBIO_ANIMALBIO_QUIZ,
                     BSBIO_PLANTBIO_QUIZ, BSBIO_MICROBIO_QUIZ, BSBIO_MEDICALBIO_QUIZ,
                     BSBIO_ECOLOGY_QUIZ, BSBIO_GENETICS_QUIZ, BSPSYC_QUIZ, BSSW_QUIZ,
@@ -42,7 +42,9 @@ urlpatterns = [
 
    # ------  CCJ  ---------
    path('CCJ/', ccj_home_view, name='CCJ_home'),
-   path('BSC/', BSC_Quiz, name='BSC_quiz'), 
+   path('BSC/', BSC_Quiz, name='BSC_quiz'),
+    path('BSISM/',BSISM_Quiz, name='BSISM_quiz'),
+   
    # ------  CAS  ---------
    path('CAS/', cas_home_view, name='CAS_home'),
    path('BAJ/', BAJ_QUIZ, name='BAJ_quiz'),
