@@ -1,6 +1,6 @@
 
 # Well being Check
-#### Video Demo:  https://www.youtube.com/watch?v=wKnEj-UnVUo
+#### Prototype Video Demo:  https://www.youtube.com/watch?v=wKnEj-UnVUo
 #### Certificate :)  https://certificates.cs50.io/46b6d8b5-1ce1-4121-8f30-b2060cd3acd1.pdf?size=letter
 #### uses django survey https://github.com/irfanpule/django-form-surveys
 #### Description:
