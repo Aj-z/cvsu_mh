@@ -10,7 +10,7 @@ from .forms import (BsessQuiz, BpedQuiz, BsaQuiz,
                     BSPSYC_Quiz, BSSW_Quiz, BSABE_Quiz, BSARCH_Quiz, BSCE_Quiz, 
                     BSCpE_Quiz, BSCS_Quiz, BSEE_Quiz, BSINDT_AT_Quiz, 
                     BSINDT_ET_Quiz, BSINDT_EX_Quiz, BSIT_Quiz, BSOA_Quiz,
-                    BSMT_Quiz, BSM_Quiz, BSN_Quiz,BSCQuiz)
+                    BSMT_Quiz, BSM_Quiz, BSN_Quiz,BSCQuiz, BSISMQuiz)
 
 # ------  CSPEAR  ---------
 def cspear_home_view(request):
@@ -966,6 +966,43 @@ def BSC_Quiz(request):
         'Carousel_3p' : Carousel_3p,
         'Go_back': Go_back
     })
+def BSISM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Industrial Security Management"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cspear.css"
+    College_Name = "College of Criminal Justice"
+    Carousel_1img ="https://images.pexels.com/photos/30617264/pexels-photo-30617264/free-photo-of-exciting-hockey-game-at-delta-center-arena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Sport has the power to change the world. It has the power to inspire. It has the power to unite people in a way that little else does."
+    Carousel_1p="-Nelson Mandela"
+    Carousel_2img ="https://images.pexels.com/photos/159607/basketball-player-girls-basketball-girl-159607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Sport is part of every man and woman’s heritage and its absence can never be compensated for."
+    Carousel_2p="-Pierre de Coubertin"
+    Carousel_3img ="https://images.pexels.com/photos/159515/football-american-football-runner-player-159515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="The man who can drive himself further once the effort gets painful is the man who will win."
+    Carousel_3p="-Roger Bannister"
+    Go_back=reverse('CCJ_home')
+
+
+
+    if request.method == "POST":
+        form = BSISMQuiz(request.POST)
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '1':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is A"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
 
 def BSISM_Quiz(request):
     COURSE_NAME = "Bachelor of Science in Industrial Security Management"
@@ -1009,7 +1046,10 @@ def BSISM_Quiz(request):
             else:
                 feedback_q3 = "Wrong! The correct answer is D"    
     else:
-        form = BSCQuiz()
+
+        form = BSISMQuiz()
+
+
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
