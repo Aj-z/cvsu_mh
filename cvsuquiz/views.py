@@ -966,6 +966,7 @@ def BSC_Quiz(request):
         'Carousel_3p' : Carousel_3p,
         'Go_back': Go_back
     })
+
 def BSISM_Quiz(request):
     COURSE_NAME = "Bachelor of Science in Industrial Security Management"
     feedback_q1 = None
