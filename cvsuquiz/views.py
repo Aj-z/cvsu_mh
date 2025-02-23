@@ -10,7 +10,7 @@ from .forms import (BsessQuiz, BpedQuiz, BsaQuiz,
                     BSPSYC_Quiz, BSSW_Quiz, BSABE_Quiz, BSARCH_Quiz, BSCE_Quiz, 
                     BSCpE_Quiz, BSCS_Quiz, BSEE_Quiz, BSINDT_AT_Quiz, 
                     BSINDT_ET_Quiz, BSINDT_EX_Quiz, BSIT_Quiz, BSOA_Quiz,
-                    BSMT_Quiz, BSM_Quiz, BSN_Quiz,BSCQuiz)
+                    BSMT_Quiz, BSM_Quiz, BSN_Quiz,BSCQuiz, BSISMQuiz)
 
 # ------  CSPEAR  ---------
 def cspear_home_view(request):
@@ -908,7 +908,7 @@ def BSC_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    css_style = "cspear.css"
+    css_style = "cas.css"
     College_Name = "College of Criminal Justice"
     Carousel_1img ="https://images.pexels.com/photos/30617264/pexels-photo-30617264/free-photo-of-exciting-hockey-game-at-delta-center-arena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_1h5="Sport has the power to change the world. It has the power to inspire. It has the power to unite people in a way that little else does."
@@ -971,7 +971,7 @@ def BSISM_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    css_style = "cspear.css"
+    css_style = "cas.css"
     College_Name = "College of Criminal Justice"
     Carousel_1img ="https://images.pexels.com/photos/30617264/pexels-photo-30617264/free-photo-of-exciting-hockey-game-at-delta-center-arena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_1h5="Sport has the power to change the world. It has the power to inspire. It has the power to unite people in a way that little else does."
@@ -987,7 +987,7 @@ def BSISM_Quiz(request):
 
 
     if request.method == "POST":
-        form = BSCQuiz(request.POST)
+        form = BSISMQuiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -1008,7 +1008,7 @@ def BSISM_Quiz(request):
             else:
                 feedback_q3 = "Wrong! The correct answer is D"    
     else:
-        form = BSCQuiz()
+        form = BSISMQuiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
