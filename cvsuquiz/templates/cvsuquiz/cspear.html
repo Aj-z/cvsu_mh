@@ -5,7 +5,7 @@
     <title>Quiz </title>
 </head>
 <body>
-    <h1>{{ COURSE_NAME }}: Try Quiz</h1>
+    <h1>{{ COURSE_NAME }}:Try Quiz</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
