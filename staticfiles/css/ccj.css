@@ -40,7 +40,7 @@ a.navbar-brand.sc1 {
 }
 .navbar.bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: #3a0359 !important;
+    background-color:  #4F0B62 !important;
     margin-bottom: 2vh;
 }
 .btn-outline-success {
@@ -67,7 +67,7 @@ a.navbar-brand.sc1 {
 
 
 .results {
-    background: #34104d;
+    background: #410851 !important;
     width: inherit;
     display: flex;
     margin-bottom: 3px;
@@ -129,7 +129,7 @@ div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
   }
 
 body {
-    background: #3c035e !important;
+    background: #540D68 !important;
 }
 label:hover {
     background: #893EBD;
