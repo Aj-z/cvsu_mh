@@ -40,7 +40,7 @@ a.navbar-brand.sc1 {
 }
 .navbar.bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: #FFB732 !important;
+    background-color: #FFB225 !important;
     margin-bottom: 2vh;
 }
 .btn-outline-success {
@@ -94,12 +94,13 @@ padding: 10px;
 
 }
 label {
-    background: white;
+    background: #ffe9bf03;
     width: inherit;
     display: flex;
     padding: 10px;
     margin-bottom: 3px;
     border-radius: 10px;
+    border: azure;
 }
 .questions {
   
@@ -110,10 +111,13 @@ label {
     height: fit-content;
 }
 div#id_answer_q1, div#id_answer_q2, div#id_answer_q3 {
-    background: white;
+    background: #ffe9bf14;
     border-radius: 10px;
     top: -13;
     width: inherit;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffa700bd;
 }
 .d-block.w-100{
     width: initial !important;
