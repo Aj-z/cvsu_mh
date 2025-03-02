@@ -910,15 +910,15 @@ def BSC_Quiz(request):
     feedback_q3 = None
     css_style = "ccj.css"
     College_Name = "College of Criminal Justice"
-    Carousel_1img ="https://images.pexels.com/photos/30617264/pexels-photo-30617264/free-photo-of-exciting-hockey-game-at-delta-center-arena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="Sport has the power to change the world. It has the power to inspire. It has the power to unite people in a way that little else does."
-    Carousel_1p="-Nelson Mandela"
-    Carousel_2img ="https://images.pexels.com/photos/159607/basketball-player-girls-basketball-girl-159607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="Sport is part of every man and woman’s heritage and its absence can never be compensated for."
-    Carousel_2p="-Pierre de Coubertin"
-    Carousel_3img ="https://images.pexels.com/photos/159515/football-american-football-runner-player-159515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="The man who can drive himself further once the effort gets painful is the man who will win."
-    Carousel_3p="-Roger Bannister"
+    Carousel_1img ="https://images.pexels.com/photos/30912131/pexels-photo-30912131/free-photo-of-statue-of-justice-with-sword-and-scale.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The criminal justice system is the bedrock of a civilized society."
+    Carousel_1p="-John Locke"
+    Carousel_2img ="https://images.pexels.com/photos/7319068/pexels-photo-7319068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The true measure of any society can be found in how it treats its most vulnerable members."
+    Carousel_2p="-Mahatma Gandhi"
+    Carousel_3img ="https://images.pexels.com/photos/10481294/pexels-photo-10481294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Justice will not be served until those who are unaffected are as outraged as those who are."
+    Carousel_3p="-Benjamin Franklin"
     Go_back=reverse('CCJ_home')
 
 
@@ -974,15 +974,15 @@ def BSISM_Quiz(request):
     css_style = "ccj.css"
 
     College_Name = "College of Criminal Justice"
-    Carousel_1img ="https://images.pexels.com/photos/30617264/pexels-photo-30617264/free-photo-of-exciting-hockey-game-at-delta-center-arena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="Sport has the power to change the world. It has the power to inspire. It has the power to unite people in a way that little else does."
-    Carousel_1p="-Nelson Mandela"
-    Carousel_2img ="https://images.pexels.com/photos/159607/basketball-player-girls-basketball-girl-159607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="Sport is part of every man and woman’s heritage and its absence can never be compensated for."
-    Carousel_2p="-Pierre de Coubertin"
-    Carousel_3img ="https://images.pexels.com/photos/159515/football-american-football-runner-player-159515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="The man who can drive himself further once the effort gets painful is the man who will win."
-    Carousel_3p="-Roger Bannister"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
     Go_back=reverse('CCJ_home')
 
 
