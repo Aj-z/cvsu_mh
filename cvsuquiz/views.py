@@ -2611,15 +2611,15 @@ def BSOA_Quiz(request):
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/12911765/pexels-photo-12911765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Efficiency is doing things right; effectiveness is doing the right things."
+    Carousel_1p="-Peter Drucker"
+    Carousel_2img ="https://images.pexels.com/photos/7550886/pexels-photo-7550886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The secret of success is to do the common things uncommonly well."
+    Carousel_2p="-John D. Rockefeller"
+    Carousel_3img ="https://images.pexels.com/photos/3183172/pexels-photo-3183172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Good order is the foundation of all things."
+    Carousel_3p="-Edmund Burke"
     Go_back=reverse('CEMDS_home')
 
 
@@ -2672,21 +2672,21 @@ def BSOA_Quiz(request):
         'Go_back': Go_back
     })
 def BSACC_Quiz(request):
-    COURSE_NAME = "Bachelor of Science in Accountancy "
+    COURSE_NAME = "Bachelor of Science in Accountancy"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/8927456/pexels-photo-8927456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Accounting is the language of business."
+    Carousel_1p="-Warren Buffett"
+    Carousel_2img ="https://images.pexels.com/photos/4476378/pexels-photo-4476378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="A budget is telling your money where to go instead of wondering where it went."
+    Carousel_2p="-Dave Ramsey"
+    Carousel_3img ="https://images.pexels.com/photos/6863176/pexels-photo-6863176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="The hardest thing in the world to understand is the income tax."
+    Carousel_3p="-Albert Einstein"
     Go_back=reverse('CEMDS_home')
 
 
@@ -2745,15 +2745,15 @@ def BSBA_FM_Quiz(request):
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/6120253/pexels-photo-6120253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The stock market is filled with individuals who know the price of everything, but the value of nothing."
+    Carousel_1p="-Philip Fisher"
+    Carousel_2img ="https://images.pexels.com/photos/14820460/pexels-photo-14820460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The goal of a successful investor is to make the most money with the least risk."
+    Carousel_2p="-Warren Buffett"
+    Carousel_3img ="https://images.pexels.com/photos/5816299/pexels-photo-5816299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="An investment in knowledge pays the best interest."
+    Carousel_3p="- Benjamin Franklin"
     Go_back=reverse('CEMDS_home')
 
 
@@ -2806,21 +2806,21 @@ def BSBA_FM_Quiz(request):
         'Go_back': Go_back
     })
 def BSBA_HRM_Quiz(request):
-    COURSE_NAME = "Bachelor of Science in Business Administration Major in Human Resource Management "
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Human Resource Management"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/3782143/pexels-photo-3782143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The way your employees feel is the way your customers will feel."
+    Carousel_1p="-Sybil F. Stershic"
+    Carousel_2img ="https://images.pexels.com/photos/3746957/pexels-photo-3746957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Hire character. Train skill."
+    Carousel_2p="-Peter Schutz"
+    Carousel_3img ="https://images.pexels.com/photos/4098369/pexels-photo-4098369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Train people well enough so they can leave, treat them well enough so they don’t want to."
+    Carousel_3p="-Richard Branson"
     Go_back=reverse('CEMDS_home')
 
 
@@ -2879,15 +2879,15 @@ def BSBA_MM_Quiz(request):
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="People don’t buy what you do; they buy why you do it."
+    Carousel_1p="-Simon Sinek"
+    Carousel_2img ="https://images.pexels.com/photos/6956316/pexels-photo-6956316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The best marketing doesn’t feel like marketing."
+    Carousel_2p="- Tom Fishburne"
+    Carousel_3img ="https://images.pexels.com/photos/7948039/pexels-photo-7948039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Stopping advertising to save money is like stopping your watch to save time."
+    Carousel_3p="-Henry Ford"
     Go_back=reverse('CEMDS_home')
 
 
