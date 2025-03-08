@@ -2946,15 +2946,15 @@ def BSBA_OM_Quiz(request):
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Efficiency is doing things right; effectiveness is doing the right things."
+    Carousel_1p="-Peter Drucker"
+    Carousel_2img ="https://images.pexels.com/photos/6592358/pexels-photo-6592358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="You can't manage what you don't measure."
+    Carousel_2p="-W. Edwards Deming"
+    Carousel_3img ="https://images.pexels.com/photos/7172858/pexels-photo-7172858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Great things are not done by impulse, but by a series of small things brought together."
+    Carousel_3p="-Vincent Van Gogh"
     Go_back=reverse('CEMDS_home')
 
 
@@ -3013,15 +3013,15 @@ def BSBA_SM_Quiz(request):
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/7512139/pexels-photo-7512139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Do what you do so well that they will want to see it again and bring their friends."
+    Carousel_1p="-Walt Disney"
+    Carousel_2img ="https://images.pexels.com/photos/5816299/pexels-photo-5816299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="A satisfied customer is the best business strategy of all."
+    Carousel_2p="-Michael LeBoeuf"
+    Carousel_3img ="https://images.pexels.com/photos/3782131/pexels-photo-3782131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Your most unhappy customers are your greatest source of learning"
+    Carousel_3p="-Bill Gates"
     Go_back=reverse('CEMDS_home')
 
 
@@ -3080,15 +3080,15 @@ def BSECON_Quiz(request):
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/7567550/pexels-photo-7567550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design."
+    Carousel_1p="-Friedrich Hayek "
+    Carousel_2img ="https://images.pexels.com/photos/6802048/pexels-photo-6802048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Economics is everywhere, and understanding economics can help you make better decisions and lead a happier life."
+    Carousel_2p="-Tyler Cowen"
+    Carousel_3img ="https://images.pexels.com/photos/6120182/pexels-photo-6120182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="The economy depends about as much on economists as the weather does on weather forecasters."
+    Carousel_3p="-Jean-Paul Kauffmann"
     Go_back=reverse('CEMDS_home')
 
 
@@ -3147,15 +3147,15 @@ def BSIS_AS_Quiz(request):
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/4551301/pexels-photo-4551301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The past is never dead. It’s not even past."
+    Carousel_1p="- William Faulkner"
+    Carousel_2img ="https://images.pexels.com/photos/581299/pexels-photo-581299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Asia is rich in people, rich in culture and rich in resources. It is also rich in trouble."
+    Carousel_2p="-Hubert H. Humphrey"
+    Carousel_3img ="https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="To understand a people, one must know their memories. The past that makes them what they are."
+    Carousel_3p="- Ryszard Kapuściński"
     Go_back=reverse('CEMDS_home')
 
 
@@ -3214,15 +3214,15 @@ def BSIS_ES_Quiz(request):
     feedback_q3 = None
     css_style = "cemds.css"
     College_Name = "College of Economics,Management and Development Studies"
-    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="The price of security is eternal vigilance."
-    Carousel_1p="-Thomas Jefferson"
-    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
-    Carousel_2p="-Henry Ford"
-    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Security is not a product, but a process."
-    Carousel_3p="-Bruce Schneier"
+    Carousel_1img ="https://images.pexels.com/photos/2574631/pexels-photo-2574631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The strength of the European Union does not lie in its bureaucracy or institutions, but in its diversity, cultures, and people."
+    Carousel_1p="-Jean-Claude Juncker"
+    Carousel_2img ="https://images.pexels.com/photos/2930354/pexels-photo-2930354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="To be European is to be open to differences and to share a common vision of the future."
+    Carousel_2p="-Emmanuel Macron"
+    Carousel_3img ="https://images.pexels.com/photos/2225442/pexels-photo-2225442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Europe was created by history. America was created by philosophy."
+    Carousel_3p="-Margaret Thatcher"
     Go_back=reverse('CEMDS_home')
 
 
