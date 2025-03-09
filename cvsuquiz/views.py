@@ -3213,7 +3213,7 @@ def BSIS_ES_Quiz(request):
     feedback_q2 = None
     feedback_q3 = None
     css_style = "cemds.css"
-    College_Name = "College of Economics,Management and Development Studies"
+    College_Name = "College of Economics,Management and Development Studies ada"
     Carousel_1img ="https://images.pexels.com/photos/2574631/pexels-photo-2574631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_1h5="The strength of the European Union does not lie in its bureaucracy or institutions, but in its diversity, cultures, and people."
     Carousel_1p="-Jean-Claude Juncker"
