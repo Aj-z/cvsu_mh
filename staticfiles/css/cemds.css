@@ -20,7 +20,7 @@ h1 {
 
 a.navbar-brand {
     color: #60B4FF ;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', serif;
 }
 .navbar-brand {
     font-size: 1.2rem;
