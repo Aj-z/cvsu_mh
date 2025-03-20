@@ -1889,37 +1889,37 @@ class BSIS_ES_QUIZ(forms.Form):
 
 class DVMQuiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. The branch of mechanics that studies the motion of a body or a system of bodies without consideration given to its mass or the forces acting on it.'),
-        ('2', 'B. The branch of mechanics that is concerned with the effects of forces on the motion of a body or system of bodies, especially of forces that do not originate within the system itself.'),
-        ('3', 'C. The study of the motion of a body or a system of bodies with consideration given to its mass or the forces acting on it.'),
-        ('4', 'D. If the forces acting upon an object are balanced, then the acceleration of that object will be 0 m/s/s.'),
+        ('1', 'A. To discuss recent advancements in veterinary pharmaceuticals.'),
+        ('2', 'B. To correlate clinical findings with pathological diagnoses.'),
+        ('3', 'C. To conduct epidemiological studies on zoonotic diseases.'),
+        ('4', 'D. To determine nutritional requirements for livestock.'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Confirmation Bias'),
-        ('2', 'B. Negativity Bias'),
-        ('3', 'C. Self-Serving Bias'),
-        ('4', 'D. Hindsight Bias'),
+        ('1', 'A. Escherichia coli'),
+        ('2', 'B. Listeria monocytogenes'),
+        ('3', 'C. Salmonella spp.'),
+        ('4', 'D. Clostridium botulinum'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. Ergogenic aids alone are sufficient to improve athletic performance, with no need for nutritional support.'),
-        ('2', 'B. Proper nutrition supports exercise recovery, but ergogenic aids can provide a significant boost in endurance, strength, and recovery beyond what nutrition alone can offer.'),
-        ('3', 'C. Proper nutrition and hydration are the most important factors for athletic performance, and ergogenic aids are only useful for professional athletes in extreme conditions.'),
-        ('4', 'D.  Ergogenic aids and proper nutrition complement each other; both can improve performance, but should be tailored to the individuals sport, body composition, and energy requirements.'),
+        ('1', 'A. Simple cuboidal epithelium'),
+        ('2', 'B. Stratified squamous epithelium'),
+        ('3', 'C. Simple columnar epithelium'),
+        ('4', 'D. Transitional epithelium'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="CLINICO-PATHOLOGICAL CONFERENCE 1:"
+        label="CLINICO-PATHOLOGICAL CONFERENCE 1: What is the primary objective of a Clinico-Pathological Conference (CPC) in veterinary medicine?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="VETERINARY FOOD SAFETY AND HYGIENE:"
+        label="VETERINARY FOOD SAFETY AND HYGIENE: Which of the following pathogens is most commonly associated with foodborne illness in improperly cooked poultry?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="VETERINARY MICROSCOPIC ANATOMY:"
+        label="VETERINARY MICROSCOPIC ANATOMY: Which type of epithelium lines the small intestine and aids in nutrient absorption?"
     )
