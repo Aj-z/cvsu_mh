@@ -13,7 +13,7 @@ from .views import (cspear_home_view, BSESS_Quiz, BPED_Quiz,
                     BSE_ENGL_QUIZ,BAPS_QUIZ, BSAM_QUIZ, BSBIO_ANIMALBIO_QUIZ,
                     BSBIO_PLANTBIO_QUIZ, BSBIO_MICROBIO_QUIZ, BSBIO_MEDICALBIO_QUIZ,
                     BSBIO_ECOLOGY_QUIZ, BSBIO_GENETICS_QUIZ, BSPSYC_QUIZ, BSSW_QUIZ,
-                    cvmbs_home_view,
+                    cvmbs_home_view,DVM_Quiz,
                     cemds_home_view,BSOA_Quiz,BSACC_Quiz, BSBA_FM_Quiz,BSBA_HRM_Quiz,
                     BSBA_MM_Quiz,BSBA_OM_Quiz,BSBA_SM_Quiz,BSECON_Quiz,BSIS_AS_Quiz,
                     BSIS_ES_Quiz)
@@ -80,6 +80,7 @@ urlpatterns = [
    path('BSIT_QUIZ/', BSIT_QUIZ, name='BSIT_quiz'),
    # ------  CVMBS ---------
    path('CVMBS/', cvmbs_home_view, name='CVMBS_home'),
+   path('DVM/', DVM_Quiz, name='DVM_Quiz'),
    # ------  CEMDS ---------
    path('CEMDS/', cemds_home_view, name='CEMDS_home'),
    path('BSOA_Quiz/', BSOA_Quiz, name='BSOA_Quiz'),
