@@ -5,70 +5,107 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CVSU MAIN COLLEGES</title>
         <link rel="stylesheet" href="{% static 'css/cvsuwrapper.css' %}">
+        <!-- Bootstrap CSS -->
+          
+
+          <!-- Owl Carousel CSS -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        
+
+          <!-- jQuery -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+          <!-- Owl Carousel JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            
+        
     </head>
     <body>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <div class="title">
-                <a class="navbar-brand">CAVITE STATE UNIVERSITY</a>
+      
+
+          <section class="game-section">
+            <h2 class="line-title">CAVITE STATE UNIVERSITY</h2>
+            
+            <div class="owl-carousel custom-carousel owl-theme">
+              <div class="item active" style="background-image: url('{% static 'images/CSPEAR.png' %}');">
+                <div class="item-desc">
+                  <h3>CSPEAR</h3>
+                  <p>focuses on physical education, sports science, and wellness to promote health and fitness. It trains students in coaching, sports management, and recreational leadership.</p>
                 </div>
+              </div>
+              <div class="item" style="background-image: url('{% static 'images/subcembs.jpg' %}');">
+                <div class="item-desc">
+                  <h3>CEMDS</h3>
+                  <p>specializes in business, economics, and development studies to cultivate leadership and entrepreneurship. It focuses on economic sustainability and strategic management.</p>
+                </div>
+              </div>
+              <div class="item" style="background-image: url('{% static 'images/subccj.jpg' %}');">
+                <div class="item-desc">
+                  <h3>CCJ</h3>
+                  <p>trains students in criminology, law enforcement, and forensic science to promote justice and public safety. It emphasizes ethical practices and crime prevention strategies.</p>
+                </div>
+              </div>
+              <div class="item" style="background-image: url('{% static 'images/subccj.jpg' %}')">
+                <div class="item-desc">
+                  <h3>CON</h3>
+                  <p>trains students to become skilled and compassionate healthcare professionals. It focuses on patient care, clinical skills, and community health service    <a>> SEE PROGRAMS <</a> </p>
+                
+                </div>
+              </div>
+              <div class="item" style="background-image: url('{% static 'images/subceit.jpg' %}');">
+                <div class="item-desc">
+                  <h3>CEIT</h3>
+                  <p>equips students with technical and problem-solving skills in engineering and IT fields. It fosters innovation and research in technology, automation, and infrastructure.</p>
+                </div>
+              </div>
+              <div class="item" style="background-image: url('{% static 'images/subcas.jpg' %}');">
+                <div class="item-desc">
+                  <h3>CAS</h3>
+                  <p>offers programs in liberal arts, sciences, and humanities to develop critical thinking and communication skills. It fosters interdisciplinary learning to prepare students for diverse career paths.</p>
+                </div>
+              </div>
               
-                <button class="btn btn-outline-success d-flex" ><a href="surveys/">Go Back</a></button>
-             
-            </div>
-          </nav>
-          <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <div class="title">
-                <a class="navbar-brand">Hello This feature is still underdevolopment you could go back for now or maybe not no pressure</a>
+              <div class="item" style="background-image: url('{% static 'images/subceit.jpg' %}');">
+                <div class="item-desc">
+                  <h3>CED</h3>
+                  <p>prepares future educators with innovative teaching methods and pedagogical expertise. It aims to produce competent, compassionate, and adaptable teachers.</p>
+                </div>
+              </div>
+              
+              <div class="item" style="background-image: url('{% static 'images/CVMBS.png' %}');">
+                <div class="item-desc">
+                  <h3>CVMBS</h3>
+                  <p>prepares students for careers in veterinary medicine, animal science, and biomedical research. It emphasizes animal health, disease prevention, and public health.</p>
+                </div>
+              </div>
+              
+              <div class="item" style="background-image: url('{% static 'images/cafenr.png' %}');">
+                <div class="item-desc">
+                  <h3>CAFENR</h3>
+                  <p>
+                    focuses on sustainable agriculture, forestry, and environmental conservation to address food security and ecological challenges. It equips students with scientific knowledge and hands-on experience in resource management.
+                  </p>
+                </div>
               </div>
             </div>
-          </nav>
-        <div class="wrapper">
-             
-              <div class="carousel">
-
-                <div class="carousel-control-button left"><input type="radio" name="carousel-control-input"></div>
-                <div class="carousel-control-button right"><input type="radio" name="carousel-control-input" checked></div>
-        
-                <div class="carousel-rotation-direction">
-        
-                        
-                        <ul class="carousel-item-wrapper" style="--_num-elements: 9">
-        
-                            <li class="carousel-item" style="--_index: 1; top:150px; height:75px; border-radius:10px;--_image-url: url('{% static 'images/CSPEAR.png' %}')"><a href="{% url 'CSPEAR_home' %}" target="_blank"><p>CSPEAR</p></a></li>
-                            <li class="carousel-item" style="--_index: 2; top:150px; height:75px; border-radius:10px;--_image-url: url('{% static 'images/CVMBS.png' %}')"><a href="{% url 'CVMBS_home' %}" target="_blank"><p>CVMBS</p></a></li>
-                            <li class="carousel-item" style="--_index: 3; top:150px; height:75px; border-radius:10px;--_image-url: url('{% static 'images/CVMBS.png' %}')"><a href="{% url 'CON_home' %}" target="_blank"><p>CON</p></a></li>
-                            <li class="carousel-item" style="--_index: 4; top:150px; height:75px; border-radius:10px;--_image-url: url('{% static 'images/subcas.jpg' %}')"><a href="{% url 'CAS_home' %}" target="_blank"><p>CAS</p></a></li>
-                            <li class="carousel-item" style="--_index: 5; top:150px; height:75px; border-radius:10px;--_image-url: url('{% static 'images/subceit.jpg' %}')"><a href="{% url 'CEIT_home' %}" target="_blank"><p>CEIT</p></a></li>
-                            <li class="carousel-item" style="--_index: 6; top:150px; height:75px; border-radius:10px;--_image-url: url('{% static 'images/subccj.jpg' %}')"><a href="{% url 'CCJ_home' %}" target="_blank"><p>CCJ</p></a></li>
-                            <li class="carousel-item" style="--_index: 7; top:150px; height:75px; border-radius:10px;--_image-url: url('{% static 'images/CED.png' %}')"><a href="{% url 'CED_home' %}" target="_blank"><p>CED</p></a></li>
-                            <li class="carousel-item" style="--_index: 8; top:150px; height:75px; border-radius:10px;--_image-url: url('{% static 'images/subcembs.jpg' %}')"><a href="{% url 'CEMDS_home' %}" target="_blank"><p>CEMDS</p></a></li>
-                            <li class="carousel-item" style="--_index: 9; top:150px; height:75px; border-radius:10px; --_image-url: url('{% static 'images/cafenr.png' %}')"><a href="{% url 'CAFENR_home' %}" target="_blank"><p>CAFENR</p></a></li>
-                            
-                            <li class="carousel-ground"></li>
-
-            
-                    </ul>
-
-                    <ul class="carousel-item-wrapper" style="--_num-elements: 9">
-        
-                        <li class="carousel-item item" style="--_index: 1; --_image-url: url('{% static 'images/CSPEAR.png' %}')"><a href="" target="_blank"></a></li>
-                        <li class="carousel-item item" style="--_index: 2; --_image-url: url('{% static 'images/CVMBS.png' %}')"><a href="" target="_blank"></a></li>
-                        <li class="carousel-item item" style="--_index: 3; --_image-url: url('{% static 'images/CVMBS.png' %}')"><a href="" target="_blank"></a></li>
-                        <li class="carousel-item item" style="--_index: 4; --_image-url: url('{% static 'images/subcas.jpg' %}')"><a href="" target="_blank"></a></li>
-                        <li class="carousel-item item" style="--_index: 5; --_image-url: url('{% static 'images/subceit.jpg' %}')"><a href="" target="_blank"></a></li>
-                        <li class="carousel-item item" style="--_index: 6; --_image-url: url('{% static 'images/subccj.jpg' %}')"><a href="" target="_blank"></a></li>
-                        <li class="carousel-item item" style="--_index: 7; --_image-url: url('{% static 'images/CED.png' %}')"><a href="" target="_blank"></a></li>
-                        <li class="carousel-item item" style="--_index: 8; --_image-url: url('{% static 'images/subcembs.jpg' %}')"><a href="" target="_blank"></a></li>
-                        <li class="carousel-item item" style="--_index: 9; --_image-url: url('{% static 'images/cafenr.png' %}')"><a href="" target="_blank"></a></li>
-                        
-                        <li class="carousel-ground"></li>
-
-                </ul>    
-        
-                </div>
+            </div>
+          </section>
         
         </div>
+        <script>
+
+          $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true
+          });
+          $(document).ready(function () {
+            $(".custom-carousel .item").click(function () {
+              $(".custom-carousel .item").not($(this)).removeClass("active");
+              $(this).toggleClass("active");
+            });
+          });
+          
+        </script>
     </body>
  </html>     
