@@ -41,11 +41,9 @@ a:hover {
   text-decoration: none;
   outline: none;
 }
-a:hover {
-  color: #e73700;
-}
+
 h2 {
-  margin-bottom: 48px;
+  margin-bottom: 14px;
   padding-bottom: 16px;
   font-size: 20px;
   line-height: 28px;
@@ -113,7 +111,7 @@ button {
   -webkit-transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
-..item:hover{
+.item:hover{
   filter:none;
 }
 .item{
@@ -230,7 +228,24 @@ button {
     -webkit-transform: translateY(calc(100% - 42px));
   }
 }
-
+/* own css*/
+.btn.btn-outline-success.d-flex:hover {
+  background: none;
+  color: #23b523;
+  border-color: #1cff1c;
+}
+.btn.btn-outline-success.d-flex {
+  background: none;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 11px;
+  color: #23b523;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @media (max-width: 767px) {
   body {
     font-size: 14px;
