@@ -410,16 +410,16 @@ def DVM_Quiz(request):
     feedback_q3 = None
     css_style = "cvmbs.css"
     College_Name = "College of Veterinary, Medicine and Biomedical Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/30617264/pexels-photo-30617264/free-photo-of-exciting-hockey-game-at-delta-center-arena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_1h5="Sport has the power to change the world. It has the power to inspire. It has the power to unite people in a way that little else does."
-    Carousel_1p="-Nelson Mandela"
-    Carousel_2img ="https://images.pexels.com/photos/159607/basketball-player-girls-basketball-girl-159607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="Sport is part of every man and woman’s heritage and its absence can never be compensated for."
-    Carousel_2p="-Pierre de Coubertin"
-    Carousel_3img ="https://images.pexels.com/photos/159515/football-american-football-runner-player-159515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="The man who can drive himself further once the effort gets painful is the man who will win."
-    Carousel_3p="-Roger Bannister"
-    Go_back=reverse('CSPEAR_home')
+    Carousel_1img ="https://images.pexels.com/photos/5731861/pexels-photo-5731861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The health of animals and humans is inextricably linked, and it is our duty to protect both."
+    Carousel_1p="-Bernhard Bang"
+    Carousel_2img ="https://images.pexels.com/photos/7470635/pexels-photo-7470635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Love of animals is a universal impulse, a common ground on which all of us may meet. By loving and understanding animals, perhaps we humans shall come to understand each other."
+    Carousel_2p="-Louis J. Camuti"
+    Carousel_3img ="https://images.pexels.com/photos/6130987/pexels-photo-6130987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Veterinary medicine and human medicine complement each other and should be considered two halves of the same whole."
+    Carousel_3p="-William Osler"
+    Go_back=reverse('CVMBS_home')
 
 
 
