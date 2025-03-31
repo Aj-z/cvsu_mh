@@ -246,6 +246,15 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.namelink:hover {
+  color: #00ffdb;
+  background: #faebd736;
+  padding: 2;
+  border-radius: 5px;
+}
+.namelink {
+  color: #0fff0f;
+}
 @media (max-width: 767px) {
   body {
     font-size: 14px;
