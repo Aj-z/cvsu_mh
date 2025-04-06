@@ -1345,109 +1345,581 @@ class BSOA_Quiz(forms.Form):
 #Con Quiz
 class BSMT_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Administering medications to patients'),
+        ('2', 'B. Performing laboratory tests to aid in disease diagnosis'),
+        ('3', 'C. Conducting surgical procedures'),
+        ('4', 'D. Prescribing treatments for patients'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. Gram staining'),
+        ('2', 'B. Polymerase Chain Reaction (PCR)'),
+        ('3', 'C. Western blot'),
+        ('4', 'D. Blood typing'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. Staphylococcus aureus'),
+        ('2', 'B. Escherichia coli'),
+        ('3', 'C. Mycobacterium tuberculosis'),
+        ('4', 'D. Streptococcus pneumoniae'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Principles of Medical Laboratory Science Practice I: What is the primary role of a medical laboratory scientist in healthcare?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Molecular Biology and Diagnostics: Which of the following is a common technique used in molecular diagnostics for detecting genetic material?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Clinical Bacteriology: Which bacterial species is commonly associated with food poisoning and is detected using selective media in clinical bacteriology?"
     )        
 class BSM_Quiz(forms.Form):
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Oxytocin'),
+        ('2', 'B. Misoprostol'),
+        ('3', 'C. Ergometrine'),
+        ('4', 'D. All of the above'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. First maneuver'),
+        ('2', 'B. Second maneuver'),
+        ('3', 'C. Third maneuver'),
+        ('4', 'D. Fourth maneuver'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. 20-30 breaths per minute'),
+        ('2', 'B. 30-60 breaths per minute'),
+        ('3', 'C. 60-80 breaths per minute'),
+        ('4', 'D. 80-100 breaths per minute'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Midwifery and Pharmacology: Which drug is commonly used to prevent postpartum hemorrhage?"
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Midwifery Practice 3: When performing Leopold’s maneuver, which step determines the fetal lie? "
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="Obstetrics and Newborn Care: What is the normal respiratory rate of a newborn? "
     )        
 class BSN_Quiz(forms.Form):    
     CHOICES_Q1 = [
-        ('1', 'A. By prioritizing advertiser requests over editorial content'),
-        ('2', 'B. By clearly separating editorial content from advertisements'),
-        ('3', 'C. By editing stories to align with advertiser preferences'),
-        ('4', 'D. By avoiding controversial topics altogether'),
+        ('1', 'A. Performing technical procedures'),
+        ('2', 'B. Establishing therapeutic relationships'),
+        ('3', 'C. Administering medications'),
+        ('4', 'D. Following hospital policies'),
     ]
     CHOICES_Q2 = [
-        ('1', 'A. Ensuring information is obtained legally and ethically'),
-        ('2', 'B. Meeting tight deadlines for publishing stories'),
-        ('3', 'C. Writing engaging headlines for maximum audience reach'),
-        ('4', 'D. Following up on leads that seem less credible'),
+        ('1', 'A. High-protein, high-potassium diet'),
+        ('2', 'B. Low-protein, low-sodium diet'),
+        ('3', 'C. High-carbohydrate, high-fat diet'),
+        ('4', 'D. High-fiber, high-sodium diet'),
     ]
     CHOICES_Q3 = [
-        ('1', 'A. To report as quickly as possible, regardless of the accuracy'),
-        ('2', 'B. To sensationalize details to attract public attention'),
-        ('3', 'C. To report with accuracy, fairness, and sensitivity to those affected'),
-        ('4', 'D. To avoid covering sensitive issues to prevent controversy'),
+        ('1', 'A. Administering aspirin and nitroglycerin'),
+        ('2', 'B. Encouraging ambulation'),
+        ('3', 'C. Providing a high-fat diet'),
+        ('4', 'D. Applying warm compress to the chest'),
     ]
     
     answer_q1 = forms.ChoiceField(
         choices=CHOICES_Q1,
         widget=forms.RadioSelect,
-        label="How can an editorial team balance the demands of advertisers with maintaining journalistic integrity?"
+        label="Theoretical Foundation of Nursing: According to Jean Watson’s Theory of Human Caring, what is the core of nursing practice? "
     )
 
     answer_q2 = forms.ChoiceField(
         choices=CHOICES_Q2,
         widget=forms.RadioSelect,
-        label="What is the most significant ethical challenge in investigative journalism?"
+        label="Nutrition and Diet Therapy: Which diet is recommended for a patient with chronic kidney disease (CKD) to reduce fluid retention and electrolyte imbalance?"
     )
     answer_q3 = forms.ChoiceField(
         choices=CHOICES_Q3,
         widget=forms.RadioSelect,
-        label="When reporting on a sensitive issue, such as a conflict or tragedy, what is the journalist's primary responsibility?"
+        label="CARE OF CLIENTS WITH LIFE THREATENING CONDITIONS/ PROBLEMS / HIGH ACUITY/ ACUTELY ILL/ MULTI-ORGAN & EMERGENCY SITUATIONS, ACUTE AND CHRONIC: Which of the following is a priority nursing intervention for a patient experiencing an acute myocardial infarction (MI)?"
     )        
+#CCJ Quiz
+class BSCQuiz(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Lack of forensic evidence'),
+        ('2', 'B. Strict banking regulations'),
+        ('3', 'C. High turnover of criminal members'),
+        ('4', 'D. Use of sophisticated communication and money laundering techniques'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Marijuana'),
+        ('2', 'B. Cocaine'),
+        ('3', 'C. Ecstasy'),
+        ('4', 'D. Methamphetamine (Shabu)'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Presence of an accidental electrical short circuit'),
+        ('2', 'B. A burn pattern showing a "V" shape on the wall'),
+        ('3', 'C. Multiple points of origin with no clear accidental cause'),
+        ('4', "D. Presence of household flammable liquids near the fire's point of origin"),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Specialized Crime Investigation 2: In investigating organized crime syndicates, which of the following is a primary challenge"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Vice and Drug Education and Control: Which of the following is NOT classified as a Schedule I drug under the Philippine Dangerous Drugs Act?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Fire Technology & Arson Investigation: Which of the following is a key indicator that a fire was intentionally set?"
+    )        
+class BSISMQuiz(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Using a strong password policy and multi-factor authentication'),
+        ('2', 'B. Locking computer screens when leaving the workstation'),
+        ('3', 'C. Conducting background checks on all employees'),
+        ('4', 'D. Installing antivirus software on personal devices'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Principle of Least Privilege'),
+        ('2', 'B. Separation of Duties'),
+        ('3', 'C. Due Diligence'),
+        ('4', 'D. Chain of Command'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Situational Crime Prevention'),
+        ('2', 'B. Rehabilitation Programs'),
+        ('3', 'C. Community-Oriented Policing'),
+        ('4', 'D. Punitive Deterrence'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="Asset Protection: Which of the following is the most effective method for protecting sensitive digital assets in an organization?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="Introduction to Security Administration & Management: In security management, which principle ensures that no single individual has complete control over a critical process?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="Crime Prevention, Detection, and Control: Which crime prevention strategy focuses on reducing opportunities for crime by modifying the environment?"
+    )        
+#CEMDS Quiz
+class BSOA_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Balance Sheet'),
+        ('2', 'B. Income Statement'),
+        ('3', 'C. Cash Flow Statement'),
+        ('4', 'D. Statement of Retained Earnings'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Risk aversion'),
+        ('2', 'B. Procrastination'),
+        ('3', 'C. Opportunity-seeking'),
+        ('4', 'D. Relying solely on luck'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To improve handwriting'),
+        ('2', 'B. To increase the speed of note-taking'),
+        ('3', 'C. To enhance grammatical accuracy'),
+        ('4', 'D. To simplify vocabulary'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="OFFICE PROFESSIONAL: What financial statement summarizes a company’s revenues and expenses over a period of time?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="ENTREPRENEURIAL BEHAVIOR AND COMPETENCIES: Which of the following is a key competency of a successful entrepreneur?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="MACHINE SHORTHAND: What is the primary purpose of machine shorthand?"
+    )
+class BSACC_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Relevance'),
+        ('2', 'B. Faithful representation'),
+        ('3', 'C. Comparability'),
+        ('4', 'D. Timeliness'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. To detect all fraud within a company'),
+        ('2', 'B. To provide absolute assurance on financial statements'),
+        ('3', 'C. To express an opinion on whether financial statements are presented fairly'),
+        ('4', 'D. To prepare financial reports for management'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Maximizing short-term profits'),
+        ('2', 'B. Avoiding disclosure of financial information'),
+        ('3', 'C. Transparency and accountability'),
+        ('4', 'D. Prioritizing personal interests over stakeholder'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="CONCEPTUAL FRAMEWORK AND ACCOUNTING STANDARDS: According to the Conceptual Framework, which of the following is NOT a fundamental qualitative characteristic of financial information?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="AUDITING ASSURANCE: CONCEPTS AND APPLICATIONS: What is the primary objective of an independent financial statement audit? "
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="GOVERNANCE, BUSINESS ETHICS, RISK MANAGEMENT, AND INTERNAL CONTROL: Which of the following is a key principle of corporate governance?"
+    )       
+ #BSBA MAJORS   
+class BSBA_FM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. To maximize credit sales without assessing risk'),
+        ('2', 'B. To ensure timely collection of receivables while managing credit risk'),
+        ('3', 'C. To increase the company’s liabilities'),
+        ('4', 'D. To avoid granting credit to customers'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Taxation'),
+        ('2', 'B. Open market operations'),
+        ('3', 'C. Government spending'),
+        ('4', 'D. Price controls'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To maximize risk exposure'),
+        ('2', 'B. To reduce overall investment risk'),
+        ('3', 'C. To invest in a single asset for higher returns'),
+        ('4', 'D. To focus only on short-term gains'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="CREDIT AND COLLECTION: What is the primary objective of a credit and collection policy?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="MONETARY POLICY AND CENTRAL BANKING: Which of the following is a primary tool of monetary policy used by central banks? "
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="INVESTMENT AND PORTFOLIO MANAGEMENT: What is the main purpose of portfolio diversification?"
+    )
+class BSBA_HRM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. To eliminate labor unions'),
+        ('2', 'B. To negotiate terms of employment between employers and employees'),
+        ('3', 'C. To reduce employee wages'),
+        ('4', 'D. To allow employers to make decisions without employee input'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Employee’s personal expenses'),
+        ('2', 'B. Market competitiveness and job evaluation'),
+        ('3', 'C. Number of vacation days taken'),
+        ('4', 'D. Employee’s social status'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To increase company expenses'),
+        ('2', 'B. To enhance employee skills and improve job performance'),
+        ('3', 'C. To reduce employee workload permanently'),
+        ('4', 'D. To replace formal education'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="LABOR RELATIONS AND NEGOTIATIONS: What is the primary purpose of collective bargaining in labor relations?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="COMPENSATION ADMINISTRATION: Which of the following is a key factor in determining employee compensation?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="TRAINING AND DEVELOPMENT: What is the primary goal of employee training and development programs?"
+    ) 
+class BSBA_MM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. To eliminate labor unions'),
+        ('2', 'B. To negotiate terms of employment between employers and employees'),
+        ('3', 'C. To reduce employee wages'),
+        ('4', 'D. To allow employers to make decisions without employee input'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Employee’s personal expenses'),
+        ('2', 'B. Market competitiveness and job evaluation'),
+        ('3', 'C. Number of vacation days taken'),
+        ('4', 'D. Employee’s social status'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Direct response advertising'),
+        ('2', 'B. Comparative advertising'),
+        ('3', 'C. Product placement'),
+        ('4', 'D. Guerrilla marketing'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="MARKET RESEARCH: What is the primary purpose of market research?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="CONSUMER BEHAVIOR: In consumer decision-making, which factor influences a buyer’s choice based on values, traditions, and social norms?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="ADVERTISING: Which advertising strategy relies on indirect promotion by integrating products into movies, TV shows, or social media content?"
+    )    
+class BSBA_OM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Stakeholder preferences'),
+        ('2', 'B. The project manager’s experience'),
+        ('3', 'C. The project management triangle'),
+        ('4', 'D. The number of employees in the company'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. To increase company expenses'),
+        ('2', 'B. To enhance employee skills and improve job performance'),
+        ('3', 'C. Product design'),
+        ('4', 'D. Customer service training'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Gantt Chart'),
+        ('2', 'B. Fishbone Diagram'),
+        ('3', 'C. Pareto Chart'),
+        ('4', 'D. Benchmarking'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="PROJECT MANAGEMENT: What is the primary constraint in project management that affects scope, time, and cost?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="LOGISTICS MANAGEMENT: Which of the following is a key function of logistics management?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="PRODUCTIVITY AND QUALITY TOOLS: Which quality tool is commonly used to identify the root cause of a problem?"
+    )                                           
+class BSBA_SM_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Increased operational costs'),
+        ('2', 'B. Enhanced focus on core business functions'),
+        ('3', 'C. Decreased access to skilled labor'),
+        ('4', 'D. Slower service delivery'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Prioritizing profit over customer satisfaction'),
+        ('2', 'B. Consistently meeting and exceeding customer expectations'),
+        ('3', 'C. Ignoring customer feedback'),
+        ('4', 'D. Reducing training programs for employees'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Manufacturing automobiles'),
+        ('2', 'B. Customer support and technical assistance'),
+        ('3', 'C. Real estate development'),
+        ('4', 'D. Oil refining'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="FUNDAMENTALS OF BUSINESS PROCESS OUTSOURCING 102: What is a key advantage of Business Process Outsourcing (BPO) for companies? "
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="SERVICE CULTURE: In a service-oriented company, what is the main characteristic of a strong service culture?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="FUNDAMENTALS OF BPO 101: Which of the following is a common service provided by BPO companies? "
+    )
+class BSECON_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. A tool for measuring inflation'),
+        ('2', 'B. A medium of exchange, store of value, and unit of account'),
+        ('3', 'C. A means to eliminate credit transactions'),
+        ('4', 'D. A way to avoid taxation'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. The risk of losing access to healthcare'),
+        ('2', 'B. The tendency of insured individuals to consume more healthcare services'),
+        ('3', 'C. The increase in the price of healthcare services'),
+        ('4', "D. The government's role in healthcare financing"),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. To increase government intervention in trade'),
+        ('2', 'B. To restrict imports and exports'),
+        ('3', 'C. To reduce trade barriers and promote economic cooperation'),
+        ('4', 'D. To increase tariffs and protect domestic industries'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="MONETARY ECONOMICS: What is the primary function of money in an economy?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="HEALTH ECONOMICS: In health economics, what does the term 'moral hazard' refer to?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="INTERNATIONAL ECONOMICS: What is the main goal of free trade agreements between countries?"
+    )         
+class BSIS_AS_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. は (wa)'),
+        ('2', 'B. に (ni)'),
+        ('3', 'C. を (wo)'),
+        ('4', 'D. で (de)'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. -아/-어 (-a/-eo)'),
+        ('2', 'B. -요 (-yo)'),
+        ('3', 'C. -고 (-go)'),
+        ('4', "D. -자 (-ja)"),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Thai'),
+        ('2', 'B. Korean (Hanja)'),
+        ('3', 'C. Tagalog'),
+        ('4', 'D. Malay'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="INTERMEDIATE NIPPONGO: In Japanese grammar, which of the following particles is used to indicate the direct object of a sentence?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="INTERMEDIATE KOREAN: In Korean, which of the following honorific endings is commonly used when speaking to someone of higher status?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="ASIAN LANGUAGE 2: Which of the following Asian languages uses characters derived from Chinese Hanzi?"
+    )                                                                                     
+class BSIS_ES_QUIZ(forms.Form):    
+    CHOICES_Q1 = [
+        ('1', 'A. Estar'),
+        ('2', 'B. Ser'),
+        ('3', 'C. Tener'),
+        ('4', 'D. Hacer'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Je vais à la magasin.'),
+        ('2', 'B. J’irai au magasin.'),
+        ('3', 'C. Je vais aller au magasin.'),
+        ('4', "D. Je vais allais au magasin."),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Italian'),
+        ('2', 'B. German'),
+        ('3', 'C. Portuguese'),
+        ('4', 'D. French'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="INTERMEDIATE SPANISH: In Spanish, which verb is used to express a permanent state or inherent characteristic?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="INTERMEDIATE FRENCH: In French, how do you correctly say 'I am going to the store' using the near future tense "
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="EUROPEAN LANGUAGE: Which of the following European languages is NOT a Romance language?"
+    )                     
+
+class DVMQuiz(forms.Form):
+    CHOICES_Q1 = [
+        ('1', 'A. To discuss recent advancements in veterinary pharmaceuticals.'),
+        ('2', 'B. To correlate clinical findings with pathological diagnoses.'),
+        ('3', 'C. To conduct epidemiological studies on zoonotic diseases.'),
+        ('4', 'D. To determine nutritional requirements for livestock.'),
+    ]
+    CHOICES_Q2 = [
+        ('1', 'A. Escherichia coli'),
+        ('2', 'B. Listeria monocytogenes'),
+        ('3', 'C. Salmonella spp.'),
+        ('4', 'D. Clostridium botulinum'),
+    ]
+    CHOICES_Q3 = [
+        ('1', 'A. Simple cuboidal epithelium'),
+        ('2', 'B. Stratified squamous epithelium'),
+        ('3', 'C. Simple columnar epithelium'),
+        ('4', 'D. Transitional epithelium'),
+    ]
+    
+    answer_q1 = forms.ChoiceField(
+        choices=CHOICES_Q1,
+        widget=forms.RadioSelect,
+        label="CLINICO-PATHOLOGICAL CONFERENCE 1: What is the primary objective of a Clinico-Pathological Conference (CPC) in veterinary medicine?"
+    )
+
+    answer_q2 = forms.ChoiceField(
+        choices=CHOICES_Q2,
+        widget=forms.RadioSelect,
+        label="VETERINARY FOOD SAFETY AND HYGIENE: Which of the following pathogens is most commonly associated with foodborne illness in improperly cooked poultry?"
+    )
+    answer_q3 = forms.ChoiceField(
+        choices=CHOICES_Q3,
+        widget=forms.RadioSelect,
+        label="VETERINARY MICROSCOPIC ANATOMY: Which type of epithelium lines the small intestine and aids in nutrient absorption?"
+    )

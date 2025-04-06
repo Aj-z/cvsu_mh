@@ -48,7 +48,7 @@ a.navbar-brand.sc1 {
     --bs-btn-border-color: #06060600 !important;
     --bs-btn-hover-color: #fff0 !important;
     --bs-btn-hover-bg: #fff0 !important;
-    --bs-btn-hover-border-color: #fff !important;
+    --bs-btn-hover-border-color: #fbff00 !important;
     --bs-btn-focus-shadow-rgb: 25,135,84 !important;
     --bs-btn-active-color: #fff !important;
     --bs-btn-active-bg: #fcfbd757 !important;
@@ -217,3 +217,8 @@ button {
     }
 }
    
+@media (min-width: 1200px) {
+    .carousel{
+        top: -10vh;
+}
+} 

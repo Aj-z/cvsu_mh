@@ -9,8 +9,10 @@ from .forms import (BsessQuiz, BpedQuiz, BsaQuiz,
                     BSBIO_ECOLOGY_Quiz, BSBIO_GENETICS_Quiz, BSBIO_GENETICS_Quiz,
                     BSPSYC_Quiz, BSSW_Quiz, BSABE_Quiz, BSARCH_Quiz, BSCE_Quiz, 
                     BSCpE_Quiz, BSCS_Quiz, BSEE_Quiz, BSINDT_AT_Quiz, 
-                    BSINDT_ET_Quiz, BSINDT_EX_Quiz, BSIT_Quiz, BSOA_Quiz,
-                    BSMT_Quiz, BSM_Quiz, BSN_Quiz)
+                    BSINDT_ET_Quiz, BSINDT_EX_Quiz, BSIT_Quiz, 
+                    BSOA_QUIZ, BSACC_QUIZ,BSBA_FM_QUIZ,BSBA_HRM_QUIZ,BSBA_OM_QUIZ,
+                    BSBA_MM_QUIZ,BSBA_SM_QUIZ,BSECON_QUIZ,BSIS_AS_QUIZ,BSIS_ES_QUIZ,
+                    BSMT_Quiz, BSM_Quiz, BSN_Quiz,BSCQuiz, BSISMQuiz, DVMQuiz)
 
 # ------  CSPEAR  ---------
 def cspear_home_view(request):
@@ -22,6 +24,18 @@ def BSESS_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
+    css_style = "cspear.css"
+    College_Name = "College of Sports, Physical Education and Recreation"
+    Carousel_1img ="https://images.pexels.com/photos/30617264/pexels-photo-30617264/free-photo-of-exciting-hockey-game-at-delta-center-arena.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Sport has the power to change the world. It has the power to inspire. It has the power to unite people in a way that little else does."
+    Carousel_1p="-Nelson Mandela"
+    Carousel_2img ="https://images.pexels.com/photos/159607/basketball-player-girls-basketball-girl-159607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Sport is part of every man and woman’s heritage and its absence can never be compensated for."
+    Carousel_2p="-Pierre de Coubertin"
+    Carousel_3img ="https://images.pexels.com/photos/159515/football-american-football-runner-player-159515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="The man who can drive himself further once the effort gets painful is the man who will win."
+    Carousel_3p="-Roger Bannister"
+    Go_back=reverse('CSPEAR_home')
 
 
 
@@ -55,12 +69,37 @@ def BSESS_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BPED_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor of Physical Education"
+    css_style = "cspear.css"
+    College_Name = "College of Sports, Physical Education and Recreation"
+    Carousel_1img ="https://images.pexels.com/photos/8537187/pexels-photo-8537187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Intelligence and skill can only function at the peak of their capacity when the body is healthy and strong."
+    Carousel_1p="- John F. Kennedy "
+    Carousel_2img ="https://images.pexels.com/photos/15138028/pexels-photo-15138028/free-photo-of-boy-during-pe-classes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The education of the body must precede that of the intellect."
+    Carousel_2p="-Aristotle"
+    Carousel_3img ="https://images.pexels.com/photos/8430349/pexels-photo-8430349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="A sound mind in a sound body is a short but full description of a happy state in this world."
+    Carousel_3p="-Friedrich Ludwig Jahn"
+    Go_back=reverse('CSPEAR_home')
+    
 
 
     if request.method == "POST":
@@ -93,6 +132,18 @@ def BPED_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 
 # ------  CAFENR  ---------
@@ -104,6 +155,18 @@ def BSA_Quiz(request):
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor Of Science In Agriculture"
+    css_style = "cafenr.css"
+    College_Name = "College Of Agriculture, Forestry, Environment and Natural Resources"
+    Carousel_1img ="https://images.pexels.com/photos/10039946/pexels-photo-10039946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Agriculture not only gives riches to a nation but the only riches she can call her own."
+    Carousel_1p="-Samuel Johnson"
+    Carousel_2img ="https://images.pexels.com/photos/10041309/pexels-photo-10041309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The farmer is the only man in our economy who buys everything at retail, sells everything at wholesale, and pays the freight both ways."
+    Carousel_2p="-John F. Kennedy"
+    Carousel_3img ="https://images.pexels.com/photos/28930671/pexels-photo-28930671/free-photo-of-organic-peanut-trade-in-zaria-market.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Agriculture is the foundation of civilization and any stable economy."
+    Carousel_3p="-Allan Savory"
+    Go_back=reverse('CAFENR_home')
 
 
     if request.method == "POST":
@@ -136,12 +199,36 @@ def BSA_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BAE_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor in Agricultural Technology"
+    css_style = "cafenr.css"
+    College_Name = "College Of Agriculture, Forestry, Environment and Natural Resources"
+    Carousel_1img ="https://images.pexels.com/photos/3912372/pexels-photo-3912372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Innovation is the central issue in economic prosperity, and nowhere is this truer than in agriculture."
+    Carousel_1p="-William Baumol"
+    Carousel_2img="https://images.pexels.com/photos/2818573/pexels-photo-2818573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Agricultural technology is a powerful tool that can improve efficiency, conserve resources, and enhance food security"
+    Carousel_2p="-Norman Borlaug"
+    Carousel_3img ="https://images.pexels.com/photos/27469249/pexels-photo-27469249/free-photo-of-a-small-drone-flying-over-a-field.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Drones, AI, and automation will change the way we farm in ways we can only imagine."
+    Carousel_3p="- Elon Musk"
+    Go_back=reverse('CAFENR_home')
 
 
     if request.method == "POST":
@@ -174,12 +261,36 @@ def BAE_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSES_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor of Science In Environmental Science"
+    css_style = "cafenr.css"
+    College_Name = "College Of Agriculture, Forestry, Environment and Natural Resources"
+    Carousel_1img ="https://images.pexels.com/photos/1296265/pexels-photo-1296265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="What we are doing to the forests of the world is but a mirror reflection of what we are doing to ourselves and to one another."
+    Carousel_1p="- Mahatma Gandhi"
+    Carousel_2img ="https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The environment is where we all meet; it is the one thing we all share."
+    Carousel_2p="-Lady Bird Johnson"
+    Carousel_3img ="https://images.pexels.com/photos/30574675/pexels-photo-30574675/free-photo-of-wind-turbine-against-blue-sky-in-bengaluru.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Sustainability is no longer about doing less harm. It’s about doing more good."
+    Carousel_3p="- Jochen Zeitz"
+    Go_back=reverse('CAFENR_home')
 
 
     if request.method == "POST":
@@ -212,12 +323,36 @@ def BSES_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 def BSFT_Quiz(request):
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
     COURSE_NAME = "Bachelor of Science In Food Technology"
+    css_style = "cafenr.css"
+    College_Name = "College Of Agriculture, Forestry, Environment and Natural Resources"
+    Carousel_1img ="https://images.pexels.com/photos/8940363/pexels-photo-8940363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Technology is the future of food innovation, ensuring safety, efficiency, and nutrition."
+    Carousel_1p="-George Santayana"
+    Carousel_2img ="https://images.pexels.com/photos/6208936/pexels-photo-6208936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Food science is the bridge between agriculture and nutrition, ensuring safe and sustainable consumption"
+    Carousel_2p="-Harold McGee"
+    Carousel_3img ="https://images.pexels.com/photos/2862154/pexels-photo-2862154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="A well-balanced diet is the key to a healthy life, and food technology helps make that possible."
+    Carousel_3p="- Michael Pollan"
+    Go_back=reverse('CAFENR_home')
 
 
     if request.method == "POST":
@@ -250,12 +385,87 @@ def BSFT_Quiz(request):
         'feedback_q2': feedback_q2,
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
 
 # ------  CVMBS  ---------
 def cvmbs_home_view(request):
     return render(request, 'cvsuquiz/cvmbs.html')
 
+def DVM_Quiz(request):
+    COURSE_NAME = "Doctor of Veterinary Medicine"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cvmbs.css"
+    College_Name = "College of Veterinary, Medicine and Biomedical Sciences"
+    Carousel_1img ="https://images.pexels.com/photos/5731861/pexels-photo-5731861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The health of animals and humans is inextricably linked, and it is our duty to protect both."
+    Carousel_1p="-Bernhard Bang"
+    Carousel_2img ="https://images.pexels.com/photos/7470635/pexels-photo-7470635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Love of animals is a universal impulse, a common ground on which all of us may meet. By loving and understanding animals, perhaps we humans shall come to understand each other."
+    Carousel_2p="-Louis J. Camuti"
+    Carousel_3img ="https://images.pexels.com/photos/6130987/pexels-photo-6130987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Veterinary medicine and human medicine complement each other and should be considered two halves of the same whole."
+    Carousel_3p="-William Osler"
+    Go_back=reverse('CVMBS_home')
+
+
+
+    if request.method == "POST":
+        form = DVMQuiz(request.POST)
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '3':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is C"
+
+            if answer_q3 == '3':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+        form = DVMQuiz()
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
 # ------  CED  ---------
 def ced_home_view(request):
     return render(request, 'cvsuquiz/ced.html')
@@ -758,6 +968,137 @@ def BSTM_Quiz(request):
 def ccj_home_view(request):
     return render(request, 'cvsuquiz/ccj.html')
 
+def BSC_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Criminology"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "ccj.css"
+    College_Name = "College of Criminal Justice"
+    Carousel_1img ="https://images.pexels.com/photos/30912131/pexels-photo-30912131/free-photo-of-statue-of-justice-with-sword-and-scale.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The criminal justice system is the bedrock of a civilized society."
+    Carousel_1p="-John Locke"
+    Carousel_2img ="https://images.pexels.com/photos/7319068/pexels-photo-7319068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The true measure of any society can be found in how it treats its most vulnerable members."
+    Carousel_2p="-Mahatma Gandhi"
+    Carousel_3img ="https://images.pexels.com/photos/10481294/pexels-photo-10481294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Justice will not be served until those who are unaffected are as outraged as those who are."
+    Carousel_3p="-Benjamin Franklin"
+    Go_back=reverse('CCJ_home')
+
+
+
+    if request.method == "POST":
+        form = BSCQuiz(request.POST)
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '1':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is A"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '4':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is D"    
+    else:
+        form = BSCQuiz()
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSISM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Industrial Security Management"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "ccj.css"
+
+    College_Name = "College of Criminal Justice"
+    Carousel_1img ="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The price of security is eternal vigilance."
+    Carousel_1p="-Thomas Jefferson"
+    Carousel_2img ="https://images.pexels.com/photos/8369202/pexels-photo-8369202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The only real security that a man can have in this world is a reserve of knowledge, experience, and ability."
+    Carousel_2p="-Henry Ford"
+    Carousel_3img ="https://images.pexels.com/photos/792032/pexels-photo-792032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Security is not a product, but a process."
+    Carousel_3p="-Bruce Schneier"
+    Go_back=reverse('CCJ_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSISMQuiz(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '1':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is A"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '4':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is D"    
+    else:
+
+        form = BSISMQuiz()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
 # ------  CAS ---------
 def cas_home_view(request):
     return render(request, 'cvsuquiz/cas.html')
@@ -1463,7 +1804,7 @@ def BSSW_QUIZ(request):
     Carousel_3img ="https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     Carousel_3h5=" Social justice is the great work of our generation. It is the moral obligation of those with the capacity to help, to do so."
     Carousel_3p="- Whitney M. Young Jr."
-    Go_back=reverse('CAS_home')
+    Go_back=reverse('CON_home')
 
 
     if request.method == "POST":
@@ -1514,25 +1855,26 @@ def BSSW_QUIZ(request):
 def con_home_view(request):
     return render(request, 'cvsuquiz/con.html')
 def BSMT_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "con.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    COURSE_NAME = "Bachelor of Science in Medical Technology"
+    College_Name = "College of Nursing"
+    Carousel_1img ="https://images.pexels.com/photos/8088861/pexels-photo-8088861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The greatest asset of a laboratory is not its equipment, but its people."
+    Carousel_1p="-James Watson"
+    Carousel_2img ="https://images.pexels.com/photos/3786154/pexels-photo-3786154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Science moves with the spirit of an adventure characterized both by youthful arrogance and by the belief that the truth, once found, would be simple as well as pretty"
+    Carousel_2p="-Paul Nurse"
+    Carousel_3img ="https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off... no matter what they say."
+    Carousel_3p="-Barbara McClintock"
+    Go_back=reverse('CON_home')
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+        form = BSMT_Quiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -1543,17 +1885,17 @@ def BSMT_QUIZ(request):
             else:
                 feedback_q1 = "Wrong! The correct answer is B"
 
-            if answer_q2 == '1':
+            if answer_q2 == '2':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is B"
 
-            if answer_q3 == '3':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
-        form = BajQuiz()
+        form = BSMT_Quiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -1572,48 +1914,50 @@ def BSMT_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSM_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "con.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    COURSE_NAME = "Bachelor of Science in Midwifery"
+    College_Name = "College of Nursing"
+    Carousel_1img ="https://images.pexels.com/photos/3259625/pexels-photo-3259625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Good maternity care starts with respect."
+    Carousel_1p="-Ina May Gaskin"
+    Carousel_2img ="https://images.pexels.com/photos/2869318/pexels-photo-2869318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The best way to save the world is to birth and raise healthy, happy children."
+    Carousel_2p="-Robin Lim"
+    Carousel_3img ="https://images.pexels.com/photos/30044831/pexels-photo-30044831/free-photo-of-heartwarming-family-moment-with-newborn-baby.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Birth isn’t something we suffer, but something we actively do and exult in."
+    Carousel_3p="-Sheila Kitzinger"
+    Go_back=reverse('CON_home')
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+        form = BSM_Quiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
             answer_q3 = form.cleaned_data['answer_q3']
 
-            if answer_q1 == '2':
+            if answer_q1 == '4':
                 feedback_q1 = "Correct!"
             else:
-                feedback_q1 = "Wrong! The correct answer is B"
+                feedback_q1 = "Wrong! The correct answer is D"
 
             if answer_q2 == '1':
                 feedback_q2 = "Correct!"
             else:
                 feedback_q2 = "Wrong! The correct answer is A"
 
-            if answer_q3 == '3':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
-        form = BajQuiz()
+        form = BSM_Quiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -1632,27 +1976,29 @@ def BSM_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back,
     })
 def BSN_QUIZ(request):
-    css_style = "cas.css"
+    css_style = "con.css"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    COURSE_NAME = "Bachelor of Science in Nursing"
+    College_Name = "College of Nursing"
+    Carousel_1img ="https://images.pexels.com/photos/3845115/pexels-photo-3845115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="For the sick, it is important to have the best."
+    Carousel_1p="-Florence Nightingale"
+    Carousel_2img ="https://images.pexels.com/photos/6129234/pexels-photo-6129234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The nurse is temporarily the consciousness of the unconscious, the love of life for the suicidal, the leg of the amputee, the eyes of the newly blind, a means of locomotion for the infant, knowledge and confidence for the young mother, the mouthpiece for those too weak or withdrawn to speak."
+    Carousel_2p="-Virginia Henderson"
+    Carousel_3img ="https://images.pexels.com/photos/5327865/pexels-photo-5327865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="As a nurse, we have the opportunity to heal the heart, mind, soul, and body of our patients, their families, and ourselves."
+    Carousel_3p="-Maya Angelou"
+    Go_back=reverse('CON_home')
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+        form = BSN_Quiz(request.POST)
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -1663,17 +2009,17 @@ def BSN_QUIZ(request):
             else:
                 feedback_q1 = "Wrong! The correct answer is B"
 
-            if answer_q2 == '1':
+            if answer_q2 == '2':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is B"
 
-            if answer_q3 == '3':
+            if answer_q3 == '1':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is A"    
     else:
-        form = BajQuiz()
+        form = BSN_Quiz()
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -1692,7 +2038,8 @@ def BSN_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
-    });
+        'Go_back': Go_back,
+    })
 # ------  CEIT ---------
 def ceit_home_view(request):
     return render(request, 'cvsuquiz/ceit.html')
@@ -2316,26 +2663,34 @@ def BSIT_QUIZ(request):
         'Carousel_3p' : Carousel_3p,
         'Go_back': Go_back
     })
-def BSOA_QUIZ(request):
-    css_style = "cas.css"
+
+# ------  CEMDS ---------
+def cemds_home_view(request):
+    return render(request, 'cvsuquiz/cemds.html')
+def BSOA_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Office Administration"
     feedback_q1 = None
     feedback_q2 = None
     feedback_q3 = None
-    COURSE_NAME = "Bachelor of Arts in Journalism"
-    College_Name = "College of Art And Sciences"
-    Carousel_1img ="https://images.pexels.com/photos/29846183/pexels-photo-29846183/free-photo-of-newspapers-on-display-in-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
-    Carousel_1h5="Journalism is what maintains democracy. It's the force for progressive social change."
-    Carousel_1p="-Andrew Vachss"
-    Carousel_2img ="https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_2h5="The job of the newspaper is to comfort the afflicted and afflict the comfortable."
-    Carousel_2p="-Finley Peter Dunne"
-    Carousel_3img ="https://images.pexels.com/photos/16077108/pexels-photo-16077108/free-photo-of-hand-holding-turkish-newspaper.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    Carousel_3h5="Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it, and, above all, accurately so they will be guided by its light."
-    Carousel_3p="-Joseph Pulitzer"
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/12911765/pexels-photo-12911765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Efficiency is doing things right; effectiveness is doing the right things."
+    Carousel_1p="-Peter Drucker"
+    Carousel_2img ="https://images.pexels.com/photos/7550886/pexels-photo-7550886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The secret of success is to do the common things uncommonly well."
+    Carousel_2p="-John D. Rockefeller"
+    Carousel_3img ="https://images.pexels.com/photos/3183172/pexels-photo-3183172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Good order is the foundation of all things."
+    Carousel_3p="-Edmund Burke"
+    Go_back=reverse('CEMDS_home')
+
 
 
     if request.method == "POST":
-        form = BajQuiz(request.POST)
+
+        form = BSOA_QUIZ(request.POST)
+
         if form.is_valid():
             answer_q1 = form.cleaned_data['answer_q1']
             answer_q2 = form.cleaned_data['answer_q2']
@@ -2346,17 +2701,19 @@ def BSOA_QUIZ(request):
             else:
                 feedback_q1 = "Wrong! The correct answer is B"
 
-            if answer_q2 == '1':
+            if answer_q2 == '3':
                 feedback_q2 = "Correct!"
             else:
-                feedback_q2 = "Wrong! The correct answer is A"
+                feedback_q2 = "Wrong! The correct answer is c"
 
-            if answer_q3 == '3':
+            if answer_q3 == '2':
                 feedback_q3 = "Correct!"
             else:
-                feedback_q3 = "Wrong! The correct answer is C"    
+                feedback_q3 = "Wrong! The correct answer is B"    
     else:
-        form = BajQuiz()
+
+        form = BSOA_QUIZ()
+
 
     return render(request, 'cvsuquiz/quiz.html', {
         'form': form, 
@@ -2365,9 +2722,9 @@ def BSOA_QUIZ(request):
         'feedback_q3': feedback_q3,
         'COURSE_NAME': COURSE_NAME,
         'css_style' : css_style,
-       'College_Name': College_Name,
-       'Carousel_1img': Carousel_1img,
-       'Carousel_1h5' : Carousel_1h5,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
         'Carousel_1p' : Carousel_1p,
         'Carousel_2img' : Carousel_2img,
         'Carousel_2h5' : Carousel_2h5,
@@ -2375,8 +2732,608 @@ def BSOA_QUIZ(request):
         'Carousel_3img' : Carousel_3img,
         'Carousel_3h5' : Carousel_3h5,
         'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
     })
+def BSACC_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Accountancy"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/8927456/pexels-photo-8927456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Accounting is the language of business."
+    Carousel_1p="-Warren Buffett"
+    Carousel_2img ="https://images.pexels.com/photos/4476378/pexels-photo-4476378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="A budget is telling your money where to go instead of wondering where it went."
+    Carousel_2p="-Dave Ramsey"
+    Carousel_3img ="https://images.pexels.com/photos/6863176/pexels-photo-6863176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="The hardest thing in the world to understand is the income tax."
+    Carousel_3p="-Albert Einstein"
+    Go_back=reverse('CEMDS_home')
 
-# ------  CEMDS ---------
-def cemds_home_view(request):
-    return render(request, 'cvsuquiz/cemds.html')
+
+
+    if request.method == "POST":
+
+        form = BSACC_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is C"
+
+            if answer_q2 == '3':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is c"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+
+        form = BSACC_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_FM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Financial Management"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/6120253/pexels-photo-6120253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The stock market is filled with individuals who know the price of everything, but the value of nothing."
+    Carousel_1p="-Philip Fisher"
+    Carousel_2img ="https://images.pexels.com/photos/14820460/pexels-photo-14820460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The goal of a successful investor is to make the most money with the least risk."
+    Carousel_2p="-Warren Buffett"
+    Carousel_3img ="https://images.pexels.com/photos/5816299/pexels-photo-5816299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="An investment in knowledge pays the best interest."
+    Carousel_3p="- Benjamin Franklin"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_FM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_FM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_HRM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Human Resource Management"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/3782143/pexels-photo-3782143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The way your employees feel is the way your customers will feel."
+    Carousel_1p="-Sybil F. Stershic"
+    Carousel_2img ="https://images.pexels.com/photos/3746957/pexels-photo-3746957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Hire character. Train skill."
+    Carousel_2p="-Peter Schutz"
+    Carousel_3img ="https://images.pexels.com/photos/4098369/pexels-photo-4098369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Train people well enough so they can leave, treat them well enough so they don’t want to."
+    Carousel_3p="-Richard Branson"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_HRM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_HRM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_MM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Marketing Management"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="People don’t buy what you do; they buy why you do it."
+    Carousel_1p="-Simon Sinek"
+    Carousel_2img ="https://images.pexels.com/photos/6956316/pexels-photo-6956316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="The best marketing doesn’t feel like marketing."
+    Carousel_2p="- Tom Fishburne"
+    Carousel_3img ="https://images.pexels.com/photos/7948039/pexels-photo-7948039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Stopping advertising to save money is like stopping your watch to save time."
+    Carousel_3p="-Henry Ford"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_MM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '3':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is C"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_MM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_OM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Operations Management "
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Efficiency is doing things right; effectiveness is doing the right things."
+    Carousel_1p="-Peter Drucker"
+    Carousel_2img ="https://images.pexels.com/photos/6592358/pexels-photo-6592358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="You can't manage what you don't measure."
+    Carousel_2p="-W. Edwards Deming"
+    Carousel_3img ="https://images.pexels.com/photos/7172858/pexels-photo-7172858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Great things are not done by impulse, but by a series of small things brought together."
+    Carousel_3p="-Vincent Van Gogh"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_OM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '3':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is C"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_OM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSBA_SM_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Business Administration Major in Service Management Program"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/7512139/pexels-photo-7512139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="Do what you do so well that they will want to see it again and bring their friends."
+    Carousel_1p="-Walt Disney"
+    Carousel_2img ="https://images.pexels.com/photos/5816299/pexels-photo-5816299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="A satisfied customer is the best business strategy of all."
+    Carousel_2p="-Michael LeBoeuf"
+    Carousel_3img ="https://images.pexels.com/photos/3782131/pexels-photo-3782131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Your most unhappy customers are your greatest source of learning"
+    Carousel_3p="-Bill Gates"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSBA_SM_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSBA_SM_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSECON_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in Economics"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/7567550/pexels-photo-7567550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design."
+    Carousel_1p="-Friedrich Hayek "
+    Carousel_2img ="https://images.pexels.com/photos/6802048/pexels-photo-6802048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Economics is everywhere, and understanding economics can help you make better decisions and lead a happier life."
+    Carousel_2p="-Tyler Cowen"
+    Carousel_3img ="https://images.pexels.com/photos/6120182/pexels-photo-6120182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="The economy depends about as much on economists as the weather does on weather forecasters."
+    Carousel_3p="-Jean-Paul Kauffmann"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSECON_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '3':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is C"    
+    else:
+
+        form = BSECON_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSIS_AS_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in  International Studies Major in Asian Studies"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/4551301/pexels-photo-4551301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The past is never dead. It’s not even past."
+    Carousel_1p="- William Faulkner"
+    Carousel_2img ="https://images.pexels.com/photos/581299/pexels-photo-581299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="Asia is rich in people, rich in culture and rich in resources. It is also rich in trouble."
+    Carousel_2p="-Hubert H. Humphrey"
+    Carousel_3img ="https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="To understand a people, one must know their memories. The past that makes them what they are."
+    Carousel_3p="- Ryszard Kapuściński"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSIS_AS_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '3':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is C"
+
+            if answer_q2 == '2':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is B"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSIS_AS_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
+def BSIS_ES_Quiz(request):
+    COURSE_NAME = "Bachelor of Science in  International Studies Major in European Studies"
+    feedback_q1 = None
+    feedback_q2 = None
+    feedback_q3 = None
+    css_style = "cemds.css"
+    College_Name = "College of Economics,Management and Development Studies"
+    Carousel_1img ="https://images.pexels.com/photos/2574631/pexels-photo-2574631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_1h5="The strength of the European Union does not lie in its bureaucracy or institutions, but in its diversity, cultures, and people."
+    Carousel_1p="-Jean-Claude Juncker"
+    Carousel_2img ="https://images.pexels.com/photos/2930354/pexels-photo-2930354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_2h5="To be European is to be open to differences and to share a common vision of the future."
+    Carousel_2p="-Emmanuel Macron"
+    Carousel_3img ="https://images.pexels.com/photos/2225442/pexels-photo-2225442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    Carousel_3h5="Europe was created by history. America was created by philosophy."
+    Carousel_3p="-Margaret Thatcher"
+    Go_back=reverse('CEMDS_home')
+
+
+
+    if request.method == "POST":
+
+        form = BSIS_ES_QUIZ(request.POST)
+
+        if form.is_valid():
+            answer_q1 = form.cleaned_data['answer_q1']
+            answer_q2 = form.cleaned_data['answer_q2']
+            answer_q3 = form.cleaned_data['answer_q3']
+
+            if answer_q1 == '2':
+                feedback_q1 = "Correct!"
+            else:
+                feedback_q1 = "Wrong! The correct answer is B"
+
+            if answer_q2 == '3':
+                feedback_q2 = "Correct!"
+            else:
+                feedback_q2 = "Wrong! The correct answer is C"
+
+            if answer_q3 == '2':
+                feedback_q3 = "Correct!"
+            else:
+                feedback_q3 = "Wrong! The correct answer is B"    
+    else:
+
+        form = BSIS_ES_QUIZ()
+
+
+    return render(request, 'cvsuquiz/quiz.html', {
+        'form': form, 
+        'feedback_q1': feedback_q1,
+        'feedback_q2': feedback_q2,
+        'feedback_q3': feedback_q3,
+        'COURSE_NAME': COURSE_NAME,
+        'css_style' : css_style,
+        'College_Name': College_Name,
+        'Carousel_1img': Carousel_1img,
+        'Carousel_1h5' : Carousel_1h5,
+        'Carousel_1p' : Carousel_1p,
+        'Carousel_2img' : Carousel_2img,
+        'Carousel_2h5' : Carousel_2h5,
+        'Carousel_2p' : Carousel_2p,
+        'Carousel_3img' : Carousel_3img,
+        'Carousel_3h5' : Carousel_3h5,
+        'Carousel_3p' : Carousel_3p,
+        'Go_back': Go_back
+    })
