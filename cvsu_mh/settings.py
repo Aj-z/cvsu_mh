@@ -128,16 +128,21 @@ import dj_database_url
 import environ
 import os
 
+import dj_database_url
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': '35.198.227.136',  # Cloud SQL connection
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
 }
+
+#google > DATABASES = {
+ #      'ENGINE': 'django.db.backends.postgresql_psycopg2',
+  #      'NAME': os.getenv('DB_NAME'),
+   #     'USER': os.getenv('DB_USER'),
+    #    'PASSWORD': os.getenv('DB_PASSWORD'),
+     #   'HOST': '35.198.227.136',  # Cloud SQL connection
+      #  'PORT': '5432',
+    #}
+#}
 
 # Initialize environment variables
 env = environ.Env()
