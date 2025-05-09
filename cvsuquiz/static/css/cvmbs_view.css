@@ -165,7 +165,11 @@ p{
     --bs-btn-disabled-border-color: white !important;
     --bs-gradient: none !important;
 }
-
+@media (max-width: 12000px) {
+    body{
+         background-size: calc(50em + 100vh + 30vw);
+     }
+ } 
 @media (max-width: 768px) {
     .courses {
         flex-direction:column;
